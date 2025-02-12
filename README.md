@@ -1,2 +1,2 @@
 # mindwave-fantranslations
-Fan translaforions of MINDWAVE
+Fan translations of MINDWAVE
