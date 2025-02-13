@@ -1,0 +1,33 @@
+wait for marker line1
+pause
+speaker_voice terminal
+|style font fnt_pixel|Veuillez insérer votre Ticket Platine dans la fente prévue à cet effet !
+clear
+resume
+wait for marker line2
+pause
+|style font fnt_pixel|...et insérez le câble dans votre Port Neural!
+clear
+resume
+wait for marker line3
+pause
+|style font fnt_pixel|VEUILLEZ PATIENTER...
+resume
+clear
+wait for marker info
+pause
+|style font fnt_pixel|SCAN TERMINE;|p|\nNOM DU (DE LA) PARTICIPANT(E):|p| PANDORA
+|style font fnt_pixel|ENREGISTRE(E) SOUS LE TICKET NUMERO 7263672|p|\n(BOISSON PETILLANTE BREEZE COLA)
+|style font fnt_pixel|(DISTRIBUTEUR 6-A24 DANS BLACKOUT CITY EST)
+speaker_icon pandora
+speaker_voice pandora
+... flippant... 
+speaker_icon none
+resume
+text_auto 1
+speaker_voice terminal
+|style font fnt_pixel|DEMARRAGE DE LA SEQUENCE DE CALIBRATION.
+wait for marker textclear
+clear
+
+

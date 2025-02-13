@@ -1,0 +1,43 @@
+wait for marker line1
+pause
+speaker_voice announcer
+|style font fnt_pixel|Attention, Participants !
+|style font fnt_pixel|La manche de poules est sur le point de commencer.
+clear
+resume
+
+
+pause at marker line2end
+no_text_continue_until marker line2end
+|style font fnt_pixel|Veuillez entrer dans un ascenseur inoccupé dans les 10 prochaines minutes.
+clear
+resume
+wait for marker line3
+pause at marker line3end
+speaker_icon smalls
+speaker_voice smalls
+Allez,|p| bonne chance Pandora.|p|\nOn s'revoit tout à l'heure.
+speaker_icon none
+resume
+jump to marker shot2start
+clear
+
+
+wait for marker line4
+pause at marker 0_3_4_end
+speaker_voice announcer_small
+|style font fnt_pixel|Bienvenue,|p| Participant(e).
+|style font fnt_pixel|Veuillez insérer le cable dans votre Port Neural pour confirmer votre entrée.
+jump to marker 0_3_5_start
+clear
+resume
+wait for marker line5
+pause at marker 0_3_6_end
+|style font fnt_pixel|IDENTITE CONFIRMEE :|p| PANDORA.
+|style font fnt_pixel|Les poules vont commencer d'ici peu.|p| Veuillez patienter.
+jump to marker 0_3_6_end
+clear
+resume
+loop start marker elevatorloopstart2
+loop end marker elevatorloopend2
+

@@ -1,0 +1,17 @@
+
+pause at marker stareend
+wait for marker line1
+speaker_voice announcer_small
+|style font fnt_pixel|Félicitations,|p| PANDORA !
+|style font fnt_pixel|Votre performance était adéquate et suffisante pour passer a la seconde manche !
+clear
+jump to marker backstart
+resume
+
+pause at marker backend
+wait for marker line2
+|style font fnt_pixel|Vous allez atteindre le prochain étage.
+|style font fnt_pixel|Lorsque les portes s'ouvriront,|p| merci de sortir et d'attendre la prochaine manche du tournoi.
+clear
+jump to marker openstart
+resume
