@@ -1,0 +1,214 @@
+{
+	"language": "English",
+	"language_iso": "en",
+	"system":{
+		"photosensitivity_warning":[
+			"AVERTISSEMENT EPILEPSIE PHOTOSENSIBLE",
+			"MINDWAVE contient des effets visuels commes des effets stroboscopiques qui pourraient déclencher des crises épileptiques.\nUn faible pourcentage des joueurs sont susceptibles de faire des crises d'épilepsie quand exposés à des stimulations lumineuses fortes comme des successions rapides d'images ou répétition de motifs.\nConseillé à un public averti."
+		],
+		"controls_disclaimer":"MINDWAVE est fait pour etre joué avec un Clavier QWERTY et une Souris.\nSi votre clavier utilise le format AZERTY, il vous est fortement recommandé de changer sa configuration.\nLes Trackpads ne sont pas recommendés, et les Manettes ne sont pas prises en charge.",
+		"cutscene":{
+			"paused_text": "EN PAUSE",
+			"skip_button": "Passer",
+			"skipping_text": "En train de passer..."
+		},
+		"gameplay":{
+			"pause_screen":{
+				"paused_text": "EN PAUSE",
+				"exit_button": "Quitter"
+			},
+			"results_screen":{
+				"score_text": "SCORE\n"
+			}
+		}
+	},
+	"character_names":{
+		"mystery": "???",
+		"pandora": "Pandora",
+		"smalls": "Smalls",
+		"terminal": "Terminal",
+		"abbie": "Abbie",
+		"alex": "Alex",
+		"dom": "Dom",
+		"iris": "???",
+		"roxy": "Roxy",
+		"slate": "Slate",
+		"kat": "Kat"
+	},
+	"menus":{
+		"main":{
+			"press_space": "APPUYEZ SUR ESPACE",
+			"character_select_locked": "Battez le premier adversaire dans le mode histoire pour déverouiller le mode Mind Select !",
+			"quit_confirm": "Etes-vous sur de vouloir quitter ?",
+			"popup_button_ok": "OK",
+			"popup_button_yes": "OUI",
+			"popup_button_no": "NON"
+		},
+		"character_select":{
+			"title": "MIND SELECT",
+			"mode_endless": "SANS FIN",
+			"mode_standard": "STANDARD",
+			"play_button": "JOUER",
+			"leaderboard_button": "CLASSEMENT",
+			"settings_button": "PARAMETRES",
+			"simple_mode_toggle": "SIMPLE    ",
+			"back_button": "RETOUR",
+			
+			"character_names":{
+				"starlight": "Starlight",
+				"tutorial": "Tutoriel",
+				"shuffle": "Meli-Melo"
+			},
+			"presets":{
+				"leaderboard_name_template": "#CHARACTER_NAME#\n(#PRESET_NAME#)",
+				"default": "Default",
+				"custom": "Custom",
+				"no_gimmicks": "Simple"
+			}
+		},
+		"leaderboard":{
+			"local_tab": "Local",
+			"global_tab": "Global",
+			"friends_tab": "Amis",
+			"page_number": "Pg. #",
+			"close_button": "Fermer",
+			"text_local_no_scores": "Pas encore de score.\nFait une partie, d'abord !",
+			"text_loading_scores": "Scores en chargement...",
+			"text_no_connection": "Pas de connection.",
+			"text_drm_free": "Le Classement en Ligne n'est qu'uniquement disponible sur la version Steam."
+		},
+		"options":{
+			"back_button": "Retour",
+			"volume_label": "Volume",
+			"vol_master": "Principal",
+			"vol_sfx": "Sons",
+			"vol_music": "Musique",
+			"mute_on_lose_focus": "Silencieux en Minimisé",
+			"window_scale": "Echelle de la Fenêtre",
+			"window_scale_option": "#x",
+			"window_scale_default": "Par Défaut (#x)",
+			"fullscreen_toggle": "Plein Ecran",
+			"window_mouse_lock_toggle": "Verrouillage Curseur",
+			"pause_on_lose_focus": "Pause en Minimisé",
+			"key_ghosting_compensation": "Compensation Key Ghosting",
+			"test_key_ghosting": "Test Key Ghosting",
+			
+			"key_ghosting_test_text": "Essayez de garder le plus de touches enfoncées en même temps. Si certaines combinaisons de touches ne marchent pas, votre clavier souffre probablement de Key Ghosting.\nSi certaines combinaisons vous empêchent de tenir plusieurs touches enfoncées en même temps, vous devrez probablement activer la Compensation Key Ghosting.",
+			"manage_profiles_button": "Profils",
+			"reset_local_high_scores_button": "Réinitialiser les High Scores Locaux",
+			"tooltip":{
+				"mute_on_lose_focus": "Coupe tous les sons du jeu quand la fenêtre est minimisée.",
+				"pause_on_lose_focus": "Met le jeu en pause quand la fenêtre est minimisée.",
+				"window_mouse_lock_toggle": "Certaines sections du jeu vont verrouiller le curseur à la fenêtre.",
+				"key_ghosting_compensation": "Certains claviers ne peuvent pas avoir trop de touches enfoncées en même temps. Activer cette option minimise le nombre de touches qu'il faut enfoncer en même temps pour certains micro-jeux.",
+				"test_key_ghosting": "Certains claviers ne peuvent pas avoir trop de touches enfoncées en même temps.\nCliquez sur ce bouton pour tester si votre clavier souffre de Key Ghosting."
+			}
+		}
+	},
+	"microgames":{
+		"t":{
+			"0":{
+				"name": "Scamp",
+				"prompt": "ENCERCLE !"
+			}
+		},
+		"s":{
+			"0":{
+				"name": "Grizz",
+				"prompt": "ATTEINS !"
+			},
+			"1":{
+				"name": "Chao",
+				"prompt": "DONNE !"
+			},
+			"2":{
+				"name": "Brush",
+				"prompt": "BROSSE !"
+			},
+			"3":{
+				"name": "BunBox",
+				"prompt": "TRIE !"
+			},
+			"4":{
+				"name": "PcMash",
+				"prompt": "SPAMME !"
+			},
+			"5":{
+				"name": "Pop",
+				"prompt": "ECLATE !"
+			},
+			"6":{
+				"name": "Claw",
+				"prompt": "ATTRAPE !"
+			},
+			"7":{
+				"name": "Wire Run",
+				"prompt": "ESQUIVE !"
+			},
+			"8":{
+				"name": "Cat Catch",
+				"prompt": "ATTRAPE !"
+			},
+			"9":{
+				"name": "HugRun",
+				"prompt": "COURS !"
+			},
+			"10":{
+				"name": "KissDodge",
+				"prompt": "EVITE !"
+			},
+			"11":{
+				"name": "Dizzy",
+				"prompt": "TOURNE !"
+			},
+			"12":{
+				"name": "Dial",
+				"prompt": "APPELLE !"
+			},
+			"13":{
+				"name": "KappNBall",
+				"prompt": "CASSE !"
+			},
+			"14":{
+				"name": "Candy Catch",
+				"prompt": "ATTRAPE !"
+			},
+			"boss":{
+				"name": "Spring Jump",
+				"prompt": "SAUTE !"
+			}
+		},
+		"h":{
+			
+		},
+		"f":{
+			"0":{
+				"name":"Clock",
+				"prompt":"REGLE L'HEURE !"
+			},
+			"1":{
+				"name":"Yume",
+				"prompt":"SORS !"
+			}
+		}
+	},
+	"dialogue":{
+		"0":{
+			"lobby":{
+				"tutorial":{
+					"basics":[
+						"Bienvenue dans le hall !\n\nC'est ici que Pandora et Smalls peuvent prendre du temps pour discuter avec les autres participants avant le début de la manche suivante du tournoi.",
+						"Pour bouger la camera, placez votre souris sur les bords de l'écran ou utilisez les touches WASD/Flèches directionelles.",
+						"Appuyez sur Espace pour ouvrir le menu.",
+						"Vous pouvez cliquer sur Smalls pour discuter avec lui.",
+						"...et vous pouvez cliquer sur Pandora pour passer le hall et commencer la prochaine manche du tournoi.",
+						"La première manche va bientôt commencer.\n\nSi vous avez besoin de relire le dialogue, vous pouvez appuyer sur Tab pour afficher l'historique."
+					],
+					"submenu_reminder":[
+						"La première manche va bientôt commencer.\n\nPour passer le hall et commencer la manche, cliquez sur Pandora dans le menu (Espace).\n\nSi vous avez besoin de relire le dialogue, vous pouvez appuyer sur Tab pour afficher l'historique."
+					]
+				}
+			}
+		}
+	}
+}
