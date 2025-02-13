@@ -1,0 +1,35 @@
+checkflag _0.tutorial.fails 0
+goto marker 0fails
+checkflag _0.tutorial.fails 1
+goto marker 1fails
+
+goto marker 2fails
+
+
+marker 0fails
+Bien joué !|p| Ca donne cette impression là de jouer a un micro jeu !
+Essayons un micro-jeu avec une autre Interface.
+show_controls
+Celui-ci utilise l'Interface Clavier.|p|\nEssaye un petit coup !
+goto marker end
+
+
+
+
+
+marker 1fails
+Hmm...|p| on devrait tenter autre chose.
+show_controls
+Visualise un énoooooorme clavier devant toi,|p| ok ?|p|\nC'est ce que l'Interface veut dire!
+Essayons encore une fois !
+goto marker end
+
+marker 2fails
+Hmm...|p| on devrait tenter autre chose.
+show_controls
+Essaie de comprendre quelles lettres te sont affichées,|p| et tapes les!|p|\nC'est le b.a.-ba de cette Interface!
+goto marker end
+
+
+marker end
+

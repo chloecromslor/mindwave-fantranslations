@@ -1,0 +1,28 @@
+checkflag _0.tutorial.fails 0
+goto marker 0fails
+checkflag _0.tutorial.fails 1
+goto marker 1fails
+
+goto marker 2fails
+
+
+marker 0fails
+Très bien !
+Essayons un autre combo d'Interfaces !
+show_controls
+Pour ce micro-jeu,|p| il faut utiliser les interfaces Flèches et Souris.|p|\nTu penses pouvoir le faire ?
+goto marker end
+
+marker 1fails
+Woaw,|p| quel changement de perspective !|p| Quel micro-jeu incroyable.
+show_controls
+On réessaie, et tu fais de ton mieux,|p| d'accord ?
+goto marker end
+
+marker 2fails
+show_controls
+Essayons encore une fois !
+goto marker end
+
+marker end
+

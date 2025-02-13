@@ -1,0 +1,36 @@
+checkflag _0.tutorial.fails 0
+goto marker 0fails
+checkflag _0.tutorial.fails 1
+goto marker 1fails
+
+goto marker 2fails
+
+
+marker 0fails
+Salut !|p|\nMaintenant que tu t'es branchée,|p| on va faire un peu de calibration cognitive pour te préparer à jouer !
+On va te montrer les bases de MINDWAVE le temps d'attendre que la calibration se fasse.
+Dans MINDWAVE,|p| tu te connectes à l'esprit de ton adversaire pour ressentir ses pensées,|p| ses souvenirs|p| et ses émotions à petites doses appelées micro-jeux !
+Pour s'entraîner un petit peu,|p| on va jouer à quelques micro-jeux de ton propre esprit !
+show_controls
+Chaque micro-jeu utilise ce qu'on appelle une Interface.|p|\nElles déterminent comment tu intéragis avec le micro-jeu !
+Essayons un micro-jeu avec l'interface affichée à gauche !|p|\nCa devrait être plutôt facile à comprendre !
+goto marker end
+
+
+marker 1fails
+Hmm... peut-être que t'as un peu de mal à comprendre l'Interface...
+Fais comme si tu avais une souris à la main,|p| ok ?|p|\nC'est ce que l'Interface veut dire!
+show_controls
+Tu as juste à encercler la mini-toi !|p|\n"Clique" et "glisse" !
+goto marker end
+
+marker 2fails
+Fais comme si tu avais une souris à la main,|p| ok ?|p|\nC'est ce que l'Interface veut dire!
+show_controls
+Tu as juste à encercler la mini-toi !|p|\n"Clique" et "glisse" !
+goto marker end
+
+
+marker end
+
+

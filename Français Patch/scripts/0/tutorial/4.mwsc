@@ -1,0 +1,28 @@
+checkflag _0.tutorial.fails 0
+goto marker 0fails
+checkflag _0.tutorial.fails 1
+goto marker 1fails
+
+goto marker 2fails
+
+
+marker 0fails
+Bien joué !
+Tu as saisi les bases...|p|\nMais savais-tu que les Interfaces peuvent être combinées ?|p| Mhm !
+show_controls
+Essayons un micro-jeu qui utilise les Interfaces Flèches et Barre Espace en même temps !
+goto marker end
+
+marker 1fails
+Oh...|p| Je sais que c'est un peu difficile,|p| mais tu peux le faire ! Je crois en toi !
+show_controls
+N'oublie pas,|p| tu peux utiliser WASD ou les flèches directionelles,|p| c'est toi qui choisis !
+goto marker end
+
+marker 2fails
+show_controls
+N'oublie pas,|p| tu peux utiliser WASD ou les flèches directionelles,|p| c'est toi qui choisis !
+goto marker end
+
+marker end
+

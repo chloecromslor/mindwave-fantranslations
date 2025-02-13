@@ -1,0 +1,23 @@
+checkflag _0.tutorial.fails 0
+goto marker 0fails
+
+goto marker 1fails
+
+
+
+
+marker 0fails
+Ton esprit est si intéressant,|p| haha.
+show_controls
+Il est temps d'essayer l'Interface Flèches !
+Fais comme si tu jouais à un jeu sur clavier,|p| avec ta main droite sur les flèches directionelles,|p| ou ta gauche sur WASD.
+goto marker end
+
+marker 1fails
+Oh,|p| dommage...
+show_controls
+N'oublie pas,|p| tu peux utiliser soit les flèches,|p| soit WASD !|p| C'est toi qui choisis !
+goto marker end
+
+marker end
+

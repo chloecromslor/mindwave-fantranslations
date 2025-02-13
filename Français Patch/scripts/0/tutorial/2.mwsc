@@ -1,0 +1,30 @@
+checkflag _0.tutorial.fails 0
+goto marker 0fails
+checkflag _0.tutorial.fails 1
+goto marker 1fails
+
+goto marker 2fails
+
+
+marker 0fails
+Bien joué !|p|\nCe micro-jeu était un peu compliqué...|p| Et si on en faisait un plus simple ?
+show_controls
+Testons tes réflexes avec l'Interface Barre Espace !
+Attends le bon moment...|p| et BAM!|p|\nComme si tu la frappais!|p| Ok ?
+goto marker end
+
+marker 1fails
+Hmm...|p| celui-là peut prendre quelques essais...
+Appuie sur "Espace" pile quand les couleurs changent !|p| Ok ?
+show_controls
+Frappe la juste au bon moment !
+goto marker end
+
+marker 2fails
+Appuie sur "Espace" pile quand les couleurs changent !|p| Ok ?
+show_controls
+Frappe la juste au bon moment !
+goto marker end
+
+marker end
+
