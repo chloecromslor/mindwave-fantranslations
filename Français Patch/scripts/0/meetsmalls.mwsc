@@ -1,0 +1,77 @@
+char pandora p left
+char smalls s right
+face p 3 0
+p
+line "...Smalls !?"
+face s 0 2
+s
+line "Salut."
+face p 0 2
+p
+line "J'croyais que t'avais pas de ticket ?"
+face s 1 0
+s
+line "Ouais,|p| j'en ai pas."
+p
+line "Comment t'es entré, alors ?"
+face s 0 1
+s
+line "Top secret."
+face p 1 2
+p
+line "T'as fait quoi...?"
+face s 2 0
+s
+line "Y avait presque pas de sécurité."
+face s 2 1
+s
+line "Voire pas du tout, même."
+face p 0 2
+p
+line "Mec."
+face s 0 0
+s
+line "Donc je suis juste...|p| passé par la porte arrière."
+line "J'ai traversé deux ou trois couloirs au hasard puis j'me suis retrouvé dans cette salle avec plein de monde."
+face p 0 0
+p
+line "N'empêche,|p| heureusement que t'es là."
+face p 0 1
+p
+line "Ca va rendre tout ce truc beaucoup moins relou."
+face p 1 0
+p
+line "J'espère juste que la sécurité va pas se ramener pour te jeter dehors."
+face s 0 1
+s
+line "Je croise les doigts."
+face p 0 2
+p
+line "Si on me demande,|p| j'te connais pas."
+face s 0 0
+s
+line "Ca marche."
+face p 0 1
+p
+line "Mais nan,|p| en vrai..."
+skip outro
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

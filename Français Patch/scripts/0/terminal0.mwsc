@@ -1,0 +1,20 @@
+function cs_0_1_scr_terminalsong_start
+function play_crowd_ambience
+char pandora p left
+char terminal t right
+
+t
+line "|style font fnt_pixel|Sincères salutations de la part du système d'entrée de la Mindscape Tower !"
+|style font fnt_pixel|...et bienvenue dans la Mindscape Tower,|p ,| siège social du groupe Mindscape Co.|p ,|
+|style font fnt_pixel|...auteurs des plus grandes avancées dans le monde de la technologie et du divertissement cogniti-|skip|  
+p
+line "Ouais ouais passepassepasse RAF."
+face p 1 0
+
+Dépêche de finir.|p|
+Il y a genre... un million de personnes derrière qui attendent.
+
+t
+line "|style font fnt_pixel|Un(e) de nos participant(e)s les plus enthousiastes jusqu'à présent!|p| Très bien..."
+skip outro
+

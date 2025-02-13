@@ -1,0 +1,18 @@
+function play_crowd_ambience
+char pandora p left
+char terminal t right
+t
+line "|style font fnt_pixel|C'est avec plaisir que nous vous invitons au tournoi annuel de MINDWAVE,|p ,| organisé par Mindscape Co."
+face p 2 0
+p
+line "|speed 0.05|..."
+t
+line "|style font fnt_pixel|En passant par ce portique,|p ,| vous serez prêt(e) à participer au tournoi."
+|style font fnt_pixel|Veuillez noter qu'en |speed 4|passant par le portique, vous délivrez formellement et légalement la permission à Mindscape Co. d'enregistrer et|skip| 
+|style font fnt_pixel||speed 4|d'analyser la progression de votre expérience et de votre gameplay de MINDWAVE au sein de ce tournoi afin de diffuser certains ou tous les matchs au monde entier, et|skip| 
+|style font fnt_pixel||speed 4| afin d'entraîner notre Réseau Neural Mindscape (c), dans le but d'améliorer les prochaines expériences officielles de MINDWAVE.|skip| 
+|style font fnt_pixel|Veuillez vous diriger vers le hall d'entrée et attendre le début de l'évènement.
+|style font fnt_pixel|N'oubliez pas,|p ,| le plus important est de s'amuser et de traiter les autres participants avec respect et gentillesse!
+|style font fnt_pixel|Merci pour votre participation,|p ,| et nous vous souhaitons bonne chance!
+p
+line "Ouais, ouais."
