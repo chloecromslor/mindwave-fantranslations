@@ -1,0 +1,69 @@
+face s 0 0
+s
+line "Ah oui,|p| t'es dans l'équipe de MINDWAVE de ton lycée, non?"
+face r 2 1
+r
+line "Ouais."
+line "On doit faire pas mal d'exercices sur notre cerveau pour améliorer nos capacités."
+face s 0 0
+face p 0 0
+p
+line "Comme les exercices du cortex intérieur dont tu parlais?"
+face r 2 1
+r
+line "Euh,|p| ouais.|p| Il y a des jours où on fait que ça."
+face r 2 0
+r
+line "On a pas trop de budget,|p| donc on partage tous une seule machine."
+face s 0 2
+s
+line "T'as de la chance d'avoir eu un ticket avec autant d'expérience."
+face r 0 3
+r
+line "Rien à voir avec de la chance, au contraire."
+face s 0 0
+r
+line "J'ai dépensé pas mal d'argent dans des boissons énergisantes pour essayer de choper un ticket."
+s
+line "C'est pas très judicieux."
+face r 3 1
+r
+line "J'en bois tout le temps, de toute façon."
+face r 2 0
+r
+line "En plus,|p| j'ai même pas eu mon ticket comme ça."
+line "Un de mes profs a trouvé un Ticket Platine et l'a donné à notre équipe."
+face r 2 1
+r
+line "On a fait un mini-tournoi entre nous avec le ticket en prix."
+face r 3 1
+r
+line "Ah, oui, d'ailleurs..."
+...la borne m'a dit que mon prof a trouvé son ticket dans une de ces crèmes anti-toxines pour la peau qui marchent jamais.
+face p 0 1
+p
+line "C'est VRAIMENT pas judicieux."
+face s 0 0
+s
+line "A propos d'acheter des trucs,|p| tu voudrais faire quoi avec le prix?"
+face r 2 1
+r
+line "J'y ai pas trop pensé."
+line "Je vais sûrement en donner une partie à mon équipe."
+face s 4 0
+face p 0 0
+face r 2 0
+r
+line "On aurait vraiment besoin d'une deuxième machine de MINDWAVE."
+face s 0 1
+s
+line "Honnêtement,|p| prends-en plusieurs.|p| Prends-en une aussi pour toi."
+line "Ou mieux,|p| prends-en une pour NOTRE lycée."
+face p 1 2
+p
+line "C'est vraiment, VRAIMENT pas judicieux."
+setflag _0.roxy.read.ABA 1
+setflag _0.roxy.branch ABA
+function lobby_tick_time
+goto script 0/lobby/roxy/questions
+

@@ -1,0 +1,25 @@
+face s 0 0
+s
+line "On devrait y aller."
+face s 0 1
+s
+line "Si on a de la chance, on se revoit au prochain étage."
+face p 0 0
+p
+line "Ouais,|p| bonne chance Roxy."
+face r 1 1
+r
+line "Merci,|p| bon courage pour tes maux de tête."
+face p 1 2
+p
+line "Si ils s'arrêtent pas, je vais me retrouver avec une migraine d'ici la fin du tournoi."
+face r 0 1
+r
+line "..."
+
+setflag _0.smalls.roxy 1
+setflag _0.roxy.read.AABA 1
+setflag _0.roxy.done 1
+
+function lobby_tick_time
+

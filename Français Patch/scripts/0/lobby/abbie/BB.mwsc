@@ -1,0 +1,88 @@
+face p 0 0
+p
+line "Attends,|p| t'as fugué?"
+face p 4 0
+p
+line "Genre,|p| t'es sortie par la porte en douce et t'as pris le métro?"
+face a 0 0
+a
+line "Bah,|p| c'était par la fenêtre,|p| mais c'est ça!|p|"
+face p 0 1
+p
+line "T'as pas l'air du genre de personne à faire ça."
+line "Genre,|p| du tout."
+a
+line "Pourquoi?|p| Avant d'arriver ici,|p| je sortais en cachette tout le temps!"
+line "Mon amie me demandait de le faire presque toutes les nuits."
+face s 0 1
+s
+line "Tu te faisais inviter à pas mal de fêtes?"
+face a 2 2
+a
+line "Non!|p| On m'a jamais invité à une fête."
+face a 0 0
+a
+line "En fait,|p| je crois même pas que mes camarades de classes en faisaient?"
+face a 1 2
+face s 0 0
+a
+line "Tout le monde connaissait les parents de tout le monde,|p| donc on pouvait pas faire grand chose."
+face p 0 2
+p
+line "Bah...|p| vous alliez où la nuit, alors?"
+face a 0 0
+a
+line "Au parc!"
+face a 1 0
+a
+line "On avait déjà beaucoup de temps pour y aller le jour,|p| mais c'était plus spécial quand il n'y avait que nous deux."
+face a 1 2
+a
+line "Notre ville était vraiment super calme la nuit."
+face p 1 0
+p
+line "Je peux même pas l'imaginer...|p| Les klaxons et les sirènes s'arrêtent jamais ici."
+face a 0 0
+a
+line "Ohhh!|p| Nous aussi, on a eu des sirènes."
+face a 2 2
+a
+line "Le voisin nous à rapporté à la police,|p| et j'ai été privée de sortie pendant tout un mois!"
+line "J'étais trop fachée contre Jenny, même que je lui ai pas parlé pendant toute une journée."
+face a 1 2
+a
+line "Mais maintenant, je trouve ça un peu drôle.|p|\nCa me manque, ce genre de moment."
+face a 0 0
+a
+line "Donc j'ai décidé de recommencer et je suis sortie en cachette ce soir!"
+face s 0 1
+s
+line "Dément."
+face a 1 0
+a
+line "Mais, au moins, je suis pas toute seule."
+face a 1 0
+a
+line "Et,|p| tu sais..."
+face a 0 0
+a
+line "...Tu me rappelles un peu mon amie, Panda!"
+face p 0 0
+p
+line "...?"
+
+
+
+
+
+
+
+setflag nickname_panda 1
+setflag _0.abbie.read.BB 1
+setflag _0.abbie.branch BB
+function lobby_tick_time 2
+goto script 0/lobby/abbie/questions
+
+
+
+

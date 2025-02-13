@@ -1,0 +1,81 @@
+face s 0 0
+face p 0 2
+p
+line "Bon,|p| le tournoi va commencer dans pas longtemps,|p| donc on va y aller."
+line "Tu pourras nous parler de ton ticket plus tard."
+face p 0 0
+p
+line "A plus."
+face s 2 0
+s
+line "Si on atteint tous le prochain étage..."
+face s 0 1
+s
+line "Dom,|p| tu pourrais me donner ton numéro?"
+face d 1 0
+d
+line "J'peux pas utiliser ce portable pour parler."
+face p 1 2
+p
+line "Mec,|p| c'est le but d'un téléphone."
+d
+line "J'ai pas de SIM sur celui-là,|p| c'est mon tel pour ma musique."
+line "Mon autre portable est plein de fichiers que je veux pas supprimer,|p| donc j'en ai pris un autre pour faire écouter mon son aux gens."
+face p 0 0
+p
+line "Tu pourrais pas, genre...|p| mettre la SIM dans celui-là ?"
+face d 1 1
+d
+line "..."
+face d 1 0
+d
+line "Ohhh."
+face d 0 0
+d
+line "J'y avais pas pensé."
+p
+line "..."
+face p 0 2
+p
+line "Ok,|p| tant pis."
+face p 0 4
+p
+line "Tu nous attends juste à l'entrée."
+d
+line "Ca me va."
+face s 0 1
+s
+line "Tu vas devoir attendre jusqu'à ma victoire,|p| donc ça va prendre un moment."
+face p 0 0
+p
+line "L'écoute pas."
+line "On va tous perdre dès le début."
+d
+line "Ouais,|p| j'imagine, haha."
+line "On s'revoit toute à l'heure,|p| alors."
+face p 0 1
+p
+line "A toute."
+s
+line "A plus tard."
+
+
+
+
+
+
+
+
+
+
+
+
+setflag _0.smalls.dom 1
+setflag _0.dom.done 1
+setflag _0.dom.read.ABA 1
+function lobby_tick_time 2
+
+
+
+
+

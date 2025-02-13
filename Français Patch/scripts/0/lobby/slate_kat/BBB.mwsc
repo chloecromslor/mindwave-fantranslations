@@ -1,0 +1,74 @@
+face p 0 0
+p
+line "Et chez toi, c'est comment?"
+k
+line "Chez moi?"
+face p 1 0
+p
+line "Ouais,|p| chais pas."
+k
+line "J'ai pas envie de t'en parler."
+face p 0 2
+p
+line "Meuf,|p| j'te demande pas de me donner ton adresse."
+line "Je veux juste te demander comment ça se passe là-bas."
+face p 1 2
+p
+line "C'était dans le sujet."
+k
+line "D'accord, mais j'ai toujours pas envie de t'en parler."
+line "C'est pas trop mon truc de parler de ma situation."
+p
+line "...D'accord?"
+line "Je sais pas vraiment comment continuer la conversation, alors."
+face p 0 2
+p
+line "Tu rends le truc un peu difficile."
+k
+line "MOI, je rends le truc difficile?"
+face p 0 0
+p
+line "..."
+k
+line "...Parle moi de toi, alors?"
+face p 1 0
+p
+line "De moi?"
+line "Chais pas,|p| l'atmosphère est pas ouf ici."
+face p 1 2
+p
+line "J'suis pas trop douée pour parler aux gens que je connais pas."
+k
+line "Je comprends.|p| Je serais pas là si j'étais venue seule."
+face p 0 0
+p
+line "Quoi d'autre...|p| Je fais un peu de musique."
+face p 0 1
+p
+line "On est une sorte de duo, Smalls et moi."
+face k 0 2
+k
+line "Cool.|p| J'ai jamais eu un sens du rythme assez bon pour jouer d'un instrument."
+line "Mais j'aime bien peindre.|p| Rien en particulier,|p| juste de l'abstrait."
+line "Ca va faire depuis,|p| quoi?|p| 7 ans?"
+face p 0 0
+p
+line "Cool..."
+face k 0 0
+face p 1 0
+p
+line "Je flippe un peu à propos du tournoi."
+line "Genre,|p| pas juste à propos de le perdre."
+face k 0 0
+k
+line "Quoi,|p| t'as peur de voir quels esprits tu vas rencontrer?"
+face p 0 0
+p
+line "Plus peur des gens qui ont ces esprits."
+
+setflag _0.slate_kat.read.BBB 1
+setflag _0.slate_kat.branch BBB
+function lobby_tick_time
+setflag _0.pandora.alone 0
+goto script 0/lobby/slate_kat/questions
+

@@ -1,0 +1,19 @@
+face s 0 1
+s
+line "Hé,|p| nous revoilà."
+face a 0 0
+a
+line "Coucou!|p| Quoi de neuf?"
+
+
+
+
+
+
+
+
+
+
+
+goto script 0/lobby/abbie/questions
+

@@ -1,0 +1,69 @@
+face s 0 0
+face p 0 0
+p
+line "Comment t'as pu avoir du mal à venir ici, d'ailleurs?"
+face p 1 2
+p
+line "Le seul truc pas mal à Blackout,|p| c'est les transports."
+face s 1 0
+s
+line "Ouais,|p| t'as qu'à prendre un passe."
+line "Même Pandora et moi, on arrive à avoir assez pour le renouveler chaque mois."
+face s 0 1
+s
+line "Il y a pas mal de truc à faire en ville,|p| donc ça vaut le coup."
+face p 0 0
+p
+line "Je l'utilise presque que pour aller au lycée, moi."
+face a 0 0
+a
+line "J'y ai pensé,|p| mais ça avait l'air un peu cher,|p| donc j'ai juste payé ce voyage."
+face a 1 2
+a
+line "Mes parents me disent d'éviter le métro parce que c'est \"pas hygiénique.\""
+face a 0 0
+a
+line "Si l'endroit où je vais est trop loin à pied,|p| ils préfèrent me conduire là-bas."
+face p 0 2
+p
+line "J'arrive pas à m'imaginer conduire à Blackout."
+line "Les parkings sont toujours pleins."
+line "Ils aiment bien passer 20 minutes à trouver une place à chaque fois qu'ils conduisent, tes parents?"
+face a 1 2
+a
+line "Eh baaaaah...|p| C'est vrai que ça les énerve quand ils n'arrivent pas à trouver une bonne place."
+face a 0 0
+a
+line "Mais c'est pas si mal que ça.|p|"
+line "J'ai mis à peu près aussi longtemps à marcher jusqu'ici depuis l'arrêt."
+face p 0 0
+p
+line "Mais il y a un arrêt à genre,|p| 5 minutes de la tour."
+face a 1 2
+a
+line "Oh,|p| c'était peut-être de ma faute, du coup."
+face a 2 2
+a
+line "J'arrivais pas à comprendre ce que la voix dans le métro disait."
+line "J'étais pas sûre de quand je devais sortir,|p| donc j'ai dû louper mon arrêt."
+face a 1 0
+a
+line "Mais heureseument,|p| vu que la tour est super grande,|p| je pouvais la voir malgré la distance."
+face a 0 0
+a
+line "Donc j'ai juste marché dans sa direction jusqu'à ce que j'arrive!"
+face s 0 0
+s
+line "Oh, waouw."
+
+
+
+
+
+setflag _0.abbie.read.BAA 1
+setflag _0.abbie.branch BAA
+function lobby_tick_time
+goto script 0/lobby/abbie/questions
+
+
+

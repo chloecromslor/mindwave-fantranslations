@@ -1,0 +1,97 @@
+
+face p 1 0
+face s 0 0
+p
+line "Hé,|p| Smalls,|p| le tournoi commence bientôt,|p| donc va falloir y aller."
+face s 2 0
+s
+line "Il doit quand même nous rester un petit peu de temps."
+face s 0 2
+s
+line "Mais ouais, vaut mieux y aller maintenant plutôt qu'on se fasse interrompre en pleine discute."
+face a 1 2
+a
+line "Oui,|p| je comprends..."
+face a 0 0
+a
+line "...c'était cool de vous rencontrer!|p|\nJ'espère qu'on se reverra."
+line "Attendez,|p| je pourrais avoir vos numéros?"
+face s 0 1
+s
+line "Ouais,|p| voilà le mien."
+line "J'te donne aussi celui de Panda."
+face p 1 2
+p
+line "Pourquoi tu m'appelles Panda?"
+s
+line "C'est pas mal, comme surnom."
+a
+line "Oui!|p| Tu l'aimes bien, Panda?"
+face p 4 0
+p
+line "..."
+face p 1 0
+p
+line "Pas possible de gagner le débat.|p|\nAppelez moi ce que vous voulez."
+line "J'vais y aller,|p| Smalls.|p| Tu me rejoins si tu veux."
+face p 0 1
+p
+line "A plus."
+set p front_when_speak 0
+set p x -200
+wait 1 second
+a
+line "Au revoir!"
+face s 2 1
+s
+line "Comment ça, \"\si je veux\"\? Je suis CENSE rester avec toi."
+face s 0 1
+s
+line "Désolé, Abbie,|p| Je dois la rattraper,|p| on se revoit plus tard."
+face a 1 0
+a
+line "A plus tard!"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+setflag _0.smalls.abbie 1
+setflag _0.abbie.read.ABBA 1
+setflag _0.abbie.done 1
+
+

@@ -1,0 +1,89 @@
+
+s
+line "Hé Abbie,|p| on va devoir y aller,|p| le tournoi commence bientôt."
+line "C'était cool de te rencontrer."
+line "Merci d'avoir inventé le surnom \"Panda\",|p| aussi."
+p
+line "Mec,|p| j't'en supplie, arrête."
+a
+line "Bah?|p| Tu l'aimes pas?"
+p
+line "Quand c'est lui, non,|p| toi t'as le droit."
+a
+line "Youpi!"
+line "Du coup,|p| avant que vous partiez,|p| je peux avoir vos numéros?"
+line "Ce serait dommage de plus se revoir!"
+s
+line "Oh, d'acc,|p| voilà le mien."
+line "Je vais aussi te passer celui de Panda."
+p
+line "Je t'ai pas donné la permission de faire \nça,|p| mais merci."
+line "Bon, c'est tout."
+line "On se revoit plus tard Abbie,|p| salut."
+s
+line "Ouais,|p| on se revoit bientôt."
+a
+line "Attends,|p| Panda!"
+line "Avant que tu partes!"
+p
+line "Ouai-|skip| "
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+setflag _0.smalls.abbie 1
+setflag _0.abbie.read.BBAA 1
+setflag _0.abbie.done 1
+function lobby_timer_set_interrupt 0
+function lobby_tick_time
+end_transition perlin
+sequence id "sqcs_0_abbiehug" script "sequence/0/abbiehug"
+
+
+
+
+
+

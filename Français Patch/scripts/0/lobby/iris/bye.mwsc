@@ -1,0 +1,12 @@
+face p 0 1
+p
+line "Euh,|p| je vais y aller deux secondes."
+line "Je vais regarder si je peux trouver un truc à boire."
+face i 0 1
+i
+line "D'accord.|p|\nA plus tard."
+p
+line "A plus."
+setflag _0.pandora.alone 0
+
+

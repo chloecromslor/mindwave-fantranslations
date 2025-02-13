@@ -1,0 +1,47 @@
+
+face k 0 0
+k
+line "Je pense qu'on va y aller, Ethan et moi."
+face k 0 2
+k
+line "Il avait un truc super intéressant à me dire sur les tubes au plafond."
+face l 1 0
+l
+line "Ah ouais,|p| c'est vrai."
+face s 0 1
+s
+line "Ca me va."
+line "Pandora,|p| la MINUTE où on sort du tournoi,|p| on regarde FOS."
+face p 0 4
+p
+line "Mec,|p| t'es sérieux?"
+face s 0 2
+s
+line "Ouais,|p| c'est le premier truc que je veux faire après ma victoire."
+line "Mieux,|p| on devrait partir le faire tout de suite."
+face p 0 2
+p
+line "Tu veux laisser tomber tes chances de gagner pour regarder un dessin animé?"
+face k 0 2
+k
+line "Smalls, crois moi,|p| Ethan fait passer la série pour un truc beaucoup plus intéressant qu'elle ne l'est."
+face s 0 1
+s
+line "J'irais me faire my propre opinion, alors."
+face l 0 0
+l
+line "A plus, vous deux."
+face p 0 0
+p
+line "Salut."
+s
+line "A plus!"
+face k 1 0
+k
+line "Salut."
+
+setflag _0.smalls.slate_kat 1
+setflag _0.slate_kat.done 1
+setflag _0.slate_kat.read.BBAA 1
+function lobby_tick_time
+

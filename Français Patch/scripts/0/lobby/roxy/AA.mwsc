@@ -1,0 +1,61 @@
+face p 0 0
+p
+line "Et donc,|p| MINDWAVE fait quoi à ton cerveau, exactement?"
+face p 0 2
+p
+line "Parce que je devrais peut-être m'inquiéter à propos de ça."
+face s 0 2
+s
+line "Nan,|p| je joue beaucoup plus que toi et je me porte parfaitement bien."
+face s 0 3
+s
+line "Je crois."
+face r 3 1
+r
+line "Devrait pas y avoir de problème si t'y joues que de temps à autre."
+face r 2 0
+r
+line "C'est pas la même à un niveau pro, par contre."
+line "Certains jours, on y joue pendant des heures."
+face s 0 0
+s
+line "Ca doit sûrement te faire un peu perdre ton sens de la réalité."
+face r 3 0
+r
+line "T'as deviné.|p| Jouer au niveau pro, c'est pas fait pour tout le monde."
+line "Il y a pas mal de monde qui rejoint mon équipe et qui quitte dans le premier mois."
+face p 1 0
+p
+line "Tant mieux.|p| Ils devraient rejoindre des équipes pour des vrais sports,|p| à la place."
+r
+line "Rester exposé longtemps à l'esprit de quelqu'un d'autre,|p| ça peut aussi impacter ton sens de soi."
+face r 2 0
+r
+line "Un de mes partenaires d'entraînement était convaincu que certains de mes souvenirs étaient les siens."
+line "Il les voyait tellement souvent dans le jeu que son cerveau s'est convaincu que ça venait de lui."
+s
+line "Oh, waouw.|p| Ca t'est déjà arrivé, ce genre de truc?"
+r
+line "Pas vraiment.|p| J'essaie d'éviter les situations comme ça."
+line "J'ai eu quelques soucis dans le passé,|p| mais tout va bien, maintenant. "
+face s 0 3
+s
+line "Ah ouais..."
+
+
+
+
+
+
+
+
+
+
+
+
+
+setflag _0.roxy.read.AA 1
+setflag _0.roxy.branch AA
+function lobby_tick_time
+goto script 0/lobby/roxy/questions
+

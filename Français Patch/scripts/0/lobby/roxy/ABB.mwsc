@@ -1,0 +1,101 @@
+face p 0 0
+p
+line "Tu penses vraiment que j'ai une chance de gagner,|p| même si j'ai presque jamais joué?"
+face r 0 0
+r
+line "Ben...|p| c'est possible?"
+face r 0 1
+r
+line "Il doit sûrement y avoir plein de gens sans expérience ici."
+face s 2 1
+s
+line "Ouais,|p| t'as juste à espérer de pas tomber sur un pro dès le début."
+face s 0 0
+s
+line "Tu gagneras en expérience pendant le tournoi."
+face p 1 0
+p
+line "J'peux même pas jouer sans avoir un mal de tête."
+face p 1 2
+p
+line "J'vais pas devenir une pro juste avec quelques matchs."
+face r 1 0
+r
+line "De ce que je sais,|p| il y a que certains types de personnes qui peuvent jouer à MINDWAVE au niveau pro."
+line "Si tu commences à jouer tout le temps avec les mêmes personnes,|p| ton niveau va très vite plafonner."
+face r 1 1
+r
+line "Tout le monde est un peu différent,|p| donc je règle le problème en jouant à plein de salles pour affronter des nouvelles personnes à chaque fois."
+face s 1 0
+s
+line "C'est vrai,|p| j'ai déjà voulu tester d'autres salles d'arcade pour rencontrer des nouveaux adversaires."
+face r 3 1
+r
+line "Ben, en fait,|p| la salle où je t'ai vu est pas mal niveau variété d'adversaires."
+face r 3 0
+r
+line "Peut-être que t'y vas pas au bon moment."
+line "J'ai déjà fait des matchs là bas contre des gens qui m'ont complètement prise de court."
+face s 0 1
+s
+line "Tant qu'on en parle,|p| c'est à quelle salle que tu trouve les pires adversaires?"
+face r 2 1
+r
+line "Clairement North Mall."
+face r 2 0
+r
+line "Les gens de Blackout Nord ont tendance à pas trop prendre MINDWAVE au sérieux."
+
+checkflag _0.abbie.read.A 1
+goto marker branch1y
+goto marker branch1n
+
+marker branch1y
+
+face p 0 0
+p
+line "Ca me surprend pas tant que ça."
+face s 0 0
+s
+line "J'ai entendu dire que c'est toujours plein de monde là-bas."
+p
+line "Juste comme ça,|p| mais t'as déjà joué contre une fille avec des cheveux blancs là-bas?"
+face r 2 0
+r
+line "...Genre,|p| une femme agée?"
+face p 1 0
+p
+line "Nan,|p| une fille de notre âge."
+face p 0 1
+p
+line "Cheveux blancs,|p| toujours enjouée,|p| sûrement portant du rose et parlant super fort."
+face s 0 1
+s
+line "Et potentiellement en train de pleurer devant la machine."
+face r 3 1
+r
+line "Non,|p| je pense pas."
+face r 2 0
+r
+line "C'est un adversaire que tu redoutes un peu? "
+face p 0 1
+p
+line "Nan,|p| pas vraiment,|p| je voulais juste voir mes chances."
+
+goto marker branch1e
+
+marker branch1n
+face r 0 1
+r
+line "C'est aussi excessivement cher.|p|\nJe recommande pas."
+
+goto marker branch1e
+
+marker branch1e
+
+
+setflag _0.roxy.read.ABB 1
+setflag _0.roxy.branch ABB
+function lobby_tick_time
+goto script 0/lobby/roxy/questions
+

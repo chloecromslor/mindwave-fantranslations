@@ -1,0 +1,131 @@
+set a name mystery
+face s 0 1
+s
+line "Pourquoi pas elle?"
+p
+line "C'est pas vraiment le genre de personne à qui j'irais parler."
+face s 0 2
+s
+line "...C'est le but."
+face p 1 2
+p
+line "Eurk..."
+face p 0 2
+p
+line "D'accord."
+face p 1 0
+p
+line "Mais c'est toi qui commence la conversation."
+face s 2 1
+s
+line "Si tu veux."
+face s 0 0
+s
+line "Yo!"
+face a 1 0
+a
+line "..."
+face a 0 0
+a
+line "Hm?"
+face a 4 2
+a
+line "OUAAAAH!"
+face a 3 1
+a
+line "COUCOUUUUU!!!"
+face p 4 0
+p
+line "Euh, coucou..."
+a
+line "|speed 1.5|Il est pas trop GENIAL, cet endroit?"
+face a 1 0
+a
+line "|speed 1.5|Le plafond est si haut!"
+face a 4 1
+a
+line "|speed 1.5|Et il y a trop plein de gens!"
+face a 1 0
+a
+line "|speed 1.5|Oh!|p| Miss Violet!"
+line "|speed 1.5|J'adore trop tes vêtements!|p| \nLes bracelets qui piquent et les boucles d'oreilles en forme de lune...|p| Trop choupi!"
+face a 0 0
+a
+line "|speed 1.5|Et les couleurs,|p| c'est comme si tu les avais choisies juste pour l'occasion,|p| j'adore trop."
+
+checkflag _0.iris.read.AB 1
+goto marker branch1y
+goto marker branch1n
+
+marker branch1y
+face p 1 0
+p
+line "T'es la deuxième personne à me dire ça,|p| tu sais?"
+face p 0 1
+p
+line "C'est un peu marrant,|p| je trouve.|p| Merci."
+
+goto marker branch1e
+
+marker branch1n
+face p 0 4
+p
+line "Ah? Je..."
+face p 4 0
+p
+line "J'y avais pas vraiment trop pensé..?"
+line "Bah, euh, merci?"
+
+goto marker branch1e
+
+marker branch1e
+face p 0 4
+p
+line "|style color gray|(Mais j'essayais pas trop d'aller dans le \"choupi\".)"
+face a 0 0
+a
+line "Et toi aussi, je trouve que t'as l'air super cool!"
+face a 1 2
+a
+line "..."
+face a 0 0
+a
+line "Oh!|p| J'ai presque oublié,|p| c'est quoi vos noms?"
+face a 1 0
+a
+line "Moi c'est Abbie,|p| j'aurais dû commencer par ça,|p| héhé."
+set a name abbie
+face s 0 1
+s
+line "Salut,|p| Abbie.|p| J'suis Smalls,|p| et elle c'est Pandora."
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+setflag _0.abbie.met 1
+incflag _0.chars_met 1
+
+goto script 0/lobby/abbie/questions
+

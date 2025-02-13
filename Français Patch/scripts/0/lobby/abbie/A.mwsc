@@ -1,0 +1,116 @@
+face s 0 0
+face p 0 0
+s
+line "Alors,|p| Abbie."
+line "Tu te sens comment à propos du tournoi?"
+line "T'es assez forte au jeu?"
+face a 0 0
+a
+line "Euuh...|p| non!|p| Même que je suis super rouillée."
+face a 1 2
+a
+line "La dernière fois, j'ai super-trop perdu, et j'ai fini par pleurer."
+p
+line "Ah,|p| donc je m'en sors pas si mal que ça."
+face s 2 1
+s
+line "Nan,|p| je trouve que vomir et tomber dans les pommes,|p| c'est pire que pleurer."
+face p 0 2
+p
+line "Même pas vrai,|p| j'me suis pas évanouie."
+face s 0 1
+s
+line "Ouais,|p| mais t'as quand même vomi."
+face a 0 0
+a
+line "C'est pas grave!|p| Moi aussi, j'ai du mal à m'ajuster au jeu."
+face a 1 0
+a
+line "Je peux pas y jouer trop souvent."
+line "La seule salle d'arcade où mes parents m'emmennent, c'est celle à North Mall."
+s
+line "Apparemment, celle là est toujours prise."
+p
+line "Comme toutes les autres bornes de Mindwave,|p| Smalls."
+face s 2 0
+s
+line "Ouais...|p| Surtout à cette période de l'année."
+face s 0 0
+s
+line "Y a plein de gens qui s'imaginent avoir un ticket et qui s'entraînent au cas où."
+face a 1 2
+a
+line "Ah ouais...|p| J'avais même pas pensé à m'entraîner avant de venir!"
+face p 0 0
+p
+line "J'dirais que c'est pas malin,|p| mais on a à peu près le même niveau."
+face a 0 0
+a
+line "Je nous souhaite bonne chance, alors!"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+setflag _0.abbie.read.A 1
+setflag _0.abbie.branch A
+function lobby_tick_time
+goto script 0/lobby/abbie/questions
+
+

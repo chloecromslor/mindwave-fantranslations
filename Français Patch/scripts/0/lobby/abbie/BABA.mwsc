@@ -1,0 +1,103 @@
+
+face a 1 2
+a
+line "Pandora,|p| Smalls,|p| j'ai trop adoré discuter avec vous deux!"
+face a 2 2
+a
+line "Mais on va tous bientôt devoir y aller..."
+face a 1 2
+a
+line "...alors,|p| je pourrais avoir vos numéros?"
+face s 0 1
+s
+line "Ouais,|p| tiens."
+line "S'tu veux, on peut se revoir un de ces jours.|p| Passe nous un coup de fil, ou passe nous voir à l'est."
+face p 1 0
+p
+line "Je serais pas contre passer au nord..."
+line "...mais on irait,|p| genre,|p| zoner dans un parc ou chais pas quoi."
+line "Les trucs dans le nord sont un peu trop chers pour moi."
+face a 0 0
+a
+line "C'est pas grave!|p| Je pourrais payer pour vous deux!"
+face p 4 0
+p
+line "Oh,|p| c'est...|p| sympa de ta part."
+face p 0 1
+p
+line "On va y aller, du coup."
+face p 1 0
+p
+line "..."
+face p 0 1
+p
+line "C'était cool de te rencontrer,|p| Abbie,|p| on s'revoit plus tard."
+line "J'espère que tu vas revoir ton amie bientôt."
+face a 4 1
+a
+line "Oh waouh,|p| merci beaucoup!"
+face a 0 0
+a
+line "Attends,|p| avant que tu partes!"
+face p 0 0
+p
+line "Ouai-|skip| "
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+setflag _0.smalls.abbie 1
+setflag _0.abbie.read.BABA 1
+setflag _0.abbie.done 1
+function lobby_timer_set_interrupt 0
+function lobby_tick_time
+end_transition perlin
+sequence id "sqcs_0_abbiehug" script "sequence/0/abbiehug"
+
+
+
+
+
+
+
+

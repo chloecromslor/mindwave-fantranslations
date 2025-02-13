@@ -1,0 +1,12 @@
+face p 0 0
+p
+line "Je pense qu'on va y aller."
+face r 1 0
+r
+line "Oh, d'accord, salut."
+face s 0 0
+s
+line "Au revoir."
+
+
+

@@ -1,0 +1,77 @@
+
+face p 0 0
+face s 0 0
+s
+line "On dirait que vous avez décidé de faire une collab."
+face s 0 0
+s
+line "J'suis d'accord.|p| Je vais juste avoir besoin de ton num pour te contacter plus tard."
+d
+line "Ah ouais,|p| j'vais te l'écrire."
+face p 0 0
+d
+line "Mais vous savez à quoi j'pensais ?"
+line "On d'vrait jouer un truc,|p| genre,|p| ici."
+s
+line "Où,|p| à la tour ?"
+face s 2 0
+s
+line "J'sais même pas à qui on devrait demander la permission..."
+face s 0 1
+s
+line "...mais ça serait cool.|p| Juste devant la tour, c'est l'endroit parfait pour un festival."
+face p 0 2
+p
+line "Nan,|p| c'est mort."
+face p 0 3
+face s 0 3
+p
+line "Hors de question que je fasse quelque chose pour Mindscape..."
+face p 0 0
+p
+line "Quoiqu'en fait,|p| ça serait génial de jouer SANS leur accord."
+face p 0 1
+p
+line "Genre,|p| on met notre matos à l'entrée et on joue jusqu'à ce qu'ils nous virent."
+line "T'en dirais quoi,|p| Dom ?"
+d
+line "Ca m'branche,|p| on fait ça quand?"
+face p 0 0
+p
+line "Euhh...|p| J'ai rien sur moi, là,|p| donc pas tout de suite,|p| mais..."
+line "On pourrait se retrouver à l'entrée pour en discuter."
+face p 0 1
+p
+line "Ca te va, Smalls?"
+face s 0 1
+s
+line "J'ai aucune raison de refuser."
+p
+line "Parfait.|p| On se voit plus tard, Dom."
+d
+line "C'est noté,|p| à plus."
+p
+line "A plus."
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+setflag _0.smalls.dom 1
+setflag _0.dom.done 1
+setflag _0.dom.read.AAA 1
+function lobby_tick_time 2
+
+
+
+
+

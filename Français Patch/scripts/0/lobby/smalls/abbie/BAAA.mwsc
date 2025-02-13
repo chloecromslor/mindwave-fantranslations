@@ -1,0 +1,45 @@
+
+face s 0 0
+s
+line "C'était sympa de la part d'Abbie de nous proposer ça."
+line "Blackout Nord est un peu cher."
+face p 1 0
+p
+line "Ouais,|p| mais ça me mettrait un peu mal d'utiliser son argent pour moi."
+face p 1 2
+p
+line "Enfin,|p| ça me mettrait pas SI mal que ça."
+face p 0 0
+p
+line "Mais si on traîne avec Abbie,|p| je veux pas avoir l'impression qu'elle achète notre amitié."
+s
+line "Ouais,|p| je vois ce que tu veux dire."
+p
+line "Je préférerais traîner avec elle dans notre région."
+face p 4 0
+p
+line "Même si il y a des trucs cool à faire au nord..."
+face s 1 0
+s
+line "J'ai un pote qui a économisé pour des vacances là-bas."
+face s 0 0
+s
+line "Il a dû dormir dans un hôtel tout pourri parce qu'il pouvait rien se payer de mieux."
+face p 0 2
+p
+line "Blackout City, c'est vraiment la pire destination touristique."
+face s 0 0
+s
+line "Ouais, c'est ce que je lui ai dit."
+face s 0 1
+s
+line "Surtout parce qu'il habite déjà ici."
+line "A seulement une heure du Nord, en plus."
+
+
+
+setflag _0.smalls.abbie 2
+setflag _0.smalls.abbie.branch BAAA
+function lobby_tick_time 0.5
+goto script 0/lobby/smalls/return
+

@@ -1,0 +1,31 @@
+face l 1 0
+l
+line "Ah, ça me rappelle,|p| Kat,|p| t'as pensé à appeller ta mémé?"
+line "Elle voulait qu'on l'appelle quand on serait arrivés."
+face k 0 1
+k
+line "Ouaiiis,|p| je devrais vraiment le faire."
+line "Si je l'appelle pas avant le début du tournoi, elle va s'inquièter toute la soirée. "
+face k 0 0
+k
+line "Donc on devrait y aller."
+face p 0 0
+face s 0 1
+s
+line "Ouais,|p| va la rassurer."
+line "On doit y aller aussi, Pandora et moi."
+face s 0 1
+s
+line "On a d'autres gens à qui parler."
+k
+line "A plus tard! "
+face l 0 0
+l
+line "A plus dans l'bus!"
+
+
+setflag _0.smalls.slate_kat 1
+setflag _0.slate_kat.done 1
+setflag _0.slate_kat.read.ABAA 1
+function lobby_tick_time
+

@@ -1,0 +1,90 @@
+
+face s 1 0
+s
+line "Donc, t'es de Blackout Nord?"
+face a 0 0
+a
+line "Ouaip!|p| Je suis arrivée le mois dernier!"
+face s 0 0
+s
+line "Et alors, ça te plaît?"
+face a 1 2
+a
+line "Et bah,|p| la dernière fois que j'ai vécu dans une ville aussi grande, j'étais toute petite."
+face a 0 0
+a
+line "Mon cerveau marchait pas encore.|p| Mais maintenant, si!"
+face p 0 0
+p
+line "Si tu le dis."
+face s 0 1
+s
+line "Bon courage pour t'habituer, Abbie.|p| Apparemment, c'est pas facile."
+face a 3 1
+a
+line "Bon courage?|p| Mais j'adore trop cette ville!"
+face a 1 0
+a
+line "Mes parents disent que c'est hyper nul de conduire ici."
+face a 1 2
+a
+line "Et regarder les gratte-ciels me fait toujours un peu peur!"
+face a 2 2
+a
+line "Et mon amie me manque un peu beaucoup..."
+face p 0 2
+p
+line "Attends,|p| tu disais pas que t'ADORAIS la ville?"
+face a 4 1
+a
+line "Bien sûr!|p| Comment je pourrais ne pas adorer une ville avec une tour trop cool?"
+face p 0 0
+p
+line "Plusieurs idées me viennent."
+face a 0 0
+
+a
+line "Mais Panda,|p| je suis même pas arrivée à la morale de l'histoire!"
+face s 0 0
+face a 1 0
+a
+line "Il y a un magasin de bricolage super énorme à North Mall, encore plus grand qu'à ma ville d'avant."
+face a 3 1
+a
+line "J'ai trouvé de la laine à paillettes là bas.|p| Je savais même pas que ça existait!"
+face p 0 2
+p
+line "C'est ça, ta morale?"
+face s 1 0
+s
+line "C'est vrai que North Mall est pas mal,|p| ouais.|p| Un peu trop bondé, par contre."
+face p 1 0
+p
+line "Et trop cher."
+face s 0 1
+s
+line "Tu devrais essayer de venir dans l'est un de ces jours."
+face a 1 0
+a
+line "Bah,|p| j'ai déja demandé à mes parents de m'emmener à Blackout Est, une fois..."
+face a 0 0
+a
+line "...mais ils m'ont dit de pas aller dans les mauvais quartiers."
+face s 2 0
+face p 0 0
+p
+line "?"
+
+
+
+
+
+
+setflag nickname_panda 1
+setflag _0.abbie.read.AB 1
+setflag _0.abbie.branch AB
+function lobby_tick_time
+goto script 0/lobby/abbie/questions
+
+
+

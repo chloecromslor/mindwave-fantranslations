@@ -1,0 +1,94 @@
+face p 0 0
+p
+line "J'ai remarqué ton collier."
+line "T'es religieuse?"
+face p 1 0
+p
+line "C'est pas un problème ou rien, hein."
+face i 0 1
+i
+line "Je trouve juste que le collier est cool."
+line "C'est cool comme forme, les croix."
+line "Mais non,|p| je me définirais plus comme agnostique."
+face i 1 0
+i
+line "Je suis pas le genre de personne qui pense trop à ce genre de truc."
+p
+line "Ouais,|p| la même."
+face i 0 3
+i
+line "Mes parents sont pas mal religieux,|p| par contre."
+face i 1 0
+i
+line "Ils pensent que cet endroit est un genre de site satanique."
+face i 2 0
+i
+line "A cause des cornes."
+line "...et de l'oeil géant qui apparaît des fois."
+face i 0 3
+i
+line "Mais ils m'ont laissé venir quand je leur ai parlé de l'argent."
+face p 0 0
+p
+line "Bah, en même temps,|p| ça a VRAIMENT l'air d'une tour des enfers."
+face i 0 1
+i
+line "Je préfère ça aux autres pavés gris que tu vois à l'horizon."
+line "Par contre,|p| t'es la dernière personne que j'aurais imaginée critiquer le design de la tour."
+face p 0 2
+p
+line "Hein?"
+i
+line "Avec les couleurs et les piques de tes vêtements,|p| on dirait que t'essaies de te déguiser en Mindscape Tower."
+checkflag _0.abbie.met 1
+goto marker branch1Y
+goto marker branch1N
+
+marker branch1Y
+face p 0 2
+p
+line "T'es la deuxième personne à me dire ça aujourd'hui."
+face p 1 0 
+p
+line "Je le prends pas mal.|p| C'est juste, genre,|p| choquant?"
+face i 0 1
+i
+line "Oui, c'était pas un reproche.|p| Pas trop mon style mais c'est pas mal."
+face p 0 0
+p
+line "Je trouve pas que j'y ressemble tant que ça?"
+line "Genre,|p| j'ai le violet,|p| mais c'est tout."
+line "Et c'est hyper superficiel comme point commun."
+face p 0 2
+p
+line "Mindscape ont tout ce truc avec le jaune et le fuschia, ça les fait plus ressembler à..."
+line "Un cirque maléfique,|p| ou chais pas quoi.|p| J'ai pas l'air si tarée que ça."
+face p 1 0
+p
+line "Pas possible que j'ai l'air aussi tarée ou sans-âme."
+goto marker branch1E
+
+marker branch1N
+face p 0 0
+p
+line "Quoi?|p| Pas possible."
+face p 1 0
+p
+line "Pas possible que j'ai l'air aussi tarée ou sans-âme."
+face p 1 2
+p
+line "La tour me donne plus l'air de quelque chose, genre,|p| cirque maléfique."
+goto marker branch1E
+
+marker branch1E
+i
+line "C'est vrai.|p| Je n'apprécie pas trop Mindscape non plus."
+line "Mais j'aime bien leur jeu."
+
+setflag _0.iris.read.AB 1
+setflag _0.iris.branch AB
+function lobby_tick_time
+goto script 0/lobby/iris/questions
+
+
+

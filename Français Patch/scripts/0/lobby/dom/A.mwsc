@@ -1,0 +1,222 @@
+
+
+face s 0 1
+face p 0 2
+p
+line "Du coup,|p| c'est quoi le truc,|p| tu fais écouter ton morceau à tout le monde ?"
+d
+line "Nan,|p| juste vous deux pour l'instant."
+face p 0 2
+d
+line "Vous étiez déjà en train de parler de moi,|p| donc j'me suis dit que vous pourriez kiffer."
+face d 0 0
+d
+line "En plus,|p| vous aviez l'air cool."
+p
+line "Merci?"
+face p 0 0
+p
+line "Mais tu sais que t'as eu de la chance avec nous,|p| hein ?"
+face d 0 1
+d
+line "Comment ça ?"
+p
+line "Quelqu'un d'autre aurait pu trouver ça hyper lourd."
+line "Surtout vu que tout le monde est à cran ici."
+face p 0 2
+p
+line "Genre,|p| quelqu'un aurait pu te donner une torgnole pour moins que ça."
+face d 0 0
+d
+line "J'sais pas,|p| t'as pas l'air si à cran que ça."
+face p 1 0
+face d 0 1
+d
+line "P'tet parce que mon son était d'enfer?"
+face p 0 4
+p
+line "..."
+face p 0 0
+p
+line "Ok, j'avoue."
+face p 1 0 
+p
+line "Ta musique était pas trop mal."
+face p 0 2
+p
+line "Mais faudra vraiment revoir comment tu fais ta promo."
+face s 1 0
+s
+line "Je trouve que ça a pas trop mal marché, moi."
+face s 1 0
+s
+line "C'était assez marquant.|p|\nOn pourrait peut être tenter la même."
+face p 1 0
+p
+line "Nan,|p| c'est hors de question."
+face p 1 2
+p
+line "Je vais pas risquer de me faire péter les dents juste pour de la musique."
+face s 2 1
+s
+line "J'nous prendrais des protège-dents."
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+setflag _0.dom.read.A 1
+setflag _0.dom.branch A
+function lobby_tick_time
+goto script 0/lobby/dom/questions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

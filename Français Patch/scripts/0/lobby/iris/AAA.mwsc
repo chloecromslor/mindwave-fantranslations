@@ -1,0 +1,40 @@
+
+face p 0 2
+p
+line "Pourquoi t'es venue au tournoi, du coup?"
+face i 0 0
+i
+line "Et ben,|p| j'en ai pas vraiment grand chose à faire d'aller dans la tête de n'importe quel quarantenaire ici..."
+face i 0 3
+i
+line "Mais les dix millions de dollars m'intéressent."
+line "Si c'est pour ça, je veux bien avoir à interagir avec des cinglés."
+face p 1 0
+p
+line "Imagine si tu tombais face à un tueur en série."
+face p 4 0
+p
+line "Comment tu ferais pour aller le signaler?"
+face i 0 0
+i
+line "Ils vérifient sûrement les antécédants pour éviter ce genre de scénario."
+line "Et puis, aucun serial killer serait assez idiot pour se faire scanner le cerveau de son propre chef."
+line "Surtout pas pour donner les scans à ce qui semble être une entreprise financée par le gouvernement."
+p
+line "..."
+face p 0 1
+p
+line "J'sais pas,|p| j'ai lu qu'ils en laissent passer des fois."
+line "Pour rendre le jeu plus intéressant."
+face i 0 3
+i
+line "Peut-être que je suis l'un d'entre eux."
+p
+line "Ca me surprendrait pas."
+
+setflag _0.iris.read.AAA 1
+setflag _0.iris.branch AAA
+function lobby_tick_time
+goto script 0/lobby/iris/questions
+
+

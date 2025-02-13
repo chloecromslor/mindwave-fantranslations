@@ -1,0 +1,62 @@
+p
+line "Je crois que je vais aller retrouver Smalls."
+k
+line "Oh, d'accord.|p| On se revoit plus tard?"
+face p 1 0
+face s 0 0
+p
+line "..."
+set k x -200
+set s dir -1
+set s side 1
+set l x +20
+set s x -75
+set l front_when_speak 0
+l
+line "...et donc,|p| l'Exilé Hibernant est coincé dans cette tour...|p 30| |skip| "
+face s 0 1
+
+checkflag nickname_panda 1
+goto marker branch26y
+goto marker branch26n
+
+marker branch26y
+
+s
+line "Oh, salut Panda.|p| Tu t'ennuies déjà?"
+
+goto marker branch26e
+
+marker branch26n
+
+s
+line "Oh, salut Pandora.|p| Tu t'ennuies déjà?"
+
+goto marker branch26e
+
+marker branch26e
+
+face p 0 2
+
+p
+line "Je sais pas,|p| la conversation s'est juste finie."
+face l 0 0
+l
+line "Quoi d'neuf Pandora?|p| J'étais en train de raconter le meilleur arc à Smalls."
+line "Tu peux écouter, s'tu veux."
+face p 0 0
+p
+line "Non merci."
+face p 1 0
+p
+line "Smalls, on peut y aller?"
+face s 0 3
+s
+line "Oh,|p| d'acc."
+face s 0 0
+s
+line "A plus, Ethan."
+
+setflag _0.pandora.alone 0
+setflag _0.pandora.kat 1
+

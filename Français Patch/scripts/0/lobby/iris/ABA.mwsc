@@ -1,0 +1,70 @@
+
+face p 0 0
+p
+line "Et donc,|p| il y a une raison en particulier pour que tu sois là?"
+face i 2 0
+i
+line "Non.|p| Pas vraiment."
+line "J'ai assez d'argent."
+face i 0 0
+i
+line "Je veux juste pas avoir à travailler de ma vie."
+face p 0 2
+p
+line "D'accord...|p| c'est nul, comme raison."
+face i 1 0
+i
+line "Si tu insistes pour connaître tous les petits détails de ma vie..."
+face i 0 1
+i
+line "J'aimerais bien essayer de faire des films.|p| J'en fais déjà quelques-uns."
+face i 0 3
+i
+line "Majoritairement des petits films nuls avec mes potes,|p| filmés sur un téléphone."
+line "Je pourrais te montrer,|p| mais j'ai pas envie."
+p
+line "...D'accord."
+face p 0 0
+p
+line "Donc t'aimerais entrer dans une école de cinéma?"
+line "Si j'avais les sous pour,|p| j'entrerais d'entrer dans une école de musique."
+i
+line "Ok t'es pile comme je l'avais imaginé."
+line "Et oui,|p| je m'inscrirais à une école de cinéma.|p| Sur la côte ouest si possible."
+face i 2 0
+i
+line "Et avec le reste...|p| j'investirais dans des actions stables?"
+face p 4 0
+p
+line "..."
+i
+line "C'est ce que mon père m'a dit de faire."
+line "Je sais pas trop comment ça marche, mais..."
+face i 0 0
+i
+line "Mindscape est dans le vert depuis toujours."
+line "Ca a l'air d'un bon investissement,|p| pas vrai?"
+face p 0 2
+p
+line "..."
+face p 1 0
+p
+line "C'est la pire idée que j'ai entendu."
+face p 1 2
+p
+line "T'es au courant que tu serais en train de leur donner leur propre argent,|p| hein?"
+face p 0 3
+p
+line "Tu vas créer une boucle sans fin d'ultra-capitalisme."
+face i 1 0
+i
+line "...Je ferais mieux d'y penser un peu plus."
+face p 0 0
+p
+line "Bonne idée."
+
+setflag _0.iris.read.ABA 1
+setflag _0.iris.branch ABA
+function lobby_tick_time
+goto script 0/lobby/iris/questions
+

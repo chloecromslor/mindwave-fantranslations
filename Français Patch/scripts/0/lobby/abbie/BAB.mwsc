@@ -1,0 +1,84 @@
+face p 0 0
+face s 0 0
+s
+line "T'as l'air de bien aimer Blackout City,|p| pourquoi tu veux déja retourner dans ta ville d'avant?"
+face a 0 0
+a
+line "Et bah,|p| j'adore vraiment Blackout!"
+face a 1 0
+a
+line "C'est l'endroit le plus joli que j'ai jamais vu."
+line "Les gratte-ciels...|p| toutes les lumières..."
+face a 0 0
+a
+line "...je trouve que..."
+line "Je trouve que c'est génial comme nouvelle éxperience,|p| mais je trouve ça aussi un peu nostalgique?"
+face p 0 2
+p
+line "Pourquoi tu veux déménager si t'aimes bien la ville?"
+face p 0 1
+p
+line "La laine à paillettes était mieux là-bas?"
+face a 1 0
+a
+line "Non...|p| tout est vraiment mieux ici!"
+face a 0 0
+a
+line "Je connaissais même pas la laine à paillettes avant d'en voir ici."
+face a 1 2
+a
+line "Mais c'est super dur d'apprécier tout ça quand je suis toute seule."
+face a 2 2
+a
+line "Ca fait un mois que je suis ici,|p| et je me suis toujours pas faite d'amis..."
+face a 2 2
+a
+line "Si seulement Jenny était là..."
+line "...j'aurais pas besoin d'essayer de me faire des amis au lycée."
+face p 1 0
+p
+line "Hé..."
+line "Si le problème, c'est que ta pote est pas là,|p| tu pourrais pas..."
+face p 4 0
+p
+line "L'inviter à venir ici?"
+face s 0 1
+s
+line "Bien sûr.|p| Une lycéenne va adopter son amie,|p| qui elle-même est lycéenne."
+face p 1 1
+p
+line "Ouais,|p| c'était un peu stupide."
+a
+line "Je te trouve pas stupide, Panda!"
+face p 0 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+setflag nickname_panda 1
+setflag _0.abbie.read.BAB 1
+setflag _0.abbie.branch BAB
+function lobby_tick_time
+goto script 0/lobby/abbie/questions
+
+

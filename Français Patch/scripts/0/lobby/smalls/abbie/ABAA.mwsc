@@ -1,0 +1,57 @@
+
+face p 0 0
+p
+line "Abbie était...|p| intéressante."
+face s 1 0
+s
+line "..."
+face p 4 0
+p
+line "Euh,|p| ça va, Smalls?"
+s
+line "Ouais,|p| je me disais juste."
+line "Si je gagne,|p| je pourrais utiliser l'argent pour monter un magasin de peluches."
+face p 0 2
+p
+line "Un magasin de peluches."
+face s 0 1
+s
+line "Ouais.|p| Et on pourrait faire des commandes sur mesure."
+line "J'engagerai Abbie.|p|\nElle pourra s'en occuper."
+line "Elle a l'air de pas mal se débrouiller avec les gens."
+p
+line "Et toi, tu vas faire quoi?"
+face s 0 0
+s
+line "Je serai le manager."
+face p 1 2
+p
+line "C'est|p| franchement ta pire idée."
+line "Tu vas vraiment avoir, genre,|p| zéro clients."
+face s 0 1
+s
+line "Je ferai un panneau pour faire la promo."
+p
+line "Même si tu fais ça,|p| toute la charge de travail sera sur Abbie."
+face p 4 0
+p
+line "..."
+face p 0 0
+p
+line "Tu pourrais au moins m'engager aussi."
+s
+line "C'est prévu."
+face s 0 1
+s
+line "Tu seras dehors à faire tourner le panneau."
+
+
+
+
+
+
+setflag _0.smalls.abbie 2
+setflag _0.smalls.abbie.branch ABAA
+function lobby_tick_time 0.5
+goto script 0/lobby/smalls/return
+

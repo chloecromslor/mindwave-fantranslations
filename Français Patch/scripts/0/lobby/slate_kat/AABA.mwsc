@@ -1,0 +1,39 @@
+face p 0 1
+p
+line "Ethan,|p| Kat,|p| c'était cool de vous rencontrer."
+face s 0 1
+s
+line "Bonne chance pour le jeu."
+face k 0 0
+k
+line "J'ai pas besoin de chance.|p| Par contre, Ethan, si."
+face k 0 1
+k
+line "T'as pas intérêt a me faire regretter de venir en perdant dès le premier tour."
+face l 1 0
+l
+line "Oh, t'inquiète."
+line "J'pense que mon envie de compléter ma collection de FOS est une assez bonne motivation."
+k
+line "Et tu penses que ça va pas me faire regretter?"
+face s 0 1
+k
+line "Je suis contre si tu comptes gaspiller le prix comme ça."
+face k 0 0
+k
+line "En fait,|p| je compte pas y aller de main morte, même contre vous."
+face k 0 2
+k
+line "Mais bonne chance à vous aussi. "
+face p 0 0
+p
+line "A plus tard."
+face l 0 0
+l
+line "A plus dans l'bus."
+
+setflag _0.smalls.slate_kat 1
+setflag _0.slate_kat.done 1
+setflag _0.slate_kat.read.AABA 1
+function lobby_tick_time
+

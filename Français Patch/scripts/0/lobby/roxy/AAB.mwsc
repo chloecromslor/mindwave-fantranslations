@@ -1,0 +1,78 @@
+face s 0 0
+face p 0 0
+s
+line "Donc T'AVAIS des effets secondaires,|p| mais ils sont partis?"
+face r 0 0
+r
+line "Ouais,|p| c'est ça."
+face s 1 0
+s
+line "Pour que ça calme un peu Pandora,|p| c'est quoi ton secret?"
+face p 0 0
+p
+line "Tu te fais un chapeau en papier d'alu avant de jouer?"
+face r 3 0
+r
+line "Non."
+face r 3 1
+r
+line "Trop de cheveux pour que ça tienne."
+face p 0 1
+p
+line "Pas faux."
+face r 2 0
+r
+line "Mais sérieusement,|p| ça dépend de ton problème."
+face p 0 0
+r
+line "Ma technique, ça a été...|p| Un genre de compartimentation?"
+face s 0 0
+s
+line "Du genre, tu changes ton mental quand tu joues pas?"
+r
+line "C'est ça."
+face p 0 2
+p
+line "C'est le genre de solution à causer d'autres problèmes."
+r
+line "Ca a fonctionné pour moi."
+line "Quand j'ai rejoint l'équipe,|p| je visualisais toutes les interactions sociales comme si c'était des matchs de MINDWAVE."
+face r 1 0
+r
+line "Mais ironiquement,|p| j'ai arrêté de faire ça parce que ça me rendait moins forte à MINDWAVE."
+face r 0 0
+r
+line "Ca devenait trop stressant d'essayer de \"gagner\" toutes les interactions."
+line "Donc j'ai arrêté."
+face p 1 2
+p
+line "C'est flippant."
+face s 0 1
+s
+line "Nan,|p| t'as à peu près la même chose dans les \"vrais sports.\""
+face s 0 0
+s
+line "J'crois que c'est genre,|p| 73% des athlètes qui finissent par subir des effets secondaires de leur milieu. "
+face p 4 0
+p
+line "Nan,|p| c'est vrai?"
+face s 2 1
+face p 0 4
+s
+line "Nan,|p| j'ai pris un chiffre au pif."
+face s 0 1
+s
+line "...mais ça devrait être dans ces eaux-là."
+face r 1 0
+r
+line "T'es sur la bonne voie."
+face p 0 0
+face r 2 0
+r
+line "C'est sain ni pour ton esprit ni pour ton corps de trop se dédier à quelque chose."
+
+setflag _0.roxy.read.AAB 1
+setflag _0.roxy.branch AAB
+function lobby_tick_time
+goto script 0/lobby/roxy/questions
+

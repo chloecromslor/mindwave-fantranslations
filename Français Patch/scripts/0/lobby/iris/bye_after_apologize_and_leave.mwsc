@@ -1,0 +1,13 @@
+face p 0 4
+p
+line "Euh,|p| je dois y aller, en fait."
+i
+line "D'accord?|p| Salut."
+
+setflag _0.pandora.alone 0
+
+
+
+
+
+

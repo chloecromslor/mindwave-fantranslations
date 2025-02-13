@@ -1,0 +1,80 @@
+face s 0 0
+face p 1 0
+p
+line "C'est un peu...|p| bizarre de penser à tout le monde ici."
+line "Genre, on a tous gagné à la loterie pour venir ici..."
+face p 1 2
+p
+line "...mais parmi tout ce monde, il va y avoir qu'un seul gagnant."
+face s 1 0
+s
+line "Ouais,|p| tous ces gens devraient jeter l'éponge et retourner chez eux."
+face s 0 1
+s
+line "Parce que c'est moi qui vais gagner le tournoi."
+l
+line "C'est facile d'oublier à quel point c'est dingue que Kat et moi, on ait pu venir."
+face p 1 0
+k
+line "Ca doit vous faire un peu pareil, non?"
+face s 2 1
+s
+line "Ouaip,|p| on est vraiment tous trop chanceux."
+face l 1 0
+l
+line "C'est Kat qu'a trouvé les deux tickets."
+face s 0 0
+face l 0 0
+l
+line "Donc en vrai, c'est elle la chanceuse."
+k
+line "J'ai donné le premier à Ethan parce que ça m'emballe pas trop de montrer mon cerveau à des inconnus."
+face l 1 0
+l
+line "Kat,|p| c'était le meilleur cadeau d'anniv' que j'ai eu cette année."
+face k 0 1
+k
+line "C'était le seul cadeau que t'as eu."
+face s 0 1
+s
+line "Bon anniv' en retard."
+face k 0 0
+k
+line "Mais après, quand j'ai trouvé le deuxième ticket,|p| je me suis dit que ça serait stupide de manquer cette chance deux fois."
+l
+line "Heureusement que tu l'as trouvé.|p| Si t'étais pas venue, j'm'ennuierais à mourir."
+face l 0 0
+l
+line "Même si il aurait mieux valu ça que rester chez moi."
+k
+line "T'as de la chance que j'aie autant de chance."
+face k 0 1
+k
+line "La gaspille pas."
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+setflag _0.slate_kat.read.B 1
+setflag _0.slate_kat.branch B
+function lobby_tick_time
+goto script 0/lobby/slate_kat/questions
+
+

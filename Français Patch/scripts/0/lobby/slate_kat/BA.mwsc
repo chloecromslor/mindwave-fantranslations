@@ -1,0 +1,75 @@
+face s 0 0
+face p 0 0
+s
+line "Et vous comptez faire quoi avec l'argent du prix si vous gagnez?"
+face l 0 0
+l
+line "Mec,|p| j'y ai même pas réfléchi.|p| C'est Kat qu'a déjà tout prévu."
+face l 1 0
+l
+line "Elle voudrait...|p 20| |skip| "
+face k 0 1
+k
+line "Ethan,|p| si tu vas en parler, laisse moi le dire moi-même."
+face k 0 0
+k
+line "Tu vas pas bien le dire."
+face l 1 0
+l
+line "Pas d'problème,|p| on t'écoute."
+k
+line "Je voudrais utiliser l'argent pour louer mon propre studio d'art."
+face s 0 0
+s
+line "C'est trop cool,|p| tu fais quel genre d'art?"
+k
+line "C'est juste un passe-temps,|p| mais j'aime bien travailler sur de l'art abstrait."
+face l 0 0
+face k 0 1
+l
+line "Son studio actuel, c'est l'ancienne chambre de sa mère."
+face k 0 0
+k
+line "Euh,|p| ouais.|p| J'aimerais avoir mon propre espace."
+face s 0 0
+s
+line "J'te comprends."
+face s 0 1
+checkflag nickname_panda 1
+goto marker branch26y
+goto marker branch26n
+
+marker branch26y
+
+s
+line "Panda,|p| on devrait aussi utiliser un peu de sous pour un studio à nous."
+
+goto marker branch26e
+
+marker branch26n
+
+s
+line "Pandora,|p| on devrait aussi utiliser un peu de sous pour un studio à nous."
+
+goto marker branch26e
+
+marker branch26e
+
+face p 4 0
+p
+line "Mec,|p| il coûte pas un bras,|p| le loyer à Blackout?"
+s
+line "J'préfère ça qu'avoir mes voisins qui se plaignent du bruit."
+face l 0 0
+l
+line "Vous êtes dans un groupe?|p| C'est énorme."
+line "Chez moi, les voisins se plaignent aussi souvent du bruit."
+line "Mes parents sont toujours en train de hurler sur mes grands frères pour chaque bêtise qu'ils font..."
+line "Moi, j'reste en dehors de tout ça."
+line "Si c'est Kat qui gagne,|p| j'compte bien squatter son studio."
+
+setflag _0.slate_kat.read.BA 1
+setflag _0.slate_kat.branch BA
+function lobby_tick_time
+goto script 0/lobby/slate_kat/questions
+

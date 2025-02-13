@@ -1,0 +1,117 @@
+face s 0 1
+face p 0 0
+p
+line "Je dois dire."
+line "La tour est pas si incroyable que ça.|p|\nGenre, du tout."
+face p 0 2
+p
+line "Elle est plus flippante qu'autre chose,|p| nan?"
+face s 2 1
+s
+line "Désolé,|p| mais pour le coup,|p| Abbie a raison.|p| C'est LE truc le plus impressionant de la ville."
+face s 0 1
+s
+line "Si t'es pas capable d'avouer que c'est un peu cool d'être à l'intérieur en ce moment..."
+face s 0 2
+s
+line "...c'est que t'essaies trop dure d'être différente."
+face a 1 2
+a
+line "Oui, elle est tellement grande que je me suis presque fait mal au cou en essayant de voir le sommet quand j'étais dans la file!"
+face a 4 0
+face s 0 0
+a
+line "Et le gros écran avec l'oeil?|p|\nIl est trop méga cool!"
+face p 1 0
+p
+line "Tu ferais moins la maligne si l'oeil visait en plein sur la fenêtre de ton appart."
+face p 1 2
+p
+line "J'te jure,|p| il est TOUJOURS en train de me fixer pendant que j'essaye de dormir."
+face s 2 0
+face a 0 0
+s
+line "C'est une illusion d'optique."
+line "Il peut pas vraiment te fixer."
+face p 0 0
+p
+line "Et?|p| Ca reste chelou."
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+setflag _0.abbie.read.ABB 1
+setflag _0.abbie.branch ABB
+function lobby_tick_time 2
+goto script 0/lobby/abbie/questions
+

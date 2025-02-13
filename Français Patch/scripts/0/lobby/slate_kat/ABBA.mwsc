@@ -1,0 +1,37 @@
+face s 0 1
+s
+line "Ethan,|p| Kat,|p| c'était cool de vous rencontrer."
+face l 0 0
+l
+line "Idem, mec.|p| Bonne chance pour le jeu, vous deux."
+face p 0 0
+p
+line "Merci.|p| J'ai pas vraiment trop d'expérience avec MINDWAVE."
+face p 1 0
+p
+line "Je flippe un peu de devoir vous combattre."
+face k 0 0
+k
+line "Si t'es comme moi,|p| tu devrais te débrouiller contre le joueur lambda.|p| Même sans trop d'expérience."
+face k 0 2
+k
+line "Mais si t'es plus comme Ethan,|p| ouais, tu devrais t'inquiéter."
+face l 1 0
+l
+line "Kat, j'suis beaucoup plus fort que toi à MINDWAVE."
+k
+line "Ah ouais?|p| On verra bien qui gagne le tournoi."
+s
+line "Hahaha."
+face s 2 1
+s
+line "A plus tard, vous deux."
+face l 0 0
+l
+line "A plus dans l'bus."
+
+setflag _0.smalls.slate_kat 1
+setflag _0.slate_kat.done 1
+setflag _0.slate_kat.read.ABBA 1
+function lobby_tick_time
+

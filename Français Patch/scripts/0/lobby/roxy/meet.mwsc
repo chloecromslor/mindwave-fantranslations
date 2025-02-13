@@ -1,0 +1,108 @@
+
+face s 0 1
+s
+line "Oh, tiens,|p| c'est bien qui je pense?"
+
+checkflag nickname_panda 1
+goto marker branch26y
+goto marker branch26n
+
+marker branch26y
+
+s
+line "Panda,|p| on devrait lui parler."
+
+goto marker branch26e
+
+marker branch26n
+
+s
+line "Pandora,|p| on devrait lui parler."
+
+goto marker branch26e
+
+marker branch26e
+
+face p 0 0
+p
+line "A qui?|p| La fille sur son téléphone?"
+face s 0 0
+s
+line "Ouais, elle.|p| Je l'ai vue à la salle d'arcade."
+line "Elle est assez balèze à MINDWAVE."
+face s 0 1
+s
+line "Elle s'appelle Roxy,|p| je crois qu'elle est dans l'équipe officielle de MINDWAVE à son lycée."
+face s 2 1
+s
+line "Si on veut des conseils, on ferait mieux de lui demander à elle."
+face p 1 2
+p
+line "Attends,|p| des lycées ont des équipes \"officielles\" pour MINDWAVE?"
+face s 1 0
+s
+line "Bien sûr,|p| presque tous les lycées de la ville en ont une."
+face p 4 0
+face s 0 1
+s
+line "Pas le nôtre,|p| parce qu'il est nul."
+face p 1 0
+p
+line "D'accord,|p| mais c'est toi qui attire son attention."
+
+checkflag _0.alex.met 1
+goto marker branch1y
+goto marker branch1n
+
+marker branch1y
+face p 4 0
+p
+line "Je veux pas refaire la même qu'avec l'autre avec son casque."
+goto marker branch1e
+
+marker branch1n
+face p 4 0
+p
+line "Je vais pas essayer de parler à quelqu'un quand la personne est occupée."
+goto marker branch1e
+
+marker branch1e
+face s 0 0
+s
+line "Je peux le faire.|p| Je suis aussi curieux d'entendre ses conseils."
+line "*uh-hum*|p|\nSalut."
+face r 0 1
+r
+line "..."
+face p 4 0
+face s 0 3
+s
+line "..."
+face s 0 0
+s
+line "Moi, c'est Smalls."
+face r 1 0
+r
+line "..."
+line "Ah ouais,|p| je t'ai déjà vu à la salle d'arcade une fois."
+face p 0 0
+
+s
+line "Ma pote Pandora ici présente a pas trop d'expérience avec MINDWAVE."
+line "Elle aurait besoin de quelques conseils."
+p
+line "...Salut."
+face r 0 0
+r
+line "Vas-y, balance."
+
+
+
+
+
+
+setflag _0.roxy.met 1
+incflag _0.chars_met 1
+
+goto script 0/lobby/roxy/questions
+

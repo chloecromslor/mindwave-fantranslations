@@ -1,0 +1,16 @@
+face p 1 2
+p
+line "Euh,|p| ouais,|p| c'est à peu près tout ce que je voulais faire.  "
+face p 0 0
+p
+line "Donc je crois que je vais y aller,|p| mon pote m'attend là bas."
+face i 0 0
+i
+line "Ca me pose pas de problème. "
+face p 0 4
+p
+line "Ouais,|p| à plus tard, peut-être."
+i
+line "A plus tard."
+setflag _0.pandora.alone 0
+

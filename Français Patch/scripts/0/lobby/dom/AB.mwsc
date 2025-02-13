@@ -1,0 +1,151 @@
+face p 0 0
+face s 0 0
+p
+line "Hé, Dom."
+face p 0 2
+p
+line "T'es sûr d'en avoir quelque chose à faire du tournoi?"
+d
+line "Nan,|p| j'voulais même pas participer de base."
+set s x -200
+set p x 0
+face d 0 1
+d
+line "C'est pas le truc qui m'intéresse le plus..."
+face p 0 0
+p
+line "Pourquoi ?|p| Si t'as un ticket,|p| autant venir ici."
+face p 1 0
+p
+line "J'aime même pas le jeu,|p| et pourtant je suis venue."
+face d 0 0
+d
+line "Le truc,|p| c'est que j'aime bien le jeu,|p| mais que j'suis nul."
+line "Donc quand j'ai trouvé mon ticket a la pharmacie, j'voulais le donner à un po-|p| |skip| "
+face p 0 2
+p
+line "A la pharmacie?"
+d
+line "Ouais,|p| c'est dingue, hein ?"
+face p 0 4
+p
+line "Je trouve ça juste super chelou."
+face p 0 0
+p
+line "Si j'étais en train d'acheter un truc pour, j'sais pas,|p| une migraine..."
+face p 1 2 
+p
+line "...le dernier truc que je voudrais faire serait de jouer à MINDWAVE."
+d
+line "Ouais, pareil.|p| Quand j'ai trouvé le ticket dans la bouteille,|p| j'étais genre,|p| perplexe."
+face p 0 2
+p
+line "Je le serais aussi à ta place."
+line "Quand j'entends ça, le premier truc auquel je pense, c'est genre..."
+line "Un vieux qui trouve le ticket avec ses pilules pour l'arthrite,|p| et qui dit:"
+face p 1 1
+p
+line "\"MINDWAVE ?|p| Jamais entendu parler.|p| J'vais ramener mon cul de vioque là-bas.\""
+face d 0 1
+d
+line "Mec,|p| tu sais si c'est sain pour un vieux de jouer à ce jeu?"
+face p 0 2
+p
+line "C'est déjà pas sain pour moi,|p| donc je pense pas."
+face p 0 1
+p
+line "Papi peut même pas jouer au jeu."
+set s x -70
+set p x 45
+d
+line "Il pourrait passer le ticket à ses petits-enfants, au pire."
+face s 1 0
+face p 4 0
+s
+line "Le papi pourrait faire ça,|p| mais ça reste un défaut de la part de Mindscape."
+face s 0 0
+s
+line "Ils devraient juste pas mettre des tickets là où ils devraient pas être."
+face p 0 0
+p
+line "J'avais complètement oublié que t'étais la."
+face s 2 1
+s
+line "J'vous écoutais parler."
+face s 0 0
+s
+line "Tu parlais pas de ton ticket,|p| Dom?"
+face d 0 0
+d
+line "Ah ouais,|p| j'ai perdu le fil,|p| déso."
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+setflag _0.dom.read.AB 1
+setflag _0.dom.branch AB
+function lobby_tick_time
+goto script 0/lobby/dom/questions
+
+
+

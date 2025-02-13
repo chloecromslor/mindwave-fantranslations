@@ -1,0 +1,43 @@
+face s 0 1
+s
+line "Ethan,|p| Kat,|p| c'était cool de vous rencontrer."
+face l 0 0
+l
+line "Idem, mec.|p| Bonne chance pour le jeu, vous deux."
+face p 0 0
+s
+line "Kat,|p| j'espère que tu pourras avoir ton studio si tu gagnes. "
+face k 0 2
+k
+line "Merci."
+l
+line "Ca serait énorme.|p| J'demanderai à Kat d'installer un écran plat."
+line "Et j'vous inviterai tous pour qu'on regarde Fortress of Sorrow. "
+face k 0 1
+k
+line "Ouais,|p| je pense pas faire ça."
+line "J'arriverais pas à me concentrer sur mon art avec ton dessin animé débile. "
+face k 0 2
+k
+line "Mais je suis d'accord pour que vous veniez, tous les deux."
+face l 1 0
+l
+line "Mais Kat,|p| tu sais bien que j'peux pas inviter des gens chez moi."
+line "Ptêt que j'devrais gagner le tournoi,|p| comme ça c'est TOI qui viendras dans MON studio. "
+face k 0 1
+k
+line "Ah ouais?|p| On va bien voir qui gagne."
+s
+line "Hahaha."
+face s 2 1
+s
+line "A plus, vous deux."
+face l 0 0
+l
+line "A plus dans l'bus."
+
+setflag _0.smalls.slate_kat 1
+setflag _0.slate_kat.done 1
+setflag _0.slate_kat.read.BAAA 1
+function lobby_tick_time
+

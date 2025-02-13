@@ -1,0 +1,78 @@
+set d name mystery
+face p 0 0
+p
+line "J'aime bien le sweat de ce gars."
+face s 0 0
+s
+line "Tu veux lui demander où il l'a acheté ?"
+face p 1 0
+p
+line "J'sais pas,|p| pas vraiment ?|p|\nJ'aime juste le sweat."
+face s 0 1
+s
+line "Bah,|p| je peux aller lui demander \nsi tu veux."
+p
+line "Nan, je t'ai dit...|p 30| |skip| "
+face d 0 0
+d
+line "Yo."
+face p 0 0
+p
+line "Oh- euh,|p| salut ?"
+face d 1 0
+d
+line "Ecoutez ça vite fait."
+face d 1 1
+function lb0_scr_dom_music 1
+
+d
+line "..."
+face s 0 3
+face p 0 4
+s
+line "..."
+p
+line "..."
+d
+line "..."
+function lb0_scr_dom_music 0
+p
+line "..."
+face d 1 0
+d
+line "Alors ?|p| Z'en pensez quoi ?"
+face s 0 0
+face p 0 2
+p
+line "C'était quoi, ça ?"
+face d 1 0
+d
+line "Un son que j'ai fait,|p| j'espère qu'il vous plait."
+face p 0 0
+p
+line "Mec,|p| j'en sais rien."
+face p 1 0
+p
+line "Donne moi une seconde\npour y réfléchir."
+face d 0 1
+d
+line "Ouais,|p| pas d'problème."
+face d 0 0
+d
+line "J'suis Dom,|p| au fait.|p| "
+line "Mes potes m'apellent Mixmaster D mais c'est un peu à chier donc Dom ça me va,|p| haha."
+set d name dom
+face p 4 0
+p
+line "Ca sera Dom, alors."
+face p 0 0
+p
+line "Moi c'est Pandora."
+line "Et lui c'est Smalls."
+setflag _0.dom.met 1
+incflag _0.chars_met 1
+goto script 0/lobby/dom/questions
+
+
+
+

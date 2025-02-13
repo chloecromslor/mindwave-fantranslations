@@ -1,0 +1,72 @@
+face s 2 1
+s
+line "Abbie,|p| on va y aller, Panda et moi."
+face p 1 2
+face s 0 1
+p
+line "Si tu continues à m'appeler comme ça, j'te tabasse."
+face a 2 2
+a
+line "..."
+face p 1 0
+p
+line "Euh,|p| mais ça me va si c'est toi, Abbie."
+face a 4 1
+a
+line "..."
+face p 0 0
+p
+line "Bonne chance pour le tournoi et tout."
+face a 1 0
+a
+line "Oh!|p| Je devrais vous demander vos numéros."
+face a 0 0
+a
+line "Vous savez,|p| au cas où vous perdez tous les deux dès le début et qu'on se revoie jamais."
+face p 1 0
+p
+line "Ou...|p| au cas où toi tu perds dès le début."
+s
+line "Voilà mon num et celui de Pandora."
+face a 3 1
+a
+line "Merci!"
+face p 0 2
+p
+line "Mec,|p| j't'ai pas donné la permission de donner mon numéro aux gens."
+face p 0 1
+p
+line "Mais ouais,|p| on pourrait traîner ensemble un de ces quatres."
+face s 2 0
+s
+line "Du moment que tu te fais pas priver de sortie par tes parents pour le coup de ce soir."
+face a 1 2
+a
+line "...Peut-être que si je reviens avec la récompense,|p| ils seront moins fâchés?"
+face s 0 1
+s
+line "J'espère."
+p
+line "A plus, Abbie."
+face a 0 0
+a
+line "A plus tard, vous deux!"
+
+
+
+
+
+
+
+
+
+
+
+
+
+setflag _0.smalls.abbie 1
+setflag _0.abbie.read.BBA 1
+setflag _0.abbie.done 1
+function lobby_tick_time
+
+

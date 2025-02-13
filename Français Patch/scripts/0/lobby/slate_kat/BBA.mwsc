@@ -1,0 +1,74 @@
+p
+line "..."
+k
+line "T'aimes pas me parler?"
+face p 0 0
+p
+line "Nan,|p| c'est pas ça,|p| c'est juste que Smalls est un peu parti sans prévenir."
+k
+line "Donc ton problème,|p| c'est le changement soudain de situation?"
+line "Tu t'attendais pas à me parler comme ça,|p| sans personne d'autre?"
+p
+line "C'est ça.|p| J'suis pas trop douée pour parler à des inconnus."
+face p 0 0
+p
+line "J'ai rien contre toi."
+k
+line "D'accord."
+face p 1 0
+p
+line "..."
+k
+line "Je peux un peu comprendre..."
+line "Quand j'ai changé d'école,|p| je voulais parler à personne."
+face k 0 2
+k
+line "Tous mes camarades de classe me trouvaient bizarre."
+face k 0 0
+k
+line "Sauf Ethan.|p| Parce qu'il était aussi bizarre que moi."
+line "Donc je me suis habituée à traîner avec lui."
+face p 0 0
+p
+line "Ouais, honnêtement,|p| c'est Smalls qui me pousse à être plus sociale."
+face p 0 2
+p
+line "Mais je m'attendais pas à ce qu'il me plante comme ça."
+face k 0 2
+k
+line "C'est marrant."
+face k 0 0
+k
+line "Ethan est peut-être étrange,|p| mais il est super social."
+line "Passer du temps avec lui m'a fait parler à plus de gens."
+face k 0 2
+k
+line "Et maintenant, c'est lui le plus bizarre de nous deux."
+face p 0 1
+p
+line "Je vois ça."
+line "Honnêtement,|p| je-|p 20| |skip| "
+set s x -70
+set p x +45
+face l 0 0
+face p 4 0
+s
+line "Yo, nous revoilà."
+set k x +67
+set l x -48
+l
+line "Salut les filles."
+face s 2 1
+s
+line "Pandora,|p| pourquoi tu m'avais jamais parlé de Fortress of Sorrow?"
+face s 0 2
+s
+line "Ethan me l'a décrit comme le meilleur truc au monde."
+
+
+setflag _0.slate_kat.read.BBA 1
+setflag _0.pandora.alone 0
+setflag _0.slate_kat.branch BBA
+function lobby_tick_time
+goto script 0/lobby/slate_kat/questions
+

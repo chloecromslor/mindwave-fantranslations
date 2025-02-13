@@ -1,0 +1,73 @@
+
+
+
+p
+line "Mec. "
+face p 1 0
+p
+line "J'ai pas su quoi faire avec Dom."
+line "Genre d'habitude,|p| si quelqu'un venait se présenter comme ça,|p| je lui dirais d'aller se faire voir."
+face p 0 1
+p
+line "Mais chais pas,|p| je l'aimais bien."
+face s 0 1
+s
+line "Pareil.|p| Mais j'aurais voulu pouvoir parler un peu plus de musique."
+face s 0 0
+s
+line "J'aimerais entrer en contact avec d'autres musiciens."
+line "Si je reste dans ma zone de confort, j'ai peur de stagner."
+face p 0 0
+p
+line "Ca m'irait de traîner avec lui un de ces jours."
+line "Dommage qu'on ait pas pu avoir son numéro..."
+face p 0 2
+p
+line "Mais attends,|p| t'aurais pas pu lui écrire le tien?"
+face s 0 3
+s
+line "Oh."
+face s 0 0
+s
+line "Oups,|p| c'est complètement de ma faute."
+face s 1 0
+s
+line "Mais,|p| d'un côté,|p| quand il a parlé d'avoir un téléphone juste pour sa musique,|p| mon cerveau s'est mis en veille."
+line "Si tu veux voir le verre à moitié vide,|p| on aurait dit une vieille excuse pour pas qu'on ait son numéro."
+face p 1 0
+p
+line "Nan,|p| il avait l'air de le dire honnêtement."
+face p 0 0
+p
+line "Il avait l'air assez chelou pour vraiment faire ça."
+face s 0 1
+s
+line "Pas faux.|p| Pourquoi tu lui as pas donné le tien, alors?"
+face p 0 4
+p
+line "Smalls,|p| j'allais pas donner mon numéro à quelqu'un que je venais de rencontrer."
+face p 0 0
+p
+line "On pourra le revoir après le tournoi,|p| toute façon."
+face s 0 0
+s
+line "Dans ce cas,|p| j'espère qu'on arrivera à le trouver dans la foule à l'entrée."
+p
+line "J'pense que c'est lui qui va nous trouver.|p| Il a l'air d'en être capable."
+face s 0 2
+s
+line "Ouais,|p| je te suis."
+
+
+
+
+
+
+setflag _0.smalls.dom 2
+setflag _0.smalls.dom.branch ABA
+function lobby_tick_time 0.5
+goto script 0/lobby/smalls/return
+
+
+
+

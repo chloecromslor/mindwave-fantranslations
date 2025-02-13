@@ -1,0 +1,93 @@
+
+face s 0 0
+s
+line "Donc en vrai, tu t'appelles Ethan?"
+face l 0 0
+l
+line "Ouaip.|p| C'est ce que mes potes m'appellent."
+face k 0 1
+k
+line "Ta pote*."
+face l 1 0
+l
+line "C'est pas vrai.|p| Tes grand-parents m'appellent Ethan, aussi."
+line "Eux aussi, c'est mes potes."
+face s 1 0
+s
+line "Donc,|p| vous êtes pas frère et soeur."
+k
+line "Ethan est un parasite qui squatte chez moi tous les jours..."
+face k 0 2
+k
+line "...mais non, pas de lien de parenté."
+face l 0 0
+l
+line "C'est trop bruyant chez moi quand mes frères sont là."
+line "En plus,|p| personne dans ma famille veut m'écouter parler de Fortress of Sorrow."
+face s 0 0
+l
+line "Je les aime fort,|p| mais m'éloigner d'eux un peu, c'est le PARADIS."
+face l 1 0
+l
+line "Les grand-parents de Kat sont beaucoup plus cool."
+face k 0 0
+k
+line "Ethan trouve que le paradis, c'est une maison de personnes agées."
+face l 0 0
+l
+line "J'suis en paix,|p| j'ai des cookies gratuits,|p| et j'ai deux persones agées avec qui traîner.|p| Donc ouais, c'est le paradis."
+face p 0 0
+p
+line "Tu...|p| leur parles aussi de tes dessins animés?"
+l
+line "Ouaip.|p| J'peux parler avec le pépé de Kat pendant des heures."
+face k 0 1
+k
+line "Il comprend pas un traître mot de ce que tu lui racontes, pour info."
+face l 1 0
+l
+line "C'est pas grave si je dois me répéter.|p|\nCa veut juste dire qu'on parle encore plus."
+face l 0 0
+l
+line "Il a plein d'histoires qu'il adore me raconter."
+face k 0 0
+k
+line "Des histoires de vieux.|p|\nSur sa vie, et tout."
+face l 1 0
+l
+line "Exactement.|p| Il adore en parler."
+face l 1 0
+l
+line "J'adore voir la lumière dans ses yeux, peu importe si c'est la centième fois qu'il me raconte la même histoire."
+face k 0 1
+k
+line "..."
+face l 0 0
+l
+line "J'y resterais tout le temps,|p| mais j'suis trop grand pour dormir sur leurs canapés."
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+setflag _0.slate_kat.read.AB 1
+setflag _0.slate_kat.branch AB
+function lobby_tick_time 2
+goto script 0/lobby/slate_kat/questions
+

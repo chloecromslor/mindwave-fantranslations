@@ -1,0 +1,110 @@
+face p 0 0
+p
+line "Ca se passe comment, chez...|p 20| |skip| "
+face s 0 1
+s
+line "Slate, tu devrais me parler de Fortress of Sorrow."
+face l 0 0
+face p 1 2
+l
+line "J'adorerais."
+line "Fortress of Sorrow, c'est ce vieil animé des années tren-|p 20| |skip| "
+face k 0 1
+k
+line "Vous pourriez parler de ça plus loin?"
+line "On a pas tous envie de t'entendre parler de ton animé débile."
+face l 1 0
+l
+line "Oh,|p| d'acc.|p| On va aller là-bas, Smalls et moi."
+face l 0 0
+l
+line "Si ça vous dit de nous rejoindre."
+set l x -250
+wait 1 second
+set k x 0
+face s 0 2
+checkflag nickname_panda 1
+goto marker branch26y
+goto marker branch26n
+
+marker branch26y
+
+s
+line "Je reviens, Panda."
+
+goto marker branch26e
+
+marker branch26n
+
+s
+line "Je reviens, Pandora."
+
+goto marker branch26e
+
+marker branch26e
+
+set s x -200
+face p 0 0
+p
+line "..."
+face k 0 0
+k
+line "..."
+set p x 0
+k
+line "Connaissant l'état dans lequel Ethan se met quand il commence à parler de FOS..."
+line "Ils vont parler pendant un moment."
+face p 1 0
+p
+line "..."
+k
+line "Euh,|p| tu voulais me demander quelque chose, non?"
+face p 4 0
+p
+line "Hein?"
+k
+line "Juste à l'instant,|p| avant qu'Ethan et ton ami partent."
+line "Tu disais quelque chose."
+face p 1 0
+p
+line "Oh,|p| ouais,|p| euh..."
+face p 0 0
+p
+line "Je voulais demander un truc à Slate."
+face p 0 2
+p
+line "Ou, euhhh...|p| Ethan?"
+k
+line "Oh."
+face p 0 0
+p
+line "Ouais."
+k
+line "Tu pourrais me poser la question?"
+face k 0 2
+k
+line "Je le connais assez bien."
+face p 1 2
+p
+line "D'accord?|p| Je voulais qu'il me parle un peu de chez lui."
+face k 0 0
+k
+line "Chez lui?|p| Bah,|p| il y a pas grand chose à dire là-dessus."
+line "Il vit avec sa famille dans un petit appart tout moisi."
+line "C'est hyper claustro."
+face p 1 0
+p
+line "Oh,|p| d'accord."
+face p 1 0
+p
+line "Donc sa famille, c'est pas ta famille?|p|\nGenre,|p| pas de lien de parenté."
+k
+line "Non."
+
+setflag _0.pandora.alone 1
+setflag _0.slate_kat.read.BB 1
+setflag _0.slate_kat.branch BB
+function lobby_tick_time
+goto script 0/lobby/slate_kat/questions
+
+

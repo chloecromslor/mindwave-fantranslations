@@ -1,0 +1,112 @@
+
+face a 0 0
+face p 0 0
+a
+line "Pandora,|p| Smalls,|p| j'ai trop adoré discuter avec vous deux!"
+face a 2 2
+a
+line "Mais on va tous bientôt devoir y aller..."
+face a 1 2
+a
+line "...alors,|p| je pourrais avoir vos numéros?"
+face s 0 1
+s
+line "Ouais,|p| tiens."
+line "Si jamais tu veux qu'on traîne ensemble,|p| passe nous un coup de fil."
+face a 0 0
+a
+line "J'aimerias trop.|p| "
+line "Je fais faire de mon mieux pour essayer de convaincre mes parents de me laisser aller a Blackout Est!"
+face p 1 0
+p
+line "Bon...|p| Peut-être que ce serait mieux si on allait au Nord,|p| pour l'instant."
+face a 2 2
+a
+line "Vous feriez ça pour moi???"
+face p 0 1
+p
+line "Ouais,|p| mais juste pour zoner dans un parc ou je sais pas quoi."
+face p 0 0
+p
+line "Aller autre part, ça serait trop cher pour moi."
+face a 0 0
+a
+line "C'est pas grave!|p| Je pourrai payer pour vous deux!"
+face p 4 0
+p
+line "Oh,|p| bah super alors."
+face p 0 1
+p
+line "Bon, on va y aller."
+face p 0 0
+p
+line "..."
+face p 0 1
+p
+line "Cool de t'avoir rencontré,|p| Abbie,|p| on se revoit plus tard."
+face a 0 0
+a
+line "Attends,|p| avant que tu partes!"
+p
+line "Ouai-|skip| "
+
+setflag _0.smalls.abbie 1
+setflag _0.abbie.read.ABAA 1
+setflag _0.abbie.done 1
+end_transition perlin
+function lobby_timer_set_interrupt 0
+function lobby_tick_time
+sequence id "sqcs_0_abbiehug" script "sequence/0/abbiehug"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

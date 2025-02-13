@@ -1,0 +1,15 @@
+
+face p 0 0
+p
+line "Bon,|p| Dom,|p| on va devoir y aller."
+face d 0 0
+d
+line "D'acc.|p| On s'revoit plus tard."
+face s 0 1
+s
+line "A plus, mec."
+
+
+
+
+

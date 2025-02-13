@@ -1,0 +1,72 @@
+face p 0 1
+p
+line "Honnêtement, j'trouve ça cool que tu fasses de l'art abstrait."
+face p 0 0
+p
+line "A chaque fois qu'on doit peindre en arts plastiques,|p| je foire le truc."
+face p 0 1
+p
+line "Ca doit être cool de pas avoir à t'embêter avec ça et de juste mettre des couleurs partout."
+face s 0 1
+checkflag nickname_panda 1
+goto marker branch26y
+goto marker branch26n
+
+marker branch26y
+
+s
+line "Panda,|p| ce que tu rends ressemble déjà à de l'art abstrait."
+
+goto marker branch26e
+
+marker branch26n
+
+s
+line "Pandora,|p| ce que tu rends ressemble déjà à de l'art abstrait."
+
+goto marker branch26e
+
+marker branch26e
+
+
+face l 1 0
+l
+line "C'que fait Kat est énorme.|p|\nMa chambre est pleine de ses tableaux."
+face k 0 0
+k
+line "Ca fait...|p| un bon bout de temps que je peins.|p| J'ai une tonne de tableaux finis qui traînent."
+line "Je m'attache pas trop aux tableaux après les avoir finis."
+line "Ca me calme juste de peindre.|p|\nPeu importe ce que ça donne au final."
+l
+line "Ton art, il me PARLE.|p|\nIl est vraiment trop stylé."
+face p 0 0
+face k 0 1
+k
+line "Si tu le dis.|p| Le compliment est moins fort quand ça vient de toi."
+face k 0 2
+k
+line "Mais merci quand même."
+face s 0 0
+s
+line "Ca vous arrive de jouer à MINDWAVE l'un contre l'autre?"
+face s 0 2
+s
+line "Ca ressemble à quoi, l'esprit d'une artiste abstraite?"
+k
+line "C'est psychédélique, apparemment."
+face l 0 0
+l
+line "Quand on va à la salle d'arcade,|p| ceux qui jouent contre Kat sont super pris de court."
+face s 0 0
+face l 1 0
+l
+line "Mais j'comprends pas pourquoi."
+face k 0 1
+k
+line "C'est parce que t'es bizarre."
+
+setflag _0.slate_kat.read.BAA 1
+setflag _0.slate_kat.branch BAA
+function lobby_tick_time
+goto script 0/lobby/slate_kat/questions
+

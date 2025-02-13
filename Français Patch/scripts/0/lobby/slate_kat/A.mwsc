@@ -1,0 +1,152 @@
+face s 0 0
+checkflag nickname_panda 1
+goto marker branch22y
+goto marker branch22n
+
+marker branch22y
+
+s
+line "Panda,|p| vous devriez me parler de cette émission,|p| Slate et toi."
+
+goto marker branch22e
+
+marker branch22n
+
+s
+line "Pandora,|p| vous devriez me parler de cette émission,|p| Slate et toi."
+
+goto marker branch22e
+
+marker branch22e
+
+
+
+face p 0 2
+p
+line "On est a ce super tournoi super rare plein de smileys et de cornes démoniaques..."
+
+
+face p 4 0
+p
+line "...et tu veux parler de dessins animés."
+face k 0 0
+face p 1 0
+p
+line "En plus,|p| j'm'en souviens que vaguement."
+
+
+face l 0 0
+l
+line "T'inquiète!|p| J'adore en parler."
+line "Fortress of Sorrow, c'est un vieil animé des années 30 sur une guerre éternelle."
+line "C'est trop cool.|p| C'est un mix entre médiéval et cyberpunk, si tu vois."
+
+
+
+
+
+
+face s 0 1
+checkflag nickname_panda 1
+goto marker branch26y
+goto marker branch26n
+
+marker branch26y
+
+s
+line "Comment tu connais ça, Panda?"
+line "Ca a pas l'air trop ton genre."
+
+goto marker branch26e
+
+marker branch26n
+
+s
+line "Comment tu connais ça, Pandora?"
+line "Ca a pas l'air trop ton genre."
+
+goto marker branch26e
+
+marker branch26e
+
+face p 1 2
+p
+line "C'est pas mon dessin animé préféré non plus."
+face p 0 0
+p
+line "Mon père avait un DVD qui traînait, donc je le regardais des fois."
+face k 0 2
+k
+line "Il a quel âge, ton père??"
+face p 0 2
+p
+line "Chais pas,|p| dans la quarantaine."
+l
+line "Mais genre,|p| Pandora,|p| t'es d'accord que les Cybo-Manciens c'est la meilleure faction, nan?"
+face p 1 0
+p
+line "J'me rappelle à peine de l'autre faction,|p| donc sans doute?"
+face p 0 2
+p
+line "C'était les hybrides démon-humain,|p| nan?"
+face k 0 0
+k
+line "Non,|p| ça c'est la faction de \"Slate\"."
+line "L'autre faction, c'est les Nés-de-Glas.|p| C'est les esprits mécaniques."
+face s 0 0
+face p 4 0
+p
+line "Ah, ouais."
+k
+line "\"Slate\" est un Cybo-Mancien."
+face p 0 0
+p
+line "Euh,|p| d'accord."
+face s 0 1
+checkflag nickname_panda 1
+goto marker branch29y
+goto marker branch29n
+
+marker branch29y
+
+s
+line "Panda,|p| faudrait qu'on regarde un de ces quatre."
+
+goto marker branch29e
+
+marker branch29n
+
+s
+line "Pandora,|p| faudrait qu'on regarde un de ces quatre."
+
+goto marker branch29e
+
+marker branch29e
+
+l
+line "Trop cooool.|p| Donc à nous tous, ça fait QUATRE fans ici."
+line "Donc ça fait quarante mille fans dans toute la ville."
+face k 0 1
+k
+line "C'est toujours pas logique."
+
+k
+line "Mais ça serait trente mille.|p| Je suis pas une fan."
+face l 1 0
+l
+line "Nan.|p| T'es une dingue de FOS.|p| Tu connais tout par coeur."
+face p 0 0
+l
+line "T'es une fan honoraire."
+k
+line "Ethan,|p| si j'en sais autant,|p| c'est parce que t'arrêtes pas de me baratiner sur le sujet."
+line "T'as de la chance que je le tolère."
+l
+line "Ouais, totalement."
+line "Quand j'gagnerai,|p| j't'achèterai un truc pour te remercier."
+
+setflag _0.slate_kat.read.A 1
+setflag _0.slate_kat.branch A
+function lobby_tick_time 2
+goto script 0/lobby/slate_kat/questions
+

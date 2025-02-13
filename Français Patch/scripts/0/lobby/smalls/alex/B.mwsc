@@ -1,0 +1,130 @@
+face p 0 1
+p
+line "Oublie pas de me passer mes vingt balles."
+face s 2 1
+s
+line "Ouais, ouais,|p| je te les donnerai juste après ma victoire."
+face p 0 0
+p
+line "En vrai,|p| j'aurais dû parier plus."
+face p 1 0
+p
+line "Parler aux gens ici commence à me faire stresser pour le tournoi."
+face s 0 0
+s
+line "Mais naaaaan, ça va aller."
+face p 0 2
+p
+line "Nan,|p| je peux plus croire ton jugement après que t'aies complètement foiré ton coup avec Alex."
+line "Genre,|p| sans blague,|p| la personne qui essaie clairement d'éviter toute interaction veut pas nous parler."
+face s 1 0
+s
+line "Tu sais bien que c'est pas vrai."
+checkflag _0.abbie.met 1
+goto marker branch7y
+goto marker branch7n
+marker branch7y
+
+
+face s 0 1
+s
+line "Abbie avait l'air d'apprécier notre compagnie."
+line "Ca lui posait pas de problème de nous parler pendant des plombes."
+checkflag _0.abbie.done 1
+goto marker branch2y
+goto marker branch2n
+marker branch2n
+face s 2 1
+s
+line "Honnêtement,|p| on devrait peut-être retourner lui parler..."
+face s 0 2
+s
+line "Ou on pourrait aller voir d'autres gens."
+marker branch2y
+goto marker branch1e
+
+marker branch7n
+checkflag _0.roxy.met 1
+goto marker branch3y
+goto marker branch3n
+marker branch3y
+
+face s 0 1
+s
+line "Roxy était sur son téléphone et elle avait l'air sympa."
+face s 0 0
+s
+line "Enfin,|p| à peu près."
+goto marker branch1e
+
+marker branch3n
+checkflag _0.dom.met 1
+goto marker branch4y
+goto marker branch1e
+marker branch4y
+
+face s 0 1
+s
+line "Dom était sur son téléphone et ça l'a pas empêché de venir nous voir."
+
+checkflag _0.dom.read.ABAA 1
+goto marker branch5y
+goto marker branch1e
+marker branch5y
+
+face s 2 1
+s
+line "Et maintenant, on a quelqu'un avec qui faire un petit concert."
+
+
+goto marker branch1e
+marker branch1e
+
+face s 0 1
+s
+line "Il y a totalement des gens ici à qui on pourrait parler."
+face s 1 0
+s
+line "J'me suis juste trompé pour une personne,|p| c'est tout."
+face s 0 1
+s
+line "On oublie ça, et on va parler à quelqu'un d'autre."
+face p 0 1
+p
+line "Ah ouais?|p| Tu veux vraiment continuer à me forcer à parler aux gens? "
+face p 0 0
+p
+line "Tu veux me convaincre comment?|p| Tu veux continuer de m'acheter avec des paris faciles?"
+face s 1 0
+s
+line "Hmm,|p| c'est vrai que je voudrais bien récupérer mes vingt dollars..."
+face s 0 1
+s
+line "Mais je crois en l'Illusion du Joueur."
+face s 0 2
+s
+line "On fait quitte ou double sur la prochaine personne?"
+p
+line "Mec,|p| si on continue à parler à des gens comme Alex,|p| t'as intérêt à gagner ce tournoi."
+
+setflag _0.smalls.alex 2
+setflag _0.smalls.iris.branch B
+function lobby_tick_time 0.5
+goto script 0/lobby/smalls/return
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

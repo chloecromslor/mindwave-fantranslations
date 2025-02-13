@@ -1,0 +1,68 @@
+
+face s 1 0
+s
+line "Tu veux vraiment jouer devant la Mindscape Tower?"
+face p 0 1
+p
+line "Carrément."
+face p 0 0
+p
+line "Pas ce soir,|p| évidemment,|p| mais j'vais essayer de retrouver Dom plus tard pour qu'on en parle."
+face s 0 1
+s
+line "Je vais pas te mentir,|p| j'adore l'idée."
+face s 2 0
+s
+line "Le problème,|p| c'est que j'ai pas trop envie d'attirer l'attention de Mindscape, tout de suite..."
+face s 0 0
+s
+line "...Honnêtement,|p| y'a pas moyen qu'ils soient pas au courant que je suis là."
+line "...Mais pour je ne sais quelle raison,|p| ils font rien."
+face p 0 0
+p
+line "C'est peut-être quand les supermarchés te laissent voler un petit peu."
+face s 0 0
+s
+line "Hein?"
+face p 1 0
+p
+line "Ouais,|p| c'est pas qu'ils te laissent voler un petit peu parce que c'est pas une grosse perte?"
+line "Je crois que tu m'avais parlé de ça une fois."
+face s 1 0
+s
+line "Oh,|p| ça."
+line "C'est pas parce qu'ils s'en fichent,|p| c'est pour te faire penser que y'a pas de conséquences."
+face s 0 0
+s
+line "Ils veulent avoir le temps de construire un dossier pour pouvoir t'accuser d'un gros délit."
+face p 0 2
+p
+line "D'accord, on dirait que j'avais mal interprété le truc."
+s
+line "C'est pas grave."
+face s 2 0
+s
+line "Ce que je veux dire,|p| c'est que si je continue à faire des trucs que Mindscape aime pas,|p| ils vont essayer de m'arrêter."
+face p 1 0
+p
+line "Je comprends,|p| tant pis,|p| on va devoir faire le concert sans toi. "
+face s 0 0
+s
+line "..."
+face s 1 0
+s
+line "Si ils savent pour l'intrusion,|p| ils doivent aussi savoir qu'on se connaît."
+line "Dooonc...|p| Ils vont sûrement aussi garder un oeil sur toi."
+p
+line "Ah,|p| mince."
+face p 0 0
+p
+line "Si on va se faire prendre de toute façon,|p| autant que tu viennes avec nous."
+face s 0 1
+s
+line "Tu sais quoi,|p| d'accord.|p| C'est un bon argument."
+setflag _0.smalls.dom 2
+setflag _0.smalls.dom.branch AAA
+function lobby_tick_time 0.5
+goto script 0/lobby/smalls/return
+

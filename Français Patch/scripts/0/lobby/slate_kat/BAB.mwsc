@@ -1,0 +1,83 @@
+face s 1 0
+s
+line "Du coup,|p| je devrais peut-être demander..."
+face s 0 0
+s
+line " ...vous êtes frère et soeur?"
+face k 0 1
+face l 1 0
+k
+line "..."
+face k 0 0
+face l 0 0
+k
+line "...et VOUS, vous êtes frère et soeur?"
+face p 4 0
+face s 0 3
+s
+line "..."
+face p 0 1
+face s 2 0
+s
+line "Ouais,|p| tu marques un point."
+face s 1 0
+s
+line "Mais quand même,|p| on dirait un peu en vous voyant."
+face s 0 0
+s
+line "Vous voyez ce que je veux dire,|p| non?"
+face l 0 0
+l
+line "Mais genre,|p| je ressemble pas du tout à Kat."
+k
+line "Ouais,|p| Ethan est beaucoup plus grand que moi, déjà."
+l
+line "Ouaip,|p| et mes deux grands frères font à peu près la même taille.|p| Et mon p'tit frère va bientôt me dépasser."
+face k 0 2
+k
+line "Pfft,|p| ouais.|p| Tu viens d'une famille de mutants."
+face p 0 0
+p
+line "Comment vous vous connaissez, alors?"
+l
+line "Kat était la nouvelle quand on était en, euhhhhh..."
+face k 0 0
+k
+line "En CE2.|p| Il y a 7 ans."
+face l 1 0
+l
+line "Ouais,|p| en CE2.|p| Elle est arrivée en plein milieu de l'année scolaire."
+face l 0 0
+l
+line "On s'est retrouvés ensemble pour un projet de groupe.|p| Personne d'autre voulait faire équipe avec nous."
+face s 0 0
+s
+line "Bah mince,|p| pourquoi?|p| Vous avez l'air sympa."
+l
+line "Les autres aimaient pas m'entendre tout le temps discuter des émissions que je regardais."
+face l 1 0
+l
+line "Ils avaient pas l'air d'aimer Kat non plus.|p| J'comprends pas pourquoi,|p| elle est super cool."
+line "C'est toujours cool de parler avec elle."
+face l 0 0
+l
+line "Donc on a continué a rester ensemble."
+face k 0 2
+k
+line "On a eu 18 à ce projet, d'ailleurs."
+face s 0 1
+s
+line "Bien joué."
+l
+line "C'est moi qui a fait tout le travail."
+face k 0 0
+k
+line "Je t'écoutais me baratiner sur ton obsession de la semaine."
+line "Donc l'effort était équitable, je trouve."
+
+setflag _0.slate_kat.read.BAB 1
+setflag _0.slate_kat.branch BAB
+function lobby_tick_time
+goto script 0/lobby/slate_kat/questions
+
+

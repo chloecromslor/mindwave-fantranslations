@@ -1,0 +1,105 @@
+face s 0 1
+face p 0 0
+s
+line "Et donc,|p| c'est qui le p'tit gars?"
+face a 6 2
+a
+line "Oh,|p| Tommy?|p| C'est moi qui l'ai fait!"
+s
+line "Pas mal.|p| Il est mignon."
+face a 6 0
+a
+line "Merci!|p| J'ai fait plein d'autres peluches encore plus mignonnes."
+face s 0 0
+face a 6 2
+a
+line "Je les aime toutes très fort,|p| mais c'est Tommy ma préférée!"
+face a 6 1
+a
+line "C'est la première que j'ai faite,|p| donc c'est lui que j'aime le plus au monde."
+face p 0 1
+p
+line "Toujours l'aîné."
+face a 6 3
+a
+line "Héhé,|p| c'est pas faux."
+face a 0 0
+a
+line "Je l'ai amené pour qu'on voie la tour tous les deux."
+face p 1 1
+p
+line "Mais le crochet,|p| j'trouve pas ça génial comme passe-temps."
+a
+line "Ah? Pourquoi?"
+face p 0 0
+p
+line "La dernière fois que j'ai essayé,|p| j'ai pas arrêté de me piquer les doigts."
+face s 0 1
+s
+line "Attends,|p| TOI,|p| t'as fait du crochet?"
+face p 1 0
+p
+line "Ouais,|p| j'voulais faire un truc pour mon père.|p| Ca a pas trop marché."
+face a 1 0
+a
+line "Je sais que ça peut faire peur d'essayer!|p| Mais ça vaut tellement le coup de continuer!"
+face a 1 2
+a
+line "Même si ça prend plein de temps...|p| et que c'est super cher..."
+face a 2 2
+a
+line "...et en plus,|p| moi aussi je me pique les doigts tout le temps..."
+face p 4 0
+p
+line "Ouais, ca vend pas trop du rêve,|p| désolée."
+face p 0 1
+p
+line "Mais t'as l'air de pas trop mal te débrouiller."
+face a 3 1
+a
+line "Merci!!"
+face a 4 1
+a
+line "Ca me touche vraiment beaucoup, tu sais!"
+face a 0 0
+a
+line "Et Panda,|p| si jamais tu veux retenter d'apprendre le crochet,|p| je voudrais bien t'aider!"
+line "C'est mieux d'apprendre avec un ami."
+face p 0 1
+p
+line "Ouais,|p| je t'appellerai... "
+face p 1 1
+p
+line "Mais faudra amener assez de pansements pour nous deux."
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+setflag _0.abbie.read.ABA 1
+setflag _0.abbie.branch ABA
+function lobby_tick_time
+goto script 0/lobby/abbie/questions
+

@@ -1,0 +1,12 @@
+face s 0 1
+s
+line "Nous revoilà."
+face r 0 0
+r
+line "..."
+face r 1 0
+r
+line "Oh,|p| salut."
+
+goto script 0/lobby/roxy/questions
+

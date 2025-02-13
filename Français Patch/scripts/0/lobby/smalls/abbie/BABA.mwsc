@@ -1,0 +1,43 @@
+
+face p 0 0
+p
+line "Je comprends pas pourquoi Abbie m'a fait un câlin comme ça."
+face p 0 2
+p
+line "C'est vraiment sorti de nulle part."
+face s 1 0
+s
+line "Je crois qu'elle a juste envie d'une amie."
+p
+line "Ouais, mais genre,|p| on vient de se rencontrer."
+face p 1 0
+p
+line "Ca me va de traîner avec elle et tout..."
+face p 1 2
+p
+line "...mais j'essaie pas de devenir sa nouvelle meilleure pote ou rien."
+line "Je suis pas dispo."
+face s 0 2
+s
+line "Oh, Panda...|p| C'est parce que t'as déjà un meilleur pote?"
+face p 0 2
+p
+line "Mec, lâche le surnom."
+face s 0 0
+s
+line "Je peux pas, Panda.|p| C'est vraiment un surnom de génie."
+face p 0 0
+p
+line "..."
+face p 0 1
+p
+line "J'ai rien dit,|p| j'suis re-dispo."
+
+
+
+
+setflag _0.smalls.abbie 2
+setflag _0.smalls.abbie.branch BABA
+function lobby_tick_time 0.5
+goto script 0/lobby/smalls/return
+

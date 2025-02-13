@@ -1,0 +1,110 @@
+face s 0 0
+s
+line "Tu l'as eu où, ton ticket?"
+a
+line "Oh!|p| je l'ai eu dans un magasin de bricolage pas loin de chez moi."
+face a 1 0
+a
+line "J'avais presque plus d'argent de poche,|p| donc j'ai juste pris quelques aiguilles à coudre...|p|"
+
+
+
+allow_player_input 0
+face a 0 0
+a
+line "|speed 2|...et un sac énorme de rembourrage...|skip| "
+face a 1 0
+a
+line "|speed 2|Et je voulais reprendre de la laine rose que j'avais déja prise il y a quelques mois.|skip| "
+
+
+
+a
+line "|speed 2.5|Parce que je faisais une famille de lapins en peluche!|skip| "
+face a 1 2
+a
+line "|speed 2.5|Ils devaient être en ligne sur le rebord de ma fenêtre, mais maintenant j'ai une fenêtre encore plus grande, donc je DEVAIS en refaire!|skip| "
+face a 0 0
+a
+line "|speed 2.5|J'ai déménagé ici il y a pas longtemps.|skip| "
+
+
+face a 2 2
+a
+line "|speed 3|Mais du coup,|p| ils avaient pas le même rose que j'avais, donc j'ai acheté toutes les laines qui avaient à peu près la même couleur.|skip| "
+face a 1 0
+a
+line "|speed 3|Mais je me suis dit que çe ferait bizarre de recopier les lapins d'avant, du coup j'ai pris de la laine bleue en plus.|skip| "
+face a 4 0
+face p 4 0
+a
+line "|speed 5|Mais en fait, ce bleu va hyper bien avec le rose des autres lapins!|skip| "
+
+allow_player_input 1
+
+
+face a 0 0
+a
+line "Ah oui,|p| au fait,|p| je fais des peluches!"
+face a 6 2
+a
+line "Lui c'est Tommy!"
+face s 0 1
+s
+line "Coucou Tommy."
+face a 6 0
+a
+line "..."
+face a 0 0
+a
+line "Il te dit coucou!"
+face p 0 0
+p
+line "Donc t'es de Blackout Nord,|p| c'est ça?"
+a
+line "Oui!|p| Je suis arrivée le mois dernier.|p| Comment tu sais?"
+face p 0 1
+p
+line "J'ai deviné."
+face s 1 0
+s
+line "Et du coup, c'est dans quoi que t'as trouvé ton ticket?"
+face a 4 0
+a
+line "Ah oui,|p| c'est vrai!|p| Il était avec une boule de laine à paillettes!"
+face s 0 0
+p
+line "Ca doit être galère à nettoyer, ça."
+face a 1 0
+a
+line "Ouaip!|p| Il y a encore plein de paillettes sur la banquette arrière."
+face p 0 0
+a
+line "Mes parents et moi, on était trop concentrés sur le ticket pour remarquer."
+s
+line "Mais j'imagine qu'ils sont pas restés dessus trop longtemps, hein?"
+face a 2 2
+a
+line "Ouaip.|p| Ils croient pas trop en moi, j'imagine..."
+face a 0 0
+a
+line "Mais j'ai réussi a venir ici toute seule,|p| même si j'ai eu un peu de mal."
+line "Et je suis prête à gagner coûte que coûte!"
+face a 3 1
+a
+line "Et après,|p| je vais dire à mes parents que je retourne à ma ville d'avant toute seule!"
+face a 5 0
+a
+line "Je leur donnerai aucun centime de la récompense!"
+face p 0 1
+p
+line "Bien fait pour eux."
+
+
+setflag _0.abbie.read.BA 1
+setflag _0.abbie.branch BA
+function lobby_tick_time
+goto script 0/lobby/abbie/questions
+
+
+

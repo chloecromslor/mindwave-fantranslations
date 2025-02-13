@@ -1,0 +1,67 @@
+face s 0 0
+face p 0 0
+p
+line "Et donc...|p| t'as quoi d'autre comme idée de truc à acheter avec le prix?"
+face p 0 1
+p
+line "...A part offrir des cadeaux aux gens qui t'écoutent parler de dessins animés."
+face s 2 0
+s
+line "Tu dis ça comme si c'était une mauvaise idée."
+face s 0 1
+s
+line "Dis Ethan,|p| je compte comme quelqu'un qui t'écoute?"
+face l 0 0
+l
+line "J'y ai pas vraiment trop réfléchi."
+line "Ptêt que j'vais acheter l'édition ultra rare de FOS que je voulais depuis un moment."
+k
+line "Tu veux dire la même chose que ce que tu regardes tout le temps?"
+face p 4 0
+p
+line "Hé,|p| j'me demande si le DVD de mon père vaudrait pas plus qu'il en a l'air."
+l
+line "Il y a un château qui fait peur sur la couverture?"
+face p 0 0
+p
+line "Nan.|p| Je crois que c'était une boule de cristal."
+l
+line "Alors il vaut pas un clou."
+line "Ca, c'est la version originale.|p| Tu peux la trouver dans n'importe quel vide-grenier et tous les magasins d'éléctronique vintage."
+face p 1 0
+p
+line "Mince,|p| j'aurai essayé."
+l
+line "FOS a eu aucune audience ici."
+line "Donc pour sauver l'truc,|p| ils ont complètement refait l'animé pour le rendre...|p 30| |skip| "
+face l 1 0
+k
+line "Pour le rendre bien?"
+l
+line "Bah, ptêt.|p| J'l'ai jamais vu!"
+face l 0 0
+l
+line "J'entends dire qu'ils ont amélioré plein de trucs,|p| mais tous ceux qui en ont une copie la gardent sous blister."
+line "Donc c'est impossible de trouver des archives en ligne."
+face p 0 0
+p
+line "C'est nul."
+face p 0 2
+face k 0 0
+p
+line "Pourquoi les gens iraient gaspiller leur argent en achetant un DVD qu'ils vont garder en déco sur leur meubles?"
+l
+line "C'est exactement c'que j'me dis."
+line "Si tu peux pas le regarder,|p| est-ce qu'il est vraiment à toi?"
+face l 1 0
+l
+line "Pas vrai, Kat?"
+face k 0 1
+k
+line "Sans commentaire."
+
+setflag _0.slate_kat.read.AA 1
+setflag _0.slate_kat.branch AA
+function lobby_tick_time
+goto script 0/lobby/slate_kat/questions
+

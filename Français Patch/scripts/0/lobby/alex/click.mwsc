@@ -1,0 +1,234 @@
+char pandora p left +45
+set p layer 0
+char smalls s left -70
+char alex a right
+
+checkflag _0.alex.met 0
+goto marker firstMeet
+goto marker alreadyMet
+
+marker alreadyMet
+p
+line "Non. Revivons pas ça."
+line " Parlons à quelqu'un d'autre."
+s
+line "...Si tu veux."
+goto marker end
+
+
+marker firstMeet
+
+checkflag _0.chars_met 0
+goto marker firstConvo
+goto marker notFirstConvo
+
+
+marker firstConvo
+set a name mystery
+face s 0 0
+face p 0 0
+s
+line "Pour commencer... Parlons à la personne là-bas."
+p
+line "T'es sûr?|p| Je préfererais parler à quelqu'un de plus...|p| approchable."
+face p 0 2
+p
+line "En plus, avec son casque..."
+line "On dirait pas que c'est le moment d'aller lui parler."
+face s 0 2
+s
+line "Pas le moment?|p| Comme toi, du coup?"
+p
+line "Je porte pas de casque,|p| et je suis déjà en train de te parler."
+face s 0 1
+s
+line "T'as juste à t'affirmer."
+face p 1 0
+p
+line "Tu veux que je m'affirme en allant parler à des gens au hasard sans leur accord ?"
+face s 1 0
+s
+line "C'est comme ca qu'on se fait des potes, Pandora."
+p
+line "Ca dépend du contexte."
+face p 1 2
+p
+line "Mais d'acc,|p| on va essayer."
+face s 2 1
+s
+line "Tu vas voir,|p| j'ai raison, comme toujours."
+face p 0 0
+p
+line "Euh,|p| *hum*|p|\nsalut."
+a
+line "..."
+face p 1 2
+p
+line "!!!"
+face s 0 3
+s
+line "T'as à peine essayé."
+a
+line "Euh,|p| je vous entendais déjà parler depuis le début, hein."
+line "Mon casque laisse passer le son.|p| C'est un casque à dos ouvert."
+line "La chose à faire aurait été de ne pas venir déranger quelqu'un sans raison."
+line "Ce n'est pas vraiment comme ça qu'on forme une discussion."
+line "..."
+face a 0 1
+a
+line "Je suis Alex, sinon."
+face s 0 3
+face p 4 0
+p
+line "...Déso."
+set a name alex
+face a 0 0
+a
+line "Pas de problème.|p| Mais je préfererais quand même rester au calme."
+face s 0 0
+s
+line "Ok, on a retenu la leçon."
+a
+line "Je n'essayais pas vraiment de vous faire la leçon, juste..."
+line "Non, rien,|p| je vais vous laisser."
+
+set a x -200
+wait 1 second
+face s 0 3
+p
+line "..."
+s
+line "..."
+face p 1 2
+p
+line "\"J'ai raison, comme toujours.\""
+face s 0 0
+s
+line "..."
+face s 2 0
+s
+line "Ca reste vrai."
+setflag _0.alex.firstSpoken 1
+goto marker endFlags
+
+
+
+
+
+
+marker notFirstConvo
+set a name mystery
+
+face s 0 0
+s
+line "L'autre là-bas a l'air cool."
+face p 1 0
+p
+line "Ouais,|p| mais on dirait pas que c'est le moment.|p|"
+line "Regarde son casque."
+face s 0 1
+s
+line "Je parie que taper la discute serait cool quand meme."
+face p 4 0
+p
+line "Tu paries ?|p| Combien ?"
+face s 1 0
+s
+line "Euhhh...|p| t'as combien sur toi?"
+face p 0 0
+p
+line "Vingt balles."
+face s 0 1
+s
+line "Prépare toi à les sortir,|p| je suis sûr de mon coup."
+face p 1 0
+p
+line "C'est un peu bas pour toi."
+face p 0 0
+p
+line "Mais d'acc,|p| on peut essay-|p 30| |skip| "
+a
+line "Excusez-moi?"
+line "Je pouvais vous entendre depuis le début."
+line "Mon casque laisse passer le son.|p| C'est un casque à dos ouvert."
+line "La chose à faire aurait été de me laisser me reposer avant le debut du tournoi."
+line "...Ah, aussi.|p| Essayez de ne pas parler de quelqu'un trop fort quand la personne est juste devant vous."
+line "Je ne veux pas que ça parte en dispute,|p| mais ça pourrait être mal vu."
+line "..."
+face a 0 1
+a
+line "Sinon, je m'appelle Alex."
+p
+line "...Déso."
+face a 0 0
+set a name alex
+a
+line "Pas de problème.|p| Mais je préfererais quand même rester au calme."
+face s 0 0
+s
+line "Ouaip, ma faute.|p| J'ai mal lu la situation."
+face p 0 2
+p
+line "Qui l'eût cru."
+a
+line "Vous devriez lui donner ses vingt dollars."
+face s 0 0
+s
+line "Ah, ouais..."
+a
+line "Bonne journée.|p| Je vais vous laisser."
+
+set a x -200
+wait 1 second
+face s 2 0
+s
+line "J'ai rien sur moi, hein."
+face s 0 1
+face p 0 0
+p
+line "Crevard."
+face p 4 0
+p
+line "Tu peux me faire un transfert?"
+s
+line "Bien sûr.|p| Plus tard."
+
+
+
+
+setflag _0.alex.firstSpoken 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+goto marker endFlags
+
+
+marker endFlags
+function lobby_tick_time 4
+incflag _0.chars_met 1
+setflag _0.alex.met 1
+setflag _0.smalls.alex 1
+marker end

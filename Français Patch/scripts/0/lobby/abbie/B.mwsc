@@ -1,0 +1,104 @@
+
+face p 0 2
+p
+line "Question,|p| pourquoi t'es en pyjama?"
+face p 1 0
+p
+line "C'est pas méchant, hein."
+line "J'me demande juste si j'aurais pu prendre un truc plus confortable."
+face a 0 0
+a
+line "Mais non,|p| j'adore ce que tu portes!"
+face a 1 0
+a
+line "Je porte ça parce que j'ai pas pu finir mon costume à temps."
+face s 0 0
+s
+line "Tu voulais venir avec un costume?"
+a
+line "Ouaip!|p| C'était censé être un déguisement de Magical Girl."
+face a 1 2
+a
+line "Mon papa devait m'aider à le faire,|p| mais il était occupé avec son travail..."
+face p 0 2
+p
+line "Et donc...|p| la seule autre option, c'était ton pyjama?"
+face a 0 0
+a
+line "..."
+face a 1 0
+a
+line "Oh!|p| Héhé,|p| mais non!"
+line "Le truc, c'est que normalement, mon papa devait m'emmener ce soir,|p| mais il pouvait pas."
+face a 2 2
+a
+line "...et ma maman m'a dit que j'étais nulle à MINDWAVE, et que j'allais pas gagner."
+line "Donc elle n'a pas voulu m'emmener non plus."
+face s 2 0
+s
+line "C'est nul, comme point de vue.|p|"
+face s 0 1
+s
+line "Que je gagne ou non, vivre ça, c'est une expérience d'enfer."
+face a 0 0
+a
+line "C'est ce que je leur ai dit!"
+face s 0 0
+a
+line "Sans le gros mot."
+face p 1 2
+p
+line "|style color gray|(Quel gros mot???)"
+face a 2 2
+a
+line "C'est mon ticket!|p| C'est moi qui l'ai trouvé!|p| Donc je mérite de venir!"
+face a 0 0
+a
+line "Du coup...|p| J'ai fait semblant d'aller au lit plus tôt,|p| puis je suis sortie en douce!"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+setflag _0.abbie.read.B 1
+setflag _0.abbie.branch B
+function lobby_tick_time
+goto script 0/lobby/abbie/questions
+
+
+

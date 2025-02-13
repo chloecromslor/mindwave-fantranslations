@@ -1,0 +1,70 @@
+face p 0 2
+p
+line "...Désolée de t'avoir bloquée dans la file tout à l'heure."
+face i 0 0
+i
+line "..."
+face i 0 1
+i
+line "OK."
+line "Honnêtement,|p| je crois que je m'en fichais un peu."
+line "Je m'en fiche encore plus maintenant."
+line "Mais par contre,|p| ça m'embête que tu t'excuses."
+line "T'as pris un truc dont je me fichais et t'en fais toute une histoire."
+line "Et maintenant, je me sens socialement obligée de te consoler à propos d'un truc dont je me souviens même pas."
+face i 0 0
+i
+line "..."
+p
+line "..."
+i
+line "Donc...|p| excuses acceptées,|p| si c'est ce que tu voulais entendre."
+p
+line "Ok, t'es beaucoup plus aggressive sur le truc que je pensais."
+i
+line "Ouais, parce qu'on se connaît pas."
+p
+line "J'essayais juste de m'excuser."
+face i 0 0
+i
+line "J'aime pas me retrouver dans des situations gênantes comme ça."
+face p 0 3
+p
+line "Si c'est gênant, c'est ta faute."
+face p 1 2
+p
+line "C'est toi qui as fait escalader la situation."
+face i 0 2
+i
+line "...|p| Ouais."
+face i 1 0
+i
+line "OK.|p| Désolée."
+face i 2 0
+i
+line "J'essayais pas d'être méchante."
+face p 0 0
+p
+line "J'te comprends."
+face p 0 1
+p
+line "Tu parles beaucoup plus que moi, par contre."
+face i 0 3
+i
+line "C'est vrai."
+face p 0 0
+p
+line "..."
+face i 0 1
+setflag _0.iris.read.A 1
+setflag _0.iris.branch A
+function lobby_tick_time
+p
+line "|style color gray|(Si j'me casse maintenant, je vais me sentir conne.)"
+
+goto script 0/lobby/iris/questions
+
+
+
+
+

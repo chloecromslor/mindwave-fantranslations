@@ -1,0 +1,88 @@
+
+face p 0 0
+p
+line "Euh...|p| j'ai fait poireauter cette fille dans la file tout à l'heure."
+face p 1 2
+p
+line "Ca l'a un peu énervé."
+face s 1 0
+
+s
+line "Ca m'a pas vraiment l'air trop important."
+face s 0 0
+s
+line "Mais si ça t'embête,|p| pourquoi pas t'excuser?"
+face s 0 1
+s
+line "Juste une idée."
+face p 1 2
+p
+line "Une idée de merde."
+line "Je suis sûre que je vais faire qu'empirer le truc."
+
+
+
+
+checkflag _0.alex.met 1
+goto marker branch1Y
+goto marker branch1N
+
+marker branch1N
+
+goto marker branch1E
+
+marker branch1Y
+p
+line "Sortout après ce qu'il s'est passé avec Alex.\n"
+goto marker branch1E
+
+marker branch1E
+face s 0 0
+s
+line "Comme tu voudras."
+line "Mais sois pas surprise si tu dois la combattre pendant le tournoi et que tu perds tes moyens."
+face p 4 0
+p
+line "..."
+face p 0 0
+p
+line "Je devrais peut-être m'excuser."
+face s 2 1
+s
+line "Idée de génie!|p| Je t'attends ici."
+set p x 0
+set s x -250
+wait 1 second
+i
+line "..."
+face p 0 0
+p
+line "*ahem*|p|\nSalut."
+face i 2 0
+i
+line "..."
+face p 0 2
+p
+line "..."
+line "*AHEM*"
+face i 0 1
+i
+line "T'as une toux?"
+p
+line "Nan, je me raclais juste la gorge."
+i
+line "Oh,|p| d'accord."
+line "Salut."
+face p 1 2
+p
+line "Salut?"
+
+setflag _0.pandora.alone 1
+setflag _0.iris.met 1
+incflag _0.chars_met 1
+
+goto script 0/lobby/iris/questions
+
+
+
+

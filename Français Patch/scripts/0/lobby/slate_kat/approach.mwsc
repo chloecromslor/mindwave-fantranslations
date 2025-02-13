@@ -1,0 +1,84 @@
+checkflag _0.pandora.kat 1
+goto marker branch1y
+goto marker branch1n
+
+marker branch1y
+
+face p 0 0
+p
+line "Désolée.|p| Me revoilà."
+face l 0 0
+l
+line "Oh, salut vous deux.|p| On pensait que vous étiez partis pour de bon."
+face s 2 1
+s
+line "Nan,|p| on a juste fait une petite pause."
+l
+line "C'est cool, mec."
+face k 0 2
+k
+line "Contente que vous soyez revenus."
+face l 1 0
+l
+line "Ouais, trop."
+face l 0 0
+l
+line "Mais j'aurais aimé finir de parler à Smalls de FOS."
+face s 0 1
+checkflag nickname_panda 1
+goto marker branch26y
+goto marker branch26n
+
+marker branch26y
+
+s
+line "Nan,|p| Panda a bien fait d'intervenir quand elle l'a fait."
+
+goto marker branch26e
+
+marker branch26n
+
+s
+line "Nan,|p| Pandora a bien fait d'intervenir quand elle l'a fait."
+
+goto marker branch26e
+
+marker branch26e
+
+face k 0 0
+s
+line "Tu m'as déjà vendu du rêve."
+l
+line "Trop cooool."
+k
+line "Fais attention, Pandora."
+face k 0 2
+face l 1 0
+k
+line "Tous ceux qui regardent cette émission deviennent débiles."
+face p 0 1
+p
+line "T'inquiète,|p| je vais garder mes DVD hors de la portée de Smalls."
+face s 0 2
+s
+line "Nan,|p| toi aussi, tu vas devenir débile."
+line "On regardera toute la série ensemble."
+setflag _0.slate_kat.odd 1
+setflag _0.smalls.slate_kat 1
+setflag _0.slate_kat.done 1
+function lobby_tick_time 8
+
+
+goto marker branch1e
+
+marker branch1n
+
+face s 0 1
+s
+line "Hé,|p| salut vous deux,|p| on est de retour."
+face l 0 0
+l
+line "Quoi d'neuf?"
+goto script 0/lobby/slate_kat/questions
+marker branch1e
+

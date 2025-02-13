@@ -1,0 +1,89 @@
+face p 0 0
+face s 0 0
+checkflag nickname_panda 1
+goto marker branch26y
+goto marker branch26n
+
+marker branch26y
+
+s
+line "Si on oublie les effets secondaires,|p| t'as des conseils pour Panda? "
+
+goto marker branch26e
+
+marker branch26n
+
+s
+line "Si on oublie les effets secondaires,|p| t'as des conseils pour Pandora? "
+
+goto marker branch26e
+
+marker branch26e
+
+face p 1 2
+p
+line "Tu vas vraiment essayer d'oublier que MINDWAVE peut te frire le cerveau?"
+face s 2 1
+s
+line "C'est pas si grave.|p| Je vais bien, pour l'instant. "
+face p 0 4
+p
+line "J'te comprends pas."
+face s 0 1
+s
+line "Tu comprends pas MINDWAVE non plus."
+line "Autant accepter l'aide qu'on t'offre."
+face r 2 0
+r
+line "C'est principalement de l'intuition."
+line "Tout le monde a une image mentale de comment leur cerveau interagit avec MINDWAVE."
+face r 3 0
+r
+line "Tu pourrais commencer par ça."
+face p 0 0
+p
+line "D'accord,|p| mais je la forme comment, cette image mentale?"
+face r 2 0
+r
+line "C'est pas un truc qu'on explique."
+line "T'as juste à jouer au jeu."
+face p 4 0
+face s 0 0
+s
+line "Je comprends."
+line "Imagine que tes pensées, c'est un liquide."
+line "Et il est plus ou moins visqueux selon ton état d'esprit."
+face r 3 0
+r
+line "Je l'ai pas."
+face p 4 0
+p
+line "Genre,|p| mon jus de cerveau?"
+face s 2 0
+s
+line "Oubliez.|p|\nJe veux plus en parler."
+r
+line "Des exercices pour ton cortex cingulaire antérieur, ça peut aider peu importe comment tu joues."
+face s 0 0
+face p 0 0
+p
+line "Tu m'as paumée, là."
+r
+line "C'est une région essentielle à travailler pour la canalisation des souvenirs."
+p
+line "..."
+r
+line "Oh, mince,|p| je suis trop habituée à parler à des gens qui savent jouer à MINDWAVE."
+face p 1 0
+p
+line "Ok,|p| t'es un peu dure."
+face r 0 0
+r
+line "C'est pas une insulte."
+line "Mais je peux pas trop te donner de conseils si t'as pas les connaissances de base."
+
+setflag _0.roxy.read.AB 1
+setflag _0.roxy.branch AB
+function lobby_tick_time
+goto script 0/lobby/roxy/questions
+

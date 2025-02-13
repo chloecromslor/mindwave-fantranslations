@@ -1,0 +1,73 @@
+face p 0 0
+face s 0 1
+s
+line "Ethan,|p| t'as dit que t'as fait ton costume toi-même?"
+l
+line "Ouaip.|p| C'est pas parfait,|p| mais j'aime bien comment ça rend."
+face p 0 1
+p
+line "C'est pas mal."
+face s 0 1
+s
+line "J'suis d'accord."
+l
+line "Merci beaucoup.|p| Kat l'a pas apprécié autant que vous."
+face k 0 1
+k
+line "Je l'apprécie pas parce que c'est la honte que tu portes ça."
+face s 0 0
+s
+line "Hé,|p| c'est un peu méchant."
+l
+line "Nan, elle marque un point.|p| C'était pas ma meilleure idée de le porter à l'église."
+face p 0 0
+p
+line "Vous allez à l'église ensemble?"
+face l 0 0
+l
+line "Nan,|p| mais Kat y va avec ses grand-parents.|p| J'y suis allé que cette fois-là."
+face l 1 0
+l
+line "J't'avais jamais vu porter un truc aussi formel."
+face k 0 0
+k
+line "J'ai pas tellement envie d'y aller,|p| mais ils m'emmennent à chaque fois."
+line "Ils ont insisté pour qu'Ethan vienne aussi ce dimanche-là."
+face s 2 1
+s
+line "Oh merde,|p| ils ont dû regretter l'idée."
+face k 0 0
+k
+line "Ouais...|p| Mamy a dû écrire une lettre d'excuse pour le chaos\nque ça a causé."
+face l 0 0
+face s 0 0
+l
+line "Mais c'était quand même marrant.|p| Il y a un gars qui m'a passé une brochure religieuse."
+face l 1 0
+l
+line "J'l'ai encadrée et mise dans ma chambre."
+face k 0 2
+k
+line "Oui,|p| parce qu'ils pensaient que ton costume était satanique."
+face p 0 2
+p
+line "Mec, Blackout, c'est la capitale de Mindscape."
+face p 0 0
+p
+line "Il y a des cornes partout ici."
+face p 0 1
+p
+line "Si il y a un truc sataniste ici, c'est Mindscape Co."
+face l 0 0
+l
+line "Mais ouaaaais, t'as raison.|p|\nC't'endroit, c'est trop le repaire de Satan."
+line "C'est trop cool."
+face p 0 4
+p
+line "..."
+setflag _0.slate_kat.read.ABA 1
+setflag _0.slate_kat.branch ABA
+function lobby_tick_time
+goto script 0/lobby/slate_kat/questions
+
+

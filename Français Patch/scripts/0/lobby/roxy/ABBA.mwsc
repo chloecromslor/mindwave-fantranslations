@@ -1,0 +1,40 @@
+s
+line "On devrait y aller."
+face p 0 0
+p
+line "Merci pour les conseils.|p| Même si j'ai pas appris grand chose."
+face r 2 0
+r
+line "Juste un dernier conseil,|p| te prends pas trop la tête."
+face r 3 0
+r
+line "Souviens-toi que même les pros peuvent être déstabilisés par des néophytes."
+face r 1 0
+r
+line "Stresser sur tes chances, ça va faire que les diminuer."
+line "Donc tu ferais mieux de garder confiance en ce que tu as."
+face p 1 0
+p
+line "Euh,|p| merci."
+face s 0 1
+s
+line "Bonne chance pour le tournoi,|p| Roxy."
+face r 0 1
+r
+line "..."
+
+setflag _0.smalls.roxy 1
+setflag _0.roxy.read.ABBA 1
+setflag _0.roxy.done 1
+
+function lobby_tick_time
+
+
+
+
+
+
+
+
+
+

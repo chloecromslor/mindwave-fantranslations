@@ -1,0 +1,14 @@
+face p 0 0
+p
+line "Smalls,|p| on devrait y aller."
+face s 0 1
+s
+line "Ouaip.|p| A plus, vous deux."
+face l 0 0
+l
+line "A plus dans l'bus, mec."
+face k 0 0
+k
+line "Au revoir."
+
+

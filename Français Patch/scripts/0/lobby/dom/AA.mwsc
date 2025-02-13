@@ -1,0 +1,160 @@
+
+face s 0 1
+face p 0 0
+s
+line "On est aussi dans la musique,|p| Dom."
+face d 0 0
+d
+line "Sans dec ?|p| Dément."
+line "Vous êtes dans un groupe ?"
+face p 1 0
+p
+line "C'est juste nous deux,|p| donc pas vraiment un groupe."
+
+face p 0 4
+p
+line "Plus un duo,|p| avec Smalls au synthé et moi à la guitare."
+line "On est pas trop connu ou quoi que ce soit."
+face s 0 0
+s
+line "Un duo, ça peut compter comme un groupe."
+face s 0 3
+s
+line "Mais si tu continues à nous donner un nouveau nom à chaque concert qu'on fait..."
+face s 0 1
+s
+line "Ca va pas trop aider à nous faire connaître."
+face p 0 1
+p
+line "Mais admets que c'est marrant."
+face p 1 1
+p
+line "...De toute façon, on est pas assez connus pour que les gens s'intéressent à notre nom."
+face d 0 0
+d
+line "Vous faites des concerts ?|p|\nBranché."
+face p 0 0
+face d 0 1
+d
+line "J'aimerais bien faire passer mes sons en live aussi."
+face s 0 0
+s
+line "Ca devrait pas être trop dur.|p| Les petits évènements acceptent à peu près tout le monde."
+face s 0 2
+face p 0 4
+s
+line "Même nous,|p| malgré le sabotage que Pandora nous fait."
+face p 0 2
+p
+line "Mec,|p| je sais pas pourquoi tu fais une fixette sur ça."
+face p 0 4
+p
+line "On joue que dans des dépotoirs."
+face p 1 1 
+p
+line "Et il y a que 20 personnes à chaque fois,|p| grand max.|p| Tout le monde s'en fout."
+face s 1 0
+s
+line "C'est ça le truc.|p| Si on avait le même nom à chaque fois,|p| peut-être qu'ils s'en foutraient pas."
+face s 2 1
+face p 1 0
+s
+line "Et puis c'est pas si marrant que ça."
+face p 0 3
+face s 0 1 
+p
+line "Ok,|p| ton humour est clairement merdique."
+face p 0 4
+p
+line "Mais c'est pas faux."
+d
+line "..."
+face p 0 1
+p
+line "Oh,|p| Dom. Ca te dirait de jouer avec nous la prochaine fois ?"
+line "Ce serait bien d'avoir une troisième personne pour transporter le matos."
+face d 0 0
+d
+line "Mec,|p| j'kifferais."
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+setflag _0.dom.read.AA 1
+setflag _0.dom.branch AA
+function lobby_tick_time
+goto script 0/lobby/dom/questions
+
+
+
+
+
+

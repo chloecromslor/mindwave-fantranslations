@@ -1,0 +1,55 @@
+face p 1 0
+p
+line "J'vais voir où Smalls est parti."
+face p 0 0
+p
+line "C'était cool de vous rencontrer, toi et Ethan."
+face k 0 0
+k
+line "D'accord,|p| à plus tard."
+
+face k 0 2
+k
+line "Bonne chance pour arrêter Ethan en pleine discussion."
+set k x -200
+p
+line "..."
+set s dir -1
+set s side 1
+set s x 0
+face s 0 2
+checkflag nickname_panda 1
+goto marker branch26y
+goto marker branch26n
+
+marker branch26y
+
+s
+line "Salut Panda."
+
+goto marker branch26e
+
+marker branch26n
+
+s
+line "Salut Pandora."
+
+goto marker branch26e
+
+marker branch26e
+
+face p 0 2
+p
+line "Mec,|p| t'étais où?"
+s
+line "Je voulais revenir plus tôt..."
+line "...mais t'avais l'air plutôt investie dans la conversation."
+face s 2 1
+s
+line "Donc j'attendais que tu finisses."
+
+setflag _0.smalls.slate_kat 1
+setflag _0.slate_kat.done 1
+setflag _0.slate_kat.read.BBBA 1
+function lobby_tick_time
+

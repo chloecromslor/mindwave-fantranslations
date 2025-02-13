@@ -1,0 +1,53 @@
+face p 0 0
+face s 0 0
+p
+line "Alors,|p| la question la plus importante que j'aie..."
+face p 0 2
+p
+line "Ils s'arrêtent quand, les maux de tête?"
+face r 1 0
+r
+line "T'as des maux de tête?|p| T'es sûre d'être assez hydratée?"
+face p 1 2
+p
+line "Je m'hydrate normalement..."
+face r 0 0
+r
+line "Je connais pas beaucoup de monde qui se retrouve avec un mal de tête en jouant à MINDWAVE."
+face r 0 1
+r
+line "J'ai déjà vu ça arriver,|p| mais qu'après des sessions plus longues."
+face p 0 2
+p
+line "Ca m'est arrivé les deux fois où j'ai essayé de jouer."
+line "C'est arrivé tout à l'heure."
+face p 0 4
+face s 0 2
+s
+line "Peut-être que tu te fais mal à la tête à trop y penser."
+face p 1 2
+p
+line "Ou peut-être que MINDWAVE est juste pas hyper sain."
+face r 1 0
+r
+line "Vous avez tous les deux un peu raison."
+line "Ton expérience avec MINDWAVE dépend de ta mentalité."
+face r 1 1
+r
+line "Si t'y joues en voulant pas y jouer, l'expérience sera pas géniale."
+face r 1 0
+r
+line "Mais dans l'autre sens,|p| ça peut aussi pas être bon pour le mental de trop s'adapter à MINDWAVE."
+face s 1 0
+s
+line "Du genre, il y a des effets secondaires si tu joues trop?"
+face p 1 2
+p
+line "Mouais, mon avis sur le jeu risque pas de changer."
+
+
+setflag _0.roxy.read.A 1
+setflag _0.roxy.branch A
+function lobby_tick_time
+goto script 0/lobby/roxy/questions
+

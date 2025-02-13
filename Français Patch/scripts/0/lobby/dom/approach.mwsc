@@ -1,0 +1,19 @@
+
+face p 0 1
+p
+line "Salut."
+face p 0 0
+p
+line "Il nous reste encore du temps pour discuter."
+face d 0 0
+d
+line "Cool !"
+
+
+
+
+
+
+goto script 0/lobby/dom/questions
+
+
