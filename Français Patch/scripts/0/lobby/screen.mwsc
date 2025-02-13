@@ -1,0 +1,66 @@
+char pandora p left
+char smalls s right
+s
+line "Un écran avec une pendule."
+p
+line "Un écran avec une pendule."
+line "..."
+face p 1 2
+p
+line "On a tous des téléphones,|p| à quoi ça sert?"
+face s 2 0
+checkflag nickname_panda 1
+goto marker branch26y
+goto marker branch26n
+
+marker branch26y
+
+s
+line "Panda,|p| c'est un peu réductif."
+
+goto marker branch26e
+
+marker branch26n
+
+s
+line "Pandora,|p| c'est un peu réductif."
+
+goto marker branch26e
+
+marker branch26e
+
+face s 1 0
+s
+line "C'est là pour le style,|p| tu vois?"
+line "Pour vraiment qu'on se rende compte de l'importance du truc."
+face s 0 2
+s
+line "ON Y EST.|p| Dans la Mindscape Tower!"
+line "On est à ça des dix millions!|p| On est dans une pièce énorme!"
+face p 0 0
+p
+line "...et tout a des cornes.|p|\nQu'est-ce qu'ils ont avec les cornes, Mindscape Co.?"
+face s 1 0
+s
+line "C'est pour se démarquer.|p| Les entreprises font toutes ça."
+face s 0 0
+s
+line "C'est aussi là pour le style.|p| On peut tourner en boucle pendant des heures sur ça."
+face p 1 0
+p
+line "Non merci."
+face s 0 2
+s
+line "T'admets donc ta défaite, hein."
+line "T'as intérêt à bien choisir tes mots."
+p
+line "...Mec.|p| T'es bizarre."
+line "Arrête de survendre la marque,|p| et..."
+face p 0 3
+p
+line "Et puis merde, oublie pour l'écran."
+setflag _0.screen.done 1
+function lobby_tick_time 0.5
+
+
+

@@ -1,0 +1,43 @@
+char pandora p left
+char smalls s right
+
+s
+line "T'as fini de visiter?"
+p
+option add name "Ouais, c'est bon." marker "yes"
+option add name "En fait, nan." marker "no"
+options show
+
+marker yes
+
+p
+line "Ouais,|p ,| c'est bon.|p .| Attendons que ça commence."
+
+s
+line "D'accord."
+function start_next_round
+skip outro
+goto marker end
+
+marker no
+
+p
+line "En fait, nan.|p .| Continuons à voir ce qu'il y a ici."
+
+face s 2 1
+s
+line "D'accord,|p ,| d'accord.|p .| Si tu insistes."
+goto marker end
+
+marker end
+
+
+
+
+
+
+
+
+
+
+

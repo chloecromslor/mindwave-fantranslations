@@ -1,0 +1,27 @@
+char pandora p left
+char smalls s right
+
+p
+line "Ces tubes sont..."
+face p 0 2
+p
+line "...vraiment flippants."
+face s 1 0
+s
+line "Je me demande ce qu'il y a dedans."
+face p 0 0
+p
+line "Sans doute juste de l'électricité et tout."
+line "Je me demande juste pourquoi ils sont si énormes.|p| On voit que ça."
+face s 0 0
+s
+line "Que ça ? C'est pas le premier truc que je remarque."
+line "Je penserais plutot au millier de gens juste devant nous."
+face p 0 1
+p
+line "La ferme.|p| Tu vois bien ce que je veux dire."
+face s 2 1
+s
+line "..."
+setflag _0.ceiling.done 1
+function lobby_tick_time 0.5

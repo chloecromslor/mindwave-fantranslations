@@ -1,0 +1,51 @@
+
+char pandora p left
+char smalls s right
+
+face s 0 0
+s
+line "Tu regardes quoi?|p| Les fenêtres?"
+face p 0 0
+p
+line "Ouais,|p| je les aime pas."
+face s 2 0
+s
+line "Je pense que c'est juste parce que t'aimes pas l'entreprise.|p| T'es pas objective."
+face s 0 1
+s
+line "Genre, c'est juste des fenêtres."
+line "Elles font leur boulot et elles laissent la lumière naturelle passer."
+face p 1 0
+p
+line "N'importe quel autre bâtiment pourrait te laisser approcher les fenêtres,|p| et regarder à travers."
+face p 0 0
+p
+line "Mais pas la Mindscape Tower.|p| Pourquoi?"
+face p 0 2
+p
+line "Ils sont trop focalisés sur eux-mêmes à Mindscape Co.?"
+line "Ils pensent vraiment que les gens vont jamais penser à autre chose quand ils sont ici?"
+face p 1 2
+p
+line "Ou est-ce qu'ils essaient de cacher le fait que cet endroit est hyper louche?"
+face s 1 0
+s
+line "Peut-être qu'ils veulent juste pas que les gens posent leurs pattes sur les fenêtres."
+line "Ca doit leur faire économiser une fortune par an à chaque fois qu'ils font ce tournoi."
+face p 4 0
+p
+line "..."
+face p 0 0
+p
+line "Ouais,|p| elles sont quand même hyper propres, ces fenêtres."
+line "Comment ils font pour nettoyer des fenêtres aussi grandes?"
+face s 0 0
+s
+line "Je plains les nettoyeurs de fenêtres qui doivent s'occuper de la Mindscape Tower."
+face s 0 1
+s
+line "C'est peut-être les seuls gens qui détestent cet endroit plus que toi."
+
+setflag _0.windows.done 1
+function lobby_tick_time 0.5
+
