@@ -7,4 +7,5 @@ All patches are made using DeltaPatcher, and all are formatted into .xdeltas
 
 Included with the .xdelta patches are the /loc and /script folders that are necessary
 
-Francais patch by: Tamanakio
+French patch by: Tamanakio
+Brazilian Portugese patch by: Equipe Córtex
