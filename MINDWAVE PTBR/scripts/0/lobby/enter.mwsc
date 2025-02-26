@@ -1,0 +1,54 @@
+
+char pandora p left
+char smalls s right
+face s 1 0
+s
+line "A gente tem um tempinho antes da primeira rodada começar..."
+face s 0 1
+s
+line "Que tal a gente andar por aí e conhecer umas pessoas?"
+face p 1 2
+p
+line "Não obrigada.|p| Eu só tô aqui\npelo jogo."
+line "Eu prefiro ficar parada por aí até começar."
+face s 1 0
+s
+line "Bom,|p| você tem que pensar nisso estrategicamente."
+line "MINDWAVE é tudo sobre a mente das pessoas."
+
+
+
+
+s
+line "Deve ajudar dar uma olhada em algumas personalidades."
+face s 0 1
+s
+line "Ver com que tipos de cérebro estamos lidando."
+face p 1 0
+p
+line "Cara,|p| se você insiste em me arrastar por aí,|p| eu te sigo."
+face p 1 2
+p
+line "Não tem que ser todo esse rolê."
+s
+line "Por mim tudo bem!|p| Vamos ver..."
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+setflag _0.smalls.q1 1
+setflag _0.smalls.q2 1
+
+setflag _0.lobby_intro 1
+
+
