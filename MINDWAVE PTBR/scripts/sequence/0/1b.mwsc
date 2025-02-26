@@ -1,0 +1,33 @@
+wait for marker line1
+pause
+speaker_voice terminal
+|style font fnt_pixel|Por favor insira seu Bilhete de Platina na máquina!
+clear
+resume
+wait for marker line2
+pause
+|style font fnt_pixel|...e insira o cabo na sua Porta Neural!
+clear
+resume
+wait for marker line3
+pause
+|style font fnt_pixel|POR FAVOR AGUARDE...
+resume
+clear
+wait for marker info
+pause
+|style font fnt_pixel|ESCANEAMENTO COMPLETO|p|\nNOME DO CONCORRENTE:|p| PANDORA
+|style font fnt_pixel|REGISTRADO AO BILHETE NÚMERO 7263672|p|\n(REFRESCO CARBONIZADO BRIZA-COLA)
+|style font fnt_pixel|(VENDA 6-A24 NA CIDADE BLACKOUT LESTE)
+speaker_icon pandora
+speaker_voice pandora
+... assustador...
+speaker_icon none
+resume
+text_auto 1
+speaker_voice terminal
+|style font fnt_pixel|INICIANDO SEQUÊNCIA DE CALIBRAGEM.
+wait for marker textclear
+clear
+
+

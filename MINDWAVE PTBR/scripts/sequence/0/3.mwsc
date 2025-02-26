@@ -1,0 +1,43 @@
+wait for marker line1
+pause
+speaker_voice announcer
+|style font fnt_pixel|Atenção Concorrentes!
+|style font fnt_pixel|A rodada de grupos está prestes a começar.
+clear
+resume
+
+
+pause at marker line2end
+no_text_continue_until marker line2end
+|style font fnt_pixel|Por favor entre em um elevador disponível dentro dos próximos dez minutos.
+clear
+resume
+wait for marker line3
+pause at marker line3end
+speaker_icon smalls
+speaker_voice smalls
+Beleza,|p| boa sorte Pandora.|p|\nTe vejo daqui a pouquinho.
+speaker_icon none
+resume
+jump to marker shot2start
+clear
+
+
+wait for marker line4
+pause at marker 0_3_4_end
+speaker_voice announcer_small
+|style font fnt_pixel|Saudações,|p| Concorrente.
+|style font fnt_pixel|Por favor insira o cabo na sua Porta Neural para confirmar sua entrada.
+jump to marker 0_3_5_start
+clear
+resume
+wait for marker line5
+pause at marker 0_3_6_end
+|style font fnt_pixel|IDENTIDADE CONFIRMADA:|p| PANDORA.
+|style font fnt_pixel|A rodada de grupos irá começar em breve.|p| Por favor aguarde.
+jump to marker 0_3_6_end
+clear
+resume
+loop start marker elevatorloopstart2
+loop end marker elevatorloopend2
+
