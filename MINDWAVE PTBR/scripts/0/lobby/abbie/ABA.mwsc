@@ -1,0 +1,105 @@
+face s 0 1
+face p 0 0
+s
+line "Então,|p| qual é a do carinha?"
+face a 6 2
+a
+line "Oh,|p| Tommy?|p| Eu mesma fiz ele!"
+s
+line "Ele ficou bem fofo."
+face a 6 0
+a
+line "Obrigada!|p| Eu fiz outras pelúcias bem mais fofas."
+face s 0 0
+face a 6 2
+a
+line "Todas elas são especiais,|p| mas o Tommy é meu favorito!"
+face a 6 1
+a
+line "Ele é o primeiro que eu fiz,|p| então ele é o mais especial."
+face p 0 1
+p
+line "Viés de primogênito."
+face a 6 3
+a
+line "Hehe,|p| talvez um pouquinho."
+face a 0 0
+a
+line "A gente TINHA que ver a torre juntos."
+face p 1 1
+p
+line "Costura parece um hobby tão irritante,|p| eu acho."
+a
+line "Por quê?"
+face p 0 0
+p
+line "Da última vez que eu tentei,|p| a única coisa que eu consegui foram dedos furados."
+face s 0 1
+s
+line "Você,|p| de todas as pessoas,|p| tentou costura?"
+face p 1 0
+p
+line "É,|p| eu queria fazer uma coisa pro meu pai.|p| Não deu muito certo."
+face a 1 0
+a
+line "Eu entendo porque pode parecer assustador!|p| Mas vale TANTO a pena aguentar!"
+face a 1 2
+a
+line "Mesmo que gaste muito tempo...|p| e seja caro..."
+face a 2 2
+a
+line "...e é,|p| meus dedos ficam todos furados-"
+face p 4 0
+p
+line "Você realmente não tá fazendo parecer como algo pra mim,|p| foi mal."
+face p 0 1
+p
+line "Mas você parece bem boa nisso."
+face a 3 1
+a
+line "Obrigada!!"
+face a 4 1
+a
+line "Você não sabe o quanto isso significa pra mim!"
+face a 0 0
+a
+line "E Panda,|p| se você quiser tentar costura de novo,|p| é só me avisar!"
+line "Ajuda aprender com um amigo."
+face p 0 1
+p
+line "É,|p| qualquer coisa eu te chamo... "
+face p 1 1
+p
+line "Mas traz curativo o suficiente pra nós duas."
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+setflag _0.abbie.read.ABA 1
+setflag _0.abbie.branch ABA
+function lobby_tick_time
+goto script 0/lobby/abbie/questions
+

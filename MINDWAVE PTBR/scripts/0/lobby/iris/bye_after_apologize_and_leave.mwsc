@@ -1,0 +1,13 @@
+face p 0 4
+p
+line "Uh,|p| eu tenho que sair, na real."
+i
+line "Ok?|p| Tchau."
+
+setflag _0.pandora.alone 0
+
+
+
+
+
+

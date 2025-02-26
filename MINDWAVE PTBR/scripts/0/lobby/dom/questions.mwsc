@@ -1,0 +1,60 @@
+d
+options clear
+checkflag _0.dom.branch 0
+goto marker 0
+checkflag _0.dom.branch A
+goto marker A
+checkflag _0.dom.branch AA
+goto marker AA
+checkflag _0.dom.branch AB
+goto marker AB
+
+
+
+
+marker 0
+option add name "Sua música..." color pandora script "0/lobby/dom/A"
+
+options shuffle
+option add name "Tchau" script "0/lobby/dom/bye"
+goto marker end
+
+marker A
+option add name "O Torneio" color pandora script "0/lobby/dom/AB"
+option add name "Somos músicos também" color smalls script "0/lobby/dom/AA"
+options shuffle
+option add name "Tchau" script "0/lobby/dom/bye"
+goto marker end
+
+marker AA
+option add name "Tchau" script "0/lobby/dom/AAA"
+goto marker end
+
+marker AB
+option add name "Tchau" script "0/lobby/dom/ABA"
+goto marker end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+marker end
+
+options show

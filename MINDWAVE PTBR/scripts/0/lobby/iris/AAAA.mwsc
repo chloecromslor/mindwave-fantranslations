@@ -1,0 +1,38 @@
+face p 4 0 
+p
+line "OK,|p| uhhhh."
+face p 1 0
+p
+line "Isso é meio que tudo que eu consigo pensar pra falar."
+face p 0 4
+p
+line "Então eu vou sair agora."
+face i 1 0
+i
+line "OK."
+face p 0 1
+p
+line "Te vejo mais tarde?"
+face i 0 3
+i
+line "Talvez."
+face p 0 2
+p
+line "..."
+set s x -70
+set p x +45
+face s 0 3
+s
+line "Como foi"
+p
+line "Cara-"
+face p 1 2
+p
+line "Eu não sei."
+setflag _0.smalls.iris 1
+setflag _0.iris.done 1
+setflag _0.pandora.alone 0
+setflag _0.iris.read.AAAA 1
+
+function lobby_tick_time
+

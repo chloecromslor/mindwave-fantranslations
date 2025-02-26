@@ -1,0 +1,88 @@
+face p 0 0
+p
+line "Você...|p| fugiu de casa?"
+face p 4 0
+p
+line "Tipo,|p| você só passou pela porta e saltou no metrô?"
+face a 0 0
+a
+line "Bem,|p| foi a janela,|p| mas foi tipo isso!|p|"
+face p 0 1
+p
+line "Você não parece o tipo de pessoa que faria isso."
+line "Tipo,|p| nem um pouco."
+a
+line "Por que não?|p| Antes de se mudar pra cá,|p| eu fugia de casa o tempo todo!"
+line "Minha amiga costumava me chamar praticamente todas as noites."
+face s 0 1
+s
+line "Você é convidada pra muitas festas?"
+face a 2 2
+a
+line "Não!|p| Nunca fui convidada pra festas."
+face a 0 0
+a
+line "Na verdade,|p| eu não acho que nenhum dos meus colegas de classe na minha cidade natal festejavam?"
+face a 1 2
+face s 0 0
+a
+line "Todo mundo conhecia os pais dos outros,|p| então era meio difícil fazer muita coisa."
+face p 0 2
+p
+line "Aonde...|p| você tava indo a noite então?"
+face a 0 0
+a
+line "Só o parque!"
+face a 1 0
+a
+line "A gente tinha muito tempo pra passar juntas de dia,|p| mas era especial ter pra nós mesmas."
+face a 1 2
+a
+line "Nossa cidade era realmente pacífica à noite."
+face p 1 0
+p
+line "Eu não consigo imaginar isso...|p| As buzinas e sirenes nessa cidade nunca param."
+face a 0 0
+a
+line "Ohhh!|p| Nós ouvimos sirenes também."
+face a 2 2
+a
+line "Vizinhos chamaram a polícia na gente,|p| e eu fiquei de castigo por um mês!"
+line "Eu fiquei tão brava com a Jenny que eu não falei com ela por um dia inteiro."
+face a 1 2
+a
+line "Mas é meio engraçado agora.|p|\nEu sinto falta de momentos assim."
+face a 0 0
+a
+line "Então eu decidi trazer de volta eu mesma fugindo de casa hoje à noite!"
+face s 0 1
+s
+line "É isso aí."
+face a 1 0
+a
+line "Eu acho que eu não tô sozinha agora."
+face a 1 0
+a
+line "E,|p| sabe..."
+face a 0 0
+a
+line "...você me lembra dela, Panda!"
+face p 0 0
+p
+line "...?"
+
+
+
+
+
+
+
+setflag nickname_panda 1
+setflag _0.abbie.read.BB 1
+setflag _0.abbie.branch BB
+function lobby_tick_time 2
+goto script 0/lobby/abbie/questions
+
+
+
+

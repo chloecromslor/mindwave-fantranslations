@@ -1,0 +1,70 @@
+
+face p 0 0
+p
+line "Uh,|p| então tem alguma história interessante por trás de você tá aqui?"
+face i 2 0
+i
+line "Não.|p| Na verdade não."
+line "Tenho dinheiro o suficiente."
+face i 0 0
+i
+line "Só não quero ter que trabalhar pro resto da minha vida."
+face p 0 2
+p
+line "Ok...|p| isso é chato."
+face i 1 0
+i
+line "Se você insiste em saber sobre mais fatos mundanos da minha vida..."
+face i 0 1
+i
+line "Eu talvez gostaria de fazer filmes um dia.|p| Já tento um pouco."
+face i 0 3
+i
+line "Maioria é uns curtas mal feitos no celular com meus amigos."
+line "Eu mostaria pra você,|p| mas eu não quero."
+p
+line "...Ok."
+face p 0 0
+p
+line "Então você iria pra uma escola de cinema ou algo assim?"
+line "Se eu pudesse pagar,|p| eu provavelmente iria pra uma academia de música."
+i
+line "Ok minha imagem mental de você tava certa."
+line "E é,|p| eu entraria numa escola de cinema.|p| \nAlgum lugar na costa oeste de preferência."
+face i 2 0
+i
+line "E com o resto do dinheiro...|p| talvez eu investiria em um estoque seguro?"
+face p 4 0
+p
+line "..."
+i
+line "É o que o meu pai diz pra fazer."
+line "Não sei como funciona mas..."
+face i 0 0
+i
+line "Mindscape tem ficado em alta por basicamente sempre."
+line "Parece um investimento seguro,|p| não?"
+face p 0 2
+p
+line "..."
+face p 1 0
+p
+line "Essa é a pior coisa que eu já ouvi."
+face p 1 2
+p
+line "Você percebe que você taria alimentando eles com o próprio dinheiro deles,|p| não?"
+face p 0 3
+p
+line "Você criaria essa horrível ouroboros do capitalismo tardio."
+face i 1 0
+i
+line "...Talvez eu devia pensar sobre isso um pouco mais."
+face p 0 0
+p
+line "Com certeza."
+
+setflag _0.iris.read.ABA 1
+setflag _0.iris.branch ABA
+function lobby_tick_time
+goto script 0/lobby/iris/questions
+

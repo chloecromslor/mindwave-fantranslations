@@ -1,0 +1,234 @@
+char pandora p left +45
+set p layer 0
+char smalls s left -70
+char alex a right
+
+checkflag _0.alex.met 0
+goto marker firstMeet
+goto marker alreadyMet
+
+marker alreadyMet
+p
+line "Por favor, não vamos reviver isso."
+line "Vamos só deixar elu em paz."
+s
+line "...Certo."
+goto marker end
+
+
+marker firstMeet
+
+checkflag _0.chars_met 0
+goto marker firstConvo
+goto marker notFirstConvo
+
+
+marker firstConvo
+set a name mystery
+face s 0 0
+face p 0 0
+s
+line "Que tal começar com aquele ali?"
+p
+line "Aquele?|p| Eu acho que eu prefiro falar com alguém mais...|p| aproximável."
+face p 0 2
+p
+line "Elu tá usando fones."
+line "Eu não acho que elu tá no humor pra conversar."
+face s 0 2
+s
+line "O que tipo você?|p| O tempo todo?"
+p
+line "Eu não uso fones,|p| e eu tô falando com você agora."
+face s 0 1
+s
+line "Só se coloque mais lá fora."
+face p 1 0
+p
+line "Me colocar lá fora incomodando gente aleatória em público?"
+face s 1 0
+s
+line "É assim que todo mundo faz amigos, Pandora."
+p
+line "Mas isso é contextual."
+face p 1 2
+p
+line "Mas beleza,|p| vamo ver como isso vai ser."
+face s 2 1
+s
+line "Eu tô certo,|p| eu tô sempre certo."
+face p 0 0
+p
+line "Uhh,|p| *ahem*|p|\nei."
+a
+line "..."
+face p 1 2
+p
+line "!!!"
+face s 0 3
+s
+line "Você não tá tentando o suficiente."
+a
+line "Ei uh,|p| eu na verdade podia ouvir vocês dois o tempo inteiro."
+line "Esses fones são abertos."
+line "A resposta correta seria não incomodar alguém do nada."
+line "Isso não é uma boa fundação pra começar uma conversa."
+line "..."
+face a 0 1
+a
+line "Eu sou Alex por acaso."
+face s 0 3
+face p 4 0
+p
+line "...Foi mal."
+set a name alex
+face a 0 0
+a
+line "Tá tudo bem.|p| Eu ainda prefiro não ser incomodade."
+face s 0 0
+s
+line "Okay, a gente aprendeu nossa lição."
+a
+line "Não é sobre aprender uma lição é mais-"
+line "Ah, esquece,|p| eu não vou incomodar vocês."
+
+set a x -200
+wait 1 second
+face s 0 3
+p
+line "..."
+s
+line "..."
+face p 1 2
+p
+line "\"Eu tô sempre certo.\""
+face s 0 0
+s
+line "..."
+face s 2 0
+s
+line "Isso ainda é verdade."
+setflag _0.alex.firstSpoken 1
+goto marker endFlags
+
+
+
+
+
+
+marker notFirstConvo
+set a name mystery
+
+face s 0 0
+s
+line "Aquele ali parece legal."
+face p 1 0
+p
+line "Nah,|p| eu acho que elu não quer ser incomodado.|p|"
+line "Ele tá usando fones."
+face s 0 1
+s
+line "Eu aposto que seria agradável de falar com elu."
+face p 4 0
+p
+line "Você aposta?|p| Quanto?"
+face s 1 0
+s
+line "Uhhh...|p| quanto você tem aí?"
+face p 0 0
+p
+line "Só um vinte."
+face s 0 1
+s
+line "Deixa guardado pra mim,|p| eu tenho um bom pressentimento sobre essa."
+face p 1 0
+p
+line "Isso parece abaixo de você."
+face p 0 0
+p
+line "Mas tanto faz,|p| a gente pode con-|p 30| |skip| "
+a
+line "Olá?"
+line "Eu podia ouvir vocês dois o tempo inteiro."
+line "Esses fones são abertos."
+line "A resposta correta seria me deixar relaxar antes do torneio."
+line "...E também.|p| Você não devia falar tão alto sobre alguém bem na frente dela."
+line "Eu não quero começar nenhuma briga,|p| mas isso pode ser considerado rude."
+line "..."
+face a 0 1
+a
+line "Meu nome é Alex por acaso."
+p
+line "...Foi mal."
+face a 0 0
+set a name alex
+a
+line "Tá tudo bem.|p| Eu ainda prefiro não ser incomodade."
+face s 0 0
+s
+line "É foi mal.|p| Acho que eu li errado a situação."
+face p 0 2
+p
+line "Quem diria."
+a
+line "Você talvez queira dar o dinheiro pra garota."
+face s 0 0
+s
+line "Ah é..."
+a
+line "Tchau.|p| Eu não vou incomodar vocês."
+
+set a x -200
+wait 1 second
+face s 2 0
+s
+line "Eu não tenho dinheiro comigo agora."
+face s 0 1
+face p 0 0
+p
+line "Ordinário."
+face p 4 0
+p
+line "Você pode transferir?"
+s
+line "Beleza.|p| Depois."
+
+
+
+
+setflag _0.alex.firstSpoken 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+goto marker endFlags
+
+
+marker endFlags
+function lobby_tick_time 4
+incflag _0.chars_met 1
+setflag _0.alex.met 1
+setflag _0.smalls.alex 1
+marker end

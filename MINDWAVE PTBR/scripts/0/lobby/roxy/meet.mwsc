@@ -1,0 +1,108 @@
+
+face s 0 1
+s
+line "Ah ei,|p| aquela é quem eu tô pensando?"
+
+checkflag nickname_panda 1
+goto marker branch26y
+goto marker branch26n
+
+marker branch26y
+
+s
+line "Panda,|p| a gente devia falar com ela."
+
+goto marker branch26e
+
+marker branch26n
+
+s
+line "Pandora,|p| a gente devia falar com ela."
+
+goto marker branch26e
+
+marker branch26e
+
+face p 0 0
+p
+line "Quem?|p| Aquela garota no celular?"
+face s 0 0
+s
+line "Sim, ela.|p| Eu já vi ela pelo fliperama."
+line "Ela é muito boa no MINDWAVE."
+face s 0 1
+s
+line "O nome dela é Roxy,|p| eu acho que ela tá no time de MINDWAVE da escola dela."
+face s 2 1
+s
+line "Ela seria a nossa melhor chance pra umas dicas."
+face p 1 2
+p
+line "Meu Deus,|p| tem times de \"esportes\" pra MINDWAVE?"
+face s 1 0
+s
+line "É claro,|p| a maioria das escolas na cidade tem seus próprios times."
+face p 4 0
+face s 0 1
+s
+line "A nossa não porque ela|p| é um saco."
+face p 1 0
+p
+line "Tá,|p| então você vai chamar atenção dela."
+
+checkflag _0.alex.met 1
+goto marker branch1y
+goto marker branch1n
+
+marker branch1y
+face p 4 0
+p
+line "Eu não quero causar mais uma situação que nem aquela com a pessoa de fones."
+goto marker branch1e
+
+marker branch1n
+face p 4 0
+p
+line "Eu não vou tentar chamar a atenção de alguém que já tá ocupado."
+goto marker branch1e
+
+marker branch1e
+face s 0 0
+s
+line "Tudo ok por mim.|p| Tô curioso pra ouvir um conselho também."
+line "*ahem*|p|\nE aí."
+face r 0 1
+r
+line "..."
+face p 4 0
+face s 0 3
+s
+line "..."
+face s 0 0
+s
+line "Eu sou o Smalls."
+face r 1 0
+r
+line "..."
+line "Ah é,|p| eu te vi no fliperama uma vez."
+face p 0 0
+
+s
+line "Minha amiga Pandora aqui não tem tanta experiência com MINDWAVE."
+line "Ela tá procurando por uns conselhos."
+p
+line "...E aí."
+face r 0 0
+r
+line "Pode falar."
+
+
+
+
+
+
+setflag _0.roxy.met 1
+incflag _0.chars_met 1
+
+goto script 0/lobby/roxy/questions
+

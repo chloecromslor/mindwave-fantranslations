@@ -1,0 +1,69 @@
+face s 0 0
+s
+line "Tô curioso,|p| você é parte do time de MINDWAVE da sua escola, certo?"
+face r 2 1
+r
+line "É."
+line "A gente faz um monte de exercícios mentais pra nos ajudar a perfomar melhor."
+face s 0 0
+face p 0 0
+p
+line "O que, aqueles exercícios pro córtex interior que você tava falando antes?"
+face r 2 1
+r
+line "Uh,|p| sim aqueles,|p| alguns dias é o que a gente faz."
+face r 2 0
+r
+line "Nosso time tem pouco orçamento,|p| então a gente só tem uma máquina pra usar entre nós."
+face s 0 2
+s
+line "Você é sortuda de ter conseguido um bilhete com toda essa experiência que você tem."
+face r 0 3
+r
+line "Não foi sorte alguma na verdade."
+face s 0 0
+r
+line "Eu gastei um monte de dinheiro em energéticos tentando conseguir o bilhete."
+s
+line "Não é o melhor uso de dinheiro."
+face r 3 1
+r
+line "Eu bebo muitos energéticos."
+face r 2 0
+r
+line "De qualquer forma,|p| não foi nem assim que eu consegui o bilhete."
+line "Um dos meus professores achou o Bilhete de Platina e doou pro nosso time."
+face r 2 1
+r
+line "Nós todos fizemos um torneio pequeno pra ver quem de nós merecia."
+face r 3 1
+r
+line "Aliás..."
+...o terminal me disse que meu professor ganhou o bilhete de um desses cremes anti-envelhecimento de remover toxinas que nunca funcionam.
+face p 0 1
+p
+line "Uso terrível de dinheiro."
+face s 0 0
+s
+line "Falando nisso,|p| o que você planeja fazer com o seu prêmio?"
+face r 2 1
+r
+line "Não pensei muito sobre isso."
+line "Vou doar uma porção pro time da minha escola é claro."
+face s 4 0
+face p 0 0
+face r 2 0
+r
+line "A gente poderia muito usar uma outra máquina MINDWAVE."
+face s 0 1
+s
+line "Honestamente,|p| compra mais do que uma.|p| Pega uma pra você também."
+line "Ou melhor ainda,|p| doa pra NOSSA escola."
+face p 1 2
+p
+line "Uso terrível de dinheiro."
+setflag _0.roxy.read.ABA 1
+setflag _0.roxy.branch ABA
+function lobby_tick_time
+goto script 0/lobby/roxy/questions
+

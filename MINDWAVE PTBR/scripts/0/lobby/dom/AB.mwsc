@@ -1,0 +1,151 @@
+face p 0 0
+face s 0 0
+p
+line "Dom, meu mano."
+face p 0 2
+p
+line "Você ao menos se importa de tá aqui?"
+d
+line "Eu nem queria vir aqui\nem primeiro lugar."
+set s x -200
+set p x 0
+face d 0 1
+d
+line "Só não é grande coisa pra mim..."
+face p 0 0
+p
+line "Por quê?|p| Se você ganhou o bilhete,|p| é pra você tá aqui."
+face p 1 0
+p
+line "Eu nem gosto do jogo,|p| e eu tô aqui."
+face d 0 0
+d
+line "Sabe,|p| eu na real gosto do jogo,|p| mas eu sou ruim nele."
+line "Então eu tava pensando em dar o bilhete que consegui de uma farmácia para um ami-|p| |skip| "
+face p 0 2
+p
+line "De uma farmácia?"
+d
+line "É,|p| loucura né."
+face p 0 4
+p
+line "Só é meio estranho pra mim."
+face p 0 0
+p
+line "Eu acho que se eu tivesse comprando, por exemplo,|p| remédio pra enxaqueca..."
+face p 1 2 
+p
+line "...A última coisa que eu estaria ansiosa sobre seria jogar MINDWAVE."
+d
+line "Pois é, mano.|p| Quando eu vi o bilhete na garrafa,|p| eu fiquei tipo,|p| confuso."
+face p 0 2
+p
+line "Eu ficaria confusa também."
+line "A primeira coisa que vem na mente quando diz isso é tipo..."
+line "Um velho capenga,|p| olhando pro bilhete nas pílulas dele pra artrite e falando."
+face p 1 1
+p
+line "MINDWAVE?|p| Não faço a menor ideia do que é.|p| Vou é levar minha bunda geriátrica pra lá é claro."
+face d 0 1
+d
+line "Mano,|p| e é mesmo seguro pra alguém tão velho assim jogar esse jogo?"
+face p 0 2
+p
+line "Se não é seguro pra mim,|p| provavelmente não."
+face p 0 1
+p
+line "Coitado do vovô, não consegue nem jogar o jogo."
+set s x -70
+set p x 45
+d
+line "Eles poderiam dar os bilhetes pros netos deles, eu acho."
+face s 1 0
+face p 4 0
+s
+line "O vovô poderia fazer isso,|p| mas isso ainda passa a imagem do Mindscape sendo desleixado."
+face s 0 0
+s
+line "Não acho que eles deveriam descuidadosamente botar bilhetes onde eles realmente não pertencem."
+face p 0 0
+p
+line "Genuinamente me esqueci que você tava aqui."
+face s 2 1
+s
+line "Só tava ouvindo vocês dois conversando."
+face s 0 0
+s
+line "Você não tava falando do seu bilhete,|p| Dom?"
+face d 0 0
+d
+line "Ah é,|p| me distraí,|p| desculpa."
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+setflag _0.dom.read.AB 1
+setflag _0.dom.branch AB
+function lobby_tick_time
+goto script 0/lobby/dom/questions
+
+
+

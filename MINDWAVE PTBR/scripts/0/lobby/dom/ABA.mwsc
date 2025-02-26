@@ -1,0 +1,81 @@
+face s 0 0
+face p 0 2
+p
+line "Ei,|p| o torneio pode começar a qualquer momento agora,|p| então a gente já vai sair."
+line "Você pode nos contar sobre seu bilhete depois."
+face p 0 0
+p
+line "Tchau."
+face s 2 0
+s
+line "Se todos nós chegarmos no próximo andar..."
+face s 0 1
+s
+line "Dom,|p| posso pegar seu número rapidinho?"
+face d 1 0
+d
+line "Esse daqui não é meu celular pra falar, cara."
+face p 1 2
+p
+line "Todos os celulares são pra falar,|p| cara."
+d
+line "Não tô com meu cartão SIM nesse daqui,|p| é só meu celular de música."
+line "Meu celular principal tá cheio de tranqueira que não quero deletar,|p| então eu comprei esse pra mostrar minhas músicas pro meu povinho."
+face p 0 0
+p
+line "Você não poderia só...|p| trocar o cartão SIM com o do seu principal?"
+face d 1 1
+d
+line "..."
+face d 1 0
+d
+line "Ohhh."
+face d 0 0
+d
+line "Eu não sabia disso."
+p
+line "..."
+face p 0 2
+p
+line "Ok,|p| tanto faz."
+face p 0 4
+p
+line "Só espera por a gente na entrada ou sei lá."
+d
+line "Beleza."
+face s 0 1
+s
+line "Vocês vão ter que esperar até eu ganhar,|p| então vai levar um tempo."
+face p 0 0
+p
+line "Não escuta ele."
+line "Nós todos vamos perder no primeiro round de qualquer jeito."
+d
+line "Provável,|p| hah."
+line "Vou ver vocês depois,|p| até."
+face p 0 1
+p
+line "Tchau."
+s
+line "Até depois."
+
+
+
+
+
+
+
+
+
+
+
+
+setflag _0.smalls.dom 1
+setflag _0.dom.done 1
+setflag _0.dom.read.ABA 1
+function lobby_tick_time 2
+
+
+
+
+

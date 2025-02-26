@@ -1,0 +1,110 @@
+face s 0 0
+s
+line "Como exatamente você pegou seu bilhete de qualquer forma?"
+a
+line "Oh!|p| Eu ganhei dessa loja legal de hobbies perto de mim."
+face a 1 0
+a
+line "Eu não tinha muito da minha mesada sobrando,|p| então eu só peguei algumas agulhas de costura novas...|p|"
+
+
+
+allow_player_input 0
+face a 0 0
+a
+line "|speed 2|...e eu comprei esse SACO ENORME de enchimento...|skip| "
+face a 1 0
+a
+line "|speed 2|Eu também queria esse fio de costura rosa que eu peguei uns meses atrás.|skip| "
+
+
+
+a
+line "|speed 2.5|Eu tava fazendo esses coelhinhos de pelúcia!|skip| "
+face a 1 2
+a
+line "|speed 2.5|Era pra eles ficarem alinhados na minha janela, mas agora que eu tenho uma janela maior eu TINHA que fazer mais!|skip| "
+face a 0 0
+a
+line "|speed 2.5|Eu me mudei aqui recentemente.|skip| "
+
+
+face a 2 2
+a
+line "|speed 3|De qualquer forma,|p| eles não tinham a exata cor de fio rosa que eu queria então eu comprei todas as cores que PARECIAM iguais.|skip| "
+face a 1 0
+a
+line "|speed 3|Só não parecia certo imitar os coelhinhos antigos, então eu resolvi escolher essa cor azul fofa.|skip| "
+face a 4 0
+face p 4 0
+a
+line "|speed 5|E ao que parece, isso complementa os coelhinhos rosas muito bem!|skip| "
+
+allow_player_input 1
+
+
+face a 0 0
+a
+line "Oh,|p| por acaso,|p| eu faço pelúcias!"
+face a 6 2
+a
+line "Esse é o Tommy!"
+face s 0 1
+s
+line "Oi Tommy."
+face a 6 0
+a
+line "..."
+face a 0 0
+a
+line "Ele diz oi de volta!"
+face p 0 0
+p
+line "Você é de Blackout Norte,|p| certo?"
+a
+line "É!|p| Eu me mudei aqui mês passado.|p| Como você sabia?"
+face p 0 1
+p
+line "Palpite de sorte."
+face s 1 0
+s
+line "Então qual dessas coisas que você comprou tinha o bilhete?"
+face a 4 0
+a
+line "Oh,|p| certo!|p| tava enrolado nessa bola de fio de costura brilhante que eu peguei!"
+face s 0 0
+p
+line "Parece uma bagunça."
+face a 1 0
+a
+line "Sim!|p| A gente ainda tá encontrando glitter no banco de trás."
+face p 0 0
+a
+line "Meus pais e eu estavamos tão felizes sobre o bilhete que não percebemos."
+s
+line "Suponho que a felicidade deles se esgotou?"
+face a 2 2
+a
+line "Sim.|p| Eles não acreditaram em mim eu acho..."
+face a 0 0
+a
+line "Mas depois de um pouco de problema,|p| eu MESMA consegui chegar aqui."
+line "E eu tô determinada a ganhar essa coisa!"
+face a 3 1
+a
+line "Então,|p| eu vou dizer pros meus pais que eu vou me mudar de volta sozinha!"
+face a 5 0
+a
+line "Eles não vão receber nada do meu prêmio!"
+face p 0 1
+p
+line "É isso aí."
+
+
+setflag _0.abbie.read.BA 1
+setflag _0.abbie.branch BA
+function lobby_tick_time
+goto script 0/lobby/abbie/questions
+
+
+

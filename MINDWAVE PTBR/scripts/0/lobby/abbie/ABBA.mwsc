@@ -1,0 +1,97 @@
+
+face p 1 0
+face s 0 0
+p
+line "Ei,|p| Smalls,|p| o torneio vai começar a qualquer hora agora,|p| a gente tem que ir."
+face s 2 0
+s
+line "Eu não acho que vai começar TÃO em breve assim."
+face s 0 2
+s
+line "Mas seria melhor dar tchau agora antes de sermos interrompidos do nada."
+face a 1 2
+a
+line "É,|p| faz sentido..."
+face a 0 0
+a
+line "...foi legal conhecer vocês!|p|\nEspero ver vocês por aí."
+line "Espera,|p| posso ter seus números por favor?"
+face s 0 1
+s
+line "Claro,|p| aqui o meu."
+line "E eu vou te dar o número da Panda também."
+face p 1 2
+p
+line "Por que você tá me chamando de Panda."
+s
+line "É um bom apelido."
+a
+line "É mesmo!|p| Você gostou, Panda?"
+face p 4 0
+p
+line "..."
+face p 1 0
+p
+line "Eu tô lutando uma batalha difícil aqui,|p|\nsó faz o que quiser."
+line "Eu vou só sair agora,|p| Smalls,|p| pode vir comigo se quiser."
+face p 0 1
+p
+line "Tchau."
+set p front_when_speak 0
+set p x -200
+wait 1 second
+a
+line "Até mais!"
+face s 2 1
+s
+line "Eu DEVERIA vir com você."
+face s 0 1
+s
+line "Foi mal Abbie,|p| eu tenho que alcançar ela,|p| te vejo por aí."
+face a 1 0
+a
+line "Te vejo em breve!"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+setflag _0.smalls.abbie 1
+setflag _0.abbie.read.ABBA 1
+setflag _0.abbie.done 1
+
+

@@ -1,0 +1,68 @@
+face p 0 2
+face s 0 0
+p
+line "Ok,|p| ignorando todas as coisas ruins que esse jogo pode fazer pro meu cerébro."
+face p 0 0
+p
+line "Como posso maximizar as chances de ganhar?"
+face r 0 0
+r
+line "Bem,|p| honestamente é só intuição."
+face r 1 0
+r
+line "Não consigo te dar nenhum conselho de verdade."
+face r 0 0
+r
+line "Não se você não tem experiência o bastante pra se apoiar."
+face p 0 2
+p
+line "Nah cara."
+line "Você não pode só falar pra mim que NÃO tem conselhos pra dar."
+line "Especialmente depois de encher minha mente com preocupações sobre-"
+face p 0 3
+p
+line "Espera,|p| você tá tentando me atrapalhar?"
+line "Tipo,|p| enchendo minha cabeça de vibes estranhas pra eu performar pior?"
+face r 1 1
+r
+line "De jeito nenhum.|p| Qualquer profissional de MINDWAVE iria te dizer o mesmo."
+face p 0 0
+face s 0 2
+s
+line "Eu acho que ela tá falando a verdade Pandora."
+face s 0 1
+s
+line "A maioria das habilidades em MINDWAVE vêm da experiência."
+face s 0 0
+s
+line "Só tava esperando que ela pudesse te dar algo pra te ajudar a curto prazo."
+face r 2 0
+r
+line "Espera, você tá procurando por um chá pra melhorar a mente ou algo assim?"
+face p 1 0
+p
+line "Na verdade não."
+face p 0 0
+p
+line "...Talvez?|p| Isso existe?"
+face r 2 1
+r
+line "Sim,|p| mas na verdade não."
+face r 3 1
+r
+line "Chá,|p| chiclete,|p| já vi bandanas que afirmam otimizar a sua performance no MINDWAVE."
+line "Todos são falsos."
+face r 3 0
+r
+line "A maioria das pessoas que trazem isso pros testes acabam não ganhando um lugar no time."
+face p 1 2
+p
+line "Certo, então parece que eu absolutamente não tenho chance alguma aqui."
+face s 0 1
+s
+line "Não com esse tipo de pensamento."
+setflag _0.roxy.read.AAA 1
+setflag _0.roxy.branch AAA
+function lobby_tick_time
+goto script 0/lobby/roxy/questions
+

@@ -1,0 +1,72 @@
+face s 2 1
+s
+line "Abbie,|p| Panda e eu temos que ir nessa."
+face p 1 2
+face s 0 1
+p
+line "Eu vou te bater até quase a morte se você fazer isso ser uma \"coisa.\""
+face a 2 2
+a
+line "..."
+face p 1 0
+p
+line "Uh,|p| mas eu sou okay com você dizendo Abbie."
+face a 4 1
+a
+line "..."
+face p 0 0
+p
+line "Boa sorte com o torneio e tudo mais."
+face a 1 0
+a
+line "Oh!|p| Talvez eu possa pegar seus números."
+face a 0 0
+a
+line "Sabe,|p| caso qualquer um de vocês perca imediatamente e a gente nunca possa se falar de novo."
+face p 1 0
+p
+line "Você também...|p| pode acabar perdendo imediatamente."
+s
+line "Aqui tá o meu e o da Pandora."
+face a 3 1
+a
+line "Obrigada!"
+face p 0 2
+p
+line "Bro,|p| eu não te dei permissão pra dar meu número."
+face p 0 1
+p
+line "Mas claro pode ser,|p| talvez a gente possa sair algum dia."
+face s 2 0
+s
+line "Desde que você não fique de castigo pela suas ações rebeldes de hoje."
+face a 1 2
+a
+line "...Talvez quando eu voltar pra casa com o dinheiro do prêmio,|p| eles vão estar menos bravos?"
+face s 0 1
+s
+line "Assim espero."
+p
+line "'Té mais Abbie."
+face a 0 0
+a
+line "Vejo vocês em breve!"
+
+
+
+
+
+
+
+
+
+
+
+
+
+setflag _0.smalls.abbie 1
+setflag _0.abbie.read.BBA 1
+setflag _0.abbie.done 1
+function lobby_tick_time
+
+

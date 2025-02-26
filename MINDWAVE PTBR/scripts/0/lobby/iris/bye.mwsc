@@ -1,0 +1,12 @@
+face p 0 1
+p
+line "Yo,|p| eu vou dar uma saída por um tempinho."
+line "Tenho que dar uma olhada pra ver se eu acho uma coisa pra beber."
+face i 0 1
+i
+line "Claro.|p|\nAté depois."
+p
+line "Até."
+setflag _0.pandora.alone 0
+
+

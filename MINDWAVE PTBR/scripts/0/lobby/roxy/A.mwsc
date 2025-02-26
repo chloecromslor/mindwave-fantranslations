@@ -1,0 +1,53 @@
+face p 0 0
+face s 0 0
+p
+line "Ok,|p| a coisa mais importante que eu preciso perguntar é."
+face p 0 2
+p
+line "As dores de cabeça vão mesmo embora?"
+face r 1 0
+r
+line "Dor de cabeça?|p| Você tem certeza que tá bem hidratada?"
+face p 1 2
+p
+line "Eu tô bem hidratada..."
+face r 0 0
+r
+line "Não conheço muitas pessoas que pegam dor de cabeça quando jogam MINDWAVE."
+face r 0 1
+r
+line "Eu já vi acontecer,|p| mas só depois de sessões mais longas."
+face p 0 2
+p
+line "Aconteceu comigo nas duas vezes que eu tentei jogar."
+line "Aconteceu agorinha há pouco."
+face p 0 4
+face s 0 2
+s
+line "Talvez você esteja fazendo a sua própria cabeça doer por complicar demais as coisas."
+face p 1 2
+p
+line "Ou talvez MINDWAVE só não seja seguro e nem saudável de jogar."
+face r 1 0
+r
+line "Vocês dois estão certos, até um certo ponto."
+line "Sua experiência com MINDWAVE é contingente com o espaço mental em que você tá."
+face r 1 1
+r
+line "Você não vai ter uma experiência boa se você tá oposto a jogar."
+face r 1 0
+r
+line "Embora que inversamente,|p| adaptar você mesmo ao MINDWAVE demais pode causar mal também."
+face s 1 0
+s
+line "Você quer dizer que tem efeitos colaterais de longo prazo por jogar?"
+face p 1 2
+p
+line "Ééh, isso não tá me caindo muito bem não."
+
+
+setflag _0.roxy.read.A 1
+setflag _0.roxy.branch A
+function lobby_tick_time
+goto script 0/lobby/roxy/questions
+

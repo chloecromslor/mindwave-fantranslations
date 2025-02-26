@@ -1,0 +1,222 @@
+
+
+face s 0 1
+face p 0 2
+p
+line "Então,|p| qual é a sua,|p| você tá mostrando essa música pra todo mundo?"
+d
+line "Nah,|p| só cês dois até agora."
+face p 0 2
+d
+line "Já que cês já tavam falando de mim,|p| eu achei que cês iam curtir."
+face d 0 0
+d
+line "E mais,|p| eu achei que cês pareciam legais."
+p
+line "Obrigada?"
+face p 0 0
+p
+line "Você sabe que teve sorte com a gente,|p| né?"
+face d 0 1
+d
+line "Como assim?"
+p
+line "Outra pessoa poderia ter achado isso irritante pra caramba."
+line "Especialmente com todo mundo ficando tão nervoso aqui."
+face p 0 2
+p
+line "Tipo,|p| e se alguém te desse um soco no cara por isso?"
+face d 0 0
+d
+line "Não sei,|p| você não parece tá tão nervosa."
+face p 1 0
+face d 0 1
+d
+line "Talvez seja porque a minha música tem uma vibe boa?"
+face p 0 4
+p
+line "..."
+face p 0 0
+p
+line "Ok, cara."
+face p 1 0 
+p
+line "Na real eu achei ela bem boa."
+face p 0 2
+p
+line "Mas você realmente precisa repensar como você se promove por aí."
+face s 1 0
+s
+line "Eu mesmo achei que foi bem efetivo."
+face s 1 0
+s
+line "Certamente deixou uma impressão.|p|\nA gente poderia tentar algo assim."
+face p 1 0
+p
+line "Nuh uh,|p| não é assim que se começa."
+face p 1 2
+p
+line "Eu não tô tentando ter meus dentes arrancados por causa de promoção musical."
+face s 2 1
+s
+line "Vou pegar pra gente uns protetores bucais ou alguma coisa assim."
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+setflag _0.dom.read.A 1
+setflag _0.dom.branch A
+function lobby_tick_time
+goto script 0/lobby/dom/questions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

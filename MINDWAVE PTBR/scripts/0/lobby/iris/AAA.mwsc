@@ -1,0 +1,40 @@
+
+face p 0 2
+p
+line "Por que você veio pro torneio então?"
+face i 0 0
+i
+line "Bem,|p| eu realmente não ligo pra ver o que tá acontecendo na cabeça de um cara calvo de meia idade..."
+face i 0 3
+i
+line "Mas eu simplesmente quero dez milhões de dólares."
+line "Consigo aguentar um monte de gente estranha pra isso."
+face p 1 0
+p
+line "Imagina ter que ir contra um serial killer ou alguém assim."
+face p 4 0
+p
+line "Como é que você ia denunciar uma coisa dessas?"
+face i 0 0
+i
+line "Eles provavelmente tão fazendo pesquisas de históricos pra evitar esse cenário."
+line "Nenhum serial killer seria burro o bastante pra deliberadamente oferecer seu cerébro escaneado."
+line "Especialmente não para uma,|p| muito provavelmente,|p| empresa subsidiada pelo governo."
+p
+line "..."
+face p 0 1
+p
+line "Não sei,|p| eu li que eles deixam alguns entrarem de vez em quando."
+line "Pra deixar as coisas interessantes."
+face i 0 3
+i
+line "Talvez eu seja essa pessoa."
+p
+line "Não me surpreenderia."
+
+setflag _0.iris.read.AAA 1
+setflag _0.iris.branch AAA
+function lobby_tick_time
+goto script 0/lobby/iris/questions
+
+
