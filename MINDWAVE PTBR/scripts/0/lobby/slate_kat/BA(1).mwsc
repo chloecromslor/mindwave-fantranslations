@@ -1,0 +1,75 @@
+face s 0 0
+face p 0 0
+s
+line "O que vocês dois vão fazer com o dinheiro se ganharem?"
+face l 0 0
+l
+line "Cara,|p| eu mal pensei nisso.|p| A Kat que tem os planos maneiros."
+face l 1 0
+l
+line "Ela quer-|p 20| |skip| "
+face k 0 1
+k
+line "Ethan,|p| só deixa eu dizer se\nvocê vai contar."
+face k 0 0
+k
+line "Você vai dizer errado."
+face l 1 0
+l
+line "Okay cara,|p| o palco é seu."
+k
+line "Eu quero usar o dinheiro pra\nalugar meu próprio estúdio de arte."
+face s 0 0
+s
+line "Oh isso é maneiro,|p| o que você faz?"
+k
+line "É só um hobby,|p| mas eu gosto\nde fazer pinturas abstratas."
+face l 0 0
+face k 0 1
+l
+line "As coisas dela atualmente tão no quarto antigo da mãe dela."
+face k 0 0
+k
+line "Uh,|p| é.|p| Eu queria meu próprio espaço pra isso."
+face s 0 0
+s
+line "Eu entendo isso."
+face s 0 1
+checkflag nickname_panda 1
+goto marker branch26y
+goto marker branch26n
+
+marker branch26y
+
+s
+line "Panda,|p| a gente totalmente devia usar um dinheiro pro nosso próprio estúdio."
+
+goto marker branch26e
+
+marker branch26n
+
+s
+line "Pandora,|p| a gente totalmente devia usar um dinheiro pro nosso próprio estúdio."
+
+goto marker branch26e
+
+marker branch26e
+
+face p 4 0
+p
+line "Cara,|p| o aluguel nessa cidade não é\ntipo,|p| super alto?"
+s
+line "Eu acho que é melhor do que reclamação de barulho dos meus vizinhos."
+face l 0 0
+l
+line "Vocês dois tão numa banda ou algo assim?|p| Isso é tão maneiro."
+line "Minha casa recebe um monte de reclamações de barulho também."
+line "Meus pais tão sempre gritando com meus irmãos mais velhos pra cada bagunça que eles fazem..."
+line "Eu tento ficar fora disso."
+line "Se a Kat vencer,|p| eu absolutamente vou passar tempo com ela no estúdio dela."
+
+setflag _0.slate_kat.read.BA 1
+setflag _0.slate_kat.branch BA
+function lobby_tick_time
+goto script 0/lobby/slate_kat/questions
+

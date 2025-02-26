@@ -1,0 +1,25 @@
+face s 0 0
+s
+line "É melhor a gente sair."
+face s 0 1
+s
+line "Com sorte a gente vai se ver no próximo andar."
+face p 0 0
+p
+line "É,|p| boa sorte Roxy."
+face r 1 1
+r
+line "Valeu,|p| boa sorte com as dores de cabeça também."
+face p 1 2
+p
+line "Se elas não pararem, eu vou pegar uma enxaqueca até o fim do torneio."
+face r 0 1
+r
+line "..."
+
+setflag _0.smalls.roxy 1
+setflag _0.roxy.read.AABA 1
+setflag _0.roxy.done 1
+
+function lobby_tick_time
+

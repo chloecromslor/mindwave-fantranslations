@@ -1,0 +1,23 @@
+checkflag _0.tutorial.fails 0
+goto marker 0fails
+
+goto marker 1fails
+
+
+
+
+marker 0fails
+Que mente \ninteressante você tem,|p| haha.
+show_controls
+É hora de tentar a Interface das Setinhas!
+Como se estivesse jogando um jogo com um teclado,|p| concentre-se nas Setinhas com sua mão direita-|p| ou WASD com sua mão esquerda.
+goto marker end
+
+marker 1fails
+Aw,|p| que pena...
+show_controls
+Lembre-se,|p| você pode alcançar as Setinhas ou WASD!|p| O que for mais confortável pra você.
+goto marker end
+
+marker end
+

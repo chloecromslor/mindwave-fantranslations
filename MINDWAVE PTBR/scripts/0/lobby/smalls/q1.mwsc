@@ -1,0 +1,67 @@
+p
+line "Então,|p| Torre Mindscape...|p| Aqui estamos nós."
+face s 1 0
+s
+line "É.|p| O lado de dentro é bem maluco."
+p
+line "Me pergunto quantas pessoas já pisaram aqui?"
+face s 0 1
+s
+line "Além dos cento e poucos convidados anualmente?"
+face p 0 2
+p
+line "Sim,|p| além deles."
+face p 1 2
+p
+line "É só um lugar bem secreto.|p| Não parece que era pra gente estar aqui."
+
+face p 1 0
+p
+line "Não é algo que você pensa sobre.|p| Você só vê ela no horizonte."
+line "A torre malvadona com o olhão brilhante sinistro."
+face p 0 2
+p
+line "A gente tá DENTRO da torre malvadona,|p| isso não é esquisito??"
+face s 0 0
+s
+line "É,|p| mas você não ia perder essa oportunidade,|p| ia?"
+face p 0 0
+p
+line "Não.|p| Eu não vou passar a oportunidade de tirar o dinheiro da Mindscape."
+line "Mesmo se eles forem meio do mal."
+face s 1 0
+s
+line "Mas, quão do mal eles são?"
+face s 0 0
+s
+line "A marca é super estranha,|p|\nmas tudo que eles fizeram foi fazer um jogo."
+p
+line "Tem outra empresa tão transparentemente do mal?"
+face s 2 0
+s
+line "Provavelmente,|p| mas eu não consigo nomear uma de cabeça."
+face p 0 2
+p
+line "Okay,|p| útil."
+face s 2 1
+s
+line "..."
+
+
+
+setflag _0.smalls.q1 2
+function lobby_tick_time 0.5
+goto script 0/lobby/smalls/return
+
+
+
+
+
+
+
+
+
+
+
+
+

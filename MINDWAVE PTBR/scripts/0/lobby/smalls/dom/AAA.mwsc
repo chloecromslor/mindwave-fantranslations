@@ -1,0 +1,68 @@
+
+face s 1 0
+s
+line "Você realmente tá pensando em tocar fora da Torre Mindscape?"
+face p 0 1
+p
+line "Absolutamente."
+face p 0 0
+p
+line "Óbviamente não hoje,|p| mas eu definitivamente vou tentar manter contato com o Dom pra falar sobre isso depois."
+face s 0 1
+s
+line "Não vou mentir,|p| a ideia é ótima."
+face s 2 0
+s
+line "O problema é,|p| eu prefiro não atrair a atenção da Mindscape agora..."
+face s 0 0
+s
+line "...vamos ser honestos,|p| não é possivel que eles não sabem que eu entrei aqui."
+line "...Mas por alguma razão ou outra,|p| eles não ligam."
+face p 0 0
+p
+line "Talvez seja tipo como eles te deixam roubar um pouco dos supermercados."
+face s 0 0
+s
+line "Quê?"
+face p 1 0
+p
+line "É,|p| os supermercados não te deixam roubar um pouquinho por que não tem problema?"
+line "Eu acho que você me disse algo assim a um certo ponto."
+face s 1 0
+s
+line "Oh,|p| isso."
+line "Não é que eles não ligam,|p| é pra fazer você pensar que tá saindo sem consequências."
+face s 0 0
+s
+line "Eles querem construir um caso contra você pra poderem te acusar de um crime realmente sério."
+face p 0 2
+p
+line "Okay, eu acho que eu entendi isso completamente errado."
+s
+line "De boa."
+face s 2 0
+s
+line "Meu ponto é,|p| se eu fizer mais uma coisa que a Mindscape não gosta,|p| eles provavelmente tentariam me pegar."
+face p 1 0
+p
+line "Eu entendo,|p| é triste,|p| mas acho que a gente vai ter que tocar no show sem você. "
+face s 0 0
+s
+line "..."
+face s 1 0
+s
+line "Se eles sabem que eu tô invadindo,|p| eles também saberiam que a gente é associado."
+line "Entãooo...|p| eles provavelmente vão tá de olho em você também."
+p
+line "Bom,|p| droga."
+face p 0 0
+p
+line "Se não vai fazer diferença de qualquer forma,|p| você pode vir do mesmo jeito com a gente."
+face s 0 1
+s
+line "Quer saber,|p| claro.|p|\nIsso é um argumento convincente."
+setflag _0.smalls.dom 2
+setflag _0.smalls.dom.branch AAA
+function lobby_tick_time 0.5
+goto script 0/lobby/smalls/return
+

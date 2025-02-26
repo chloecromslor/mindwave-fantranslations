@@ -1,0 +1,26 @@
+face s 0 0
+s
+line "É melhor a gente sair."
+face p 1 0
+p
+line "Valeu pelo conselho.|p| Mesmo eu não tendo esperança alguma."
+face r 2 0
+r
+line "Bem,|p| eu não diria que você não tem esperança."
+line "Você certamente só não vai chegar tão longe quanto poderia com esse pensamento."
+face r 2 1
+r
+line "Não subestime o quanto a mente pode facilmente influenciar a si mesma."
+face s 0 0
+s
+line "Boa sorte com o torneio, Roxy."
+face r 0 1
+r
+line "..."
+
+setflag _0.smalls.roxy 1
+setflag _0.roxy.read.AAAA 1
+setflag _0.roxy.done 1
+
+function lobby_tick_time
+

@@ -1,0 +1,61 @@
+face p 0 0
+p
+line "Então tipo,|p| como exatamente MINDWAVE mexe com a sua cabeça?"
+face p 0 2
+p
+line "Sinto que isso é uma coisa que eu deveria me preocupar sobre."
+face s 0 2
+s
+line "Nah,|p| eu jogo mais do que você e eu tô perfeitamente bem."
+face s 0 3
+s
+line "Eu acho."
+face r 3 1
+r
+line "Você deve ficar bem se jogar ocasionalmente."
+face r 2 0
+r
+line "Mas é diferente de um nível profissional."
+line "Alguns dias a gente joga por horas."
+face s 0 0
+s
+line "Mas isso tem que causar alguma dissonância com a realidade."
+face r 3 0
+r
+line "Você tá certa.|p| Jogar profissionalmente não é pra todo mundo."
+line "Um monte de gente que se juntou no time da minha escola saiu dentro do primeiro mês."
+face p 1 0
+p
+line "Boa.|p| Eles deveriam ao invés se juntar pra times de tipo,|p| esportes de verdade."
+r
+line "Exposição a longo prazo a mente de outras pessoas pode confundir o seu senso de identidade."
+face r 2 0
+r
+line "Um dos meus parceiros de treino ficou convencido de que algumas das minhas memórias eram dele."
+line "Ele viu elas no jogo tanto que a própria mente dele se enganou."
+s
+line "Oh uau.|p| Algo assim já aconteceu com você?"
+r
+line "Na verdade não.|p| Eu tento evitar coisas assim."
+line "Já tive problemas pra mim no passado,|p| mas eu tô bem agora. "
+face s 0 3
+s
+line "Huh..."
+
+
+
+
+
+
+
+
+
+
+
+
+
+setflag _0.roxy.read.AA 1
+setflag _0.roxy.branch AA
+function lobby_tick_time
+goto script 0/lobby/roxy/questions
+

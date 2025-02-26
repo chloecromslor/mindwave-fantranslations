@@ -1,0 +1,55 @@
+face p 0 2
+p
+line "Aquela garota do colegial é a mais assustadora aqui."
+face s 0 0
+s
+line "Roxy?|p| Ela não é assustadora,|p| ela é legal."
+face p 1 0
+p
+line "Não,|p| eu não digo tipo,|p| assustadora como pessoa..."
+line "Eu digo assustadora como oponente."
+face p 0 0
+p
+line "Como pessoa,|p| ela era de boa..."
+face p 0 2
+p
+line "Mas eu ainda prefiro tomar cuidado com alguém que curto tanto MINDWAVE quanto ela."
+face s 0 1
+s
+line "Nah cara, MINDWAVE é daora também."
+face s 0 0
+s
+line "Eu acho que você toca guitarra pelas mesmas razões que a Roxy joga MINDWAVE."
+line "Eu acho que pra jogadores profissionais,|p| é sua própria forma de autoexpressão."
+face p 0 4
+p
+line "Eu não acho parecido nem um pouco.|p| Música é uma forma de arte."
+face p 0 2
+p
+line "E mais,|p| tocar guitarra não me deixa enjoada."
+face s 0 1
+s
+line "Eu assumiria que no nível dela,|p| tem provavelmente alguma criatividade envolvida no estilo de jogo dela."
+face p 1 0
+p
+line "Talvez?|p| Eu não teria como saber..."
+line "Tem muita gente aqui com mais experiência que eu."
+face s 2 0
+s
+line "Dependendo do layout do torneio,|p| você pode acabar passando o torneio inteiro sem ir contra ela."
+face s 0 1
+s
+line "Se isso ajuda."
+face p 0 0
+p
+line "Isso não ajuda."
+face p 1 0
+p
+line "Por que se isso acontecesse eu só taria contra a pessoa que venceu ela ao invés disso."
+
+
+setflag _0.smalls.roxy 2
+setflag _0.smalls.roxy.branch ABAA
+function lobby_tick_time 0.5
+goto script 0/lobby/smalls/return
+

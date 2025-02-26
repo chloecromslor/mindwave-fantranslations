@@ -1,0 +1,116 @@
+face s 0 0
+face p 0 0
+s
+line "Então,|p| Abbie."
+line "Eae,|p| como tá se sentindo sobre o torneio?"
+line "Já jogou muito antes?"
+face a 0 0
+a
+line "Umm...|p| não!|p| Eu tô SUPER enferrujada na verdade."
+face a 1 2
+a
+line "A última vez que eu joguei eu na verdade perdi tão feio que eu comecei a chorar."
+p
+line "Huh,|p| eu podia estar pior."
+face s 2 1
+s
+line "Não,|p| tenho quase certeza que vomitar e desmaiar é pior que chorar."
+face p 0 2
+p
+line "Não é verdade,|p| eu não desmaiei."
+face s 0 1
+s
+line "Okay,|p| você ainda vomitou."
+face a 0 0
+a
+line "Tá tudo bem!|p| O jogo foi difícil de se acostumar pra mim também."
+face a 1 0
+a
+line "Eu mal consigo jogar."
+line "O único fliperama que meus pais me levam é o do Mercado Norte."
+s
+line "Eu ouvi que esse aí é sempre super lotado."
+p
+line "Toda máquina de Mindwave na cidade é,|p| Smalls."
+face s 2 0
+s
+line "É...|p| Especialmente nessa época do ano."
+face s 0 0
+s
+line "Muitos potenciais jogadores que querem praticar."
+face a 1 2
+a
+line "Huh...|p| Eu nunca considerei que eu podia tá praticando pra isso!"
+face p 0 0
+p
+line "Eu diria que isso é burro,|p| mas eu acho que você tem tanta experiência quanto eu."
+face a 0 0
+a
+line "Boa sorte para nós duas então!"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+setflag _0.abbie.read.A 1
+setflag _0.abbie.branch A
+function lobby_tick_time
+goto script 0/lobby/abbie/questions
+
+

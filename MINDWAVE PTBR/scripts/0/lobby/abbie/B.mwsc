@@ -1,0 +1,104 @@
+
+face p 0 2
+p
+line "Beleza,|p| por que você tá de pijama?"
+face p 1 0
+p
+line "Não querendo ser grossa nem nada."
+line "Só meio que me perguntando se eu devia ter trazido algo mais confortável."
+face a 0 0
+a
+line "Não,|p| eu gosto do que você trouxe!"
+face a 1 0
+a
+line "Eu tô vestindo eles porque eu nunca consegui terminar a fantasia que eu tava planejando."
+face s 0 0
+s
+line "Você tava planejando uma fantasia?"
+a
+line "Sim!|p| Ia ser toda essa coisa de garota mágica."
+face a 1 2
+a
+line "Meu pai ia me ajudar a fazer,|p| mas ele ficou ocupado com o trabalho..."
+face p 0 2
+p
+line "Então...|p| sua única outra opção era seus pijamas?"
+face a 0 0
+a
+line "..."
+face a 1 0
+a
+line "Oh!|p| Hehe,|p| na verdade não!"
+line "É só que meu pai DEVERIA ter me levado hoje,|p| mas ele não podia."
+face a 2 2
+a
+line "...e minha mãe disse que eu sou péssima em MINDWAVE, e provavelmente não iria ganhar."
+line "Então ela também não queria."
+face s 2 0
+s
+line "Isso é um jeito bem ruim de pensar.|p|"
+face s 0 1
+s
+line "Essa experiência vai ser zica mesmo se eu ganhar ou não."
+face a 0 0
+a
+line "Foi exatamente o que eu disse!"
+face s 0 0
+a
+line "Menos o palavrão."
+face p 1 2
+p
+line "|style color gray|(Qual palavra é o palavrão???)"
+face a 2 2
+a
+line "É o meu bilhete!|p| Eu encontrei!|p| Eu mereço estar aqui!"
+face a 0 0
+a
+line "Então...|p| Eu fingi ir pra cama cedo hoje,|p| e daí eu fugi de casa!"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+setflag _0.abbie.read.B 1
+setflag _0.abbie.branch B
+function lobby_tick_time
+goto script 0/lobby/abbie/questions
+
+
+

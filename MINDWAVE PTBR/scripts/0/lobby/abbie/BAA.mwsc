@@ -1,0 +1,69 @@
+face s 0 0
+face p 0 0
+p
+line "Como você teve problemas chegando aqui de qualquer forma?"
+face p 1 2
+p
+line "Transporte público é tipo,|p| a única coisa boa em Blackout."
+face s 1 0
+s
+line "É só,|p| pegar um passe de trânsito."
+line "Pandora e eu recebemos o suficiente pra pagar mensalmente."
+face s 0 1
+s
+line "Tem muito o que fazer pela cidade,|p| então vale a pena."
+face p 0 0
+p
+line "Eu só uso pra ir pra escola na maioria das vezes."
+face a 0 0
+a
+line "Eu considerei isso,|p| mas parecia caro,|p| então eu só paguei pela viagem."
+face a 1 2
+a
+line "Meus pais me dizem pra evitar o metrô porque é \"sujo e maligno.\""
+face a 0 0
+a
+line "Se o lugar que eu quero ir é muito longe pra ir andando,|p| eles preferem só me dar carona até lá."
+face p 0 2
+p
+line "Eu não consigo imaginar dirigir ao redor de Blackout."
+line "Os estacionamentos sempre tão lotados."
+line "Seus pais realmente gostam de procurar lugar pra estacionar por 20 minutos toda vez que querem ir a algum lugar?"
+face a 1 2
+a
+line "Beeeem...|p| Meus pais realmente ficam bem irritados quando eles não encontram um bom lugar pra estacionar."
+face a 0 0
+a
+line "Mas não é tão ruim.|p|"
+line "Eu passei uma quantidade de tempo parecida andando até aqui da minha parada."
+face p 0 0
+p
+line "Tem uma parada a tipo,|p| literalmente 5 minutos da torre."
+face a 1 2
+a
+line "Oh,|p| isso foi provavelmente minha culpa então."
+face a 2 2
+a
+line "Eu não conseguia ouvir o alto-falante por causa do barulho."
+line "Eu não tinha certeza quando era pra descer do trem,|p| então eu devo ter perdido minha parada."
+face a 1 0
+a
+line "Por sorte com a torre sendo tão alta como é,|p| eu consegui ver ela de alguns blocos de distância."
+face a 0 0
+a
+line "Eu só andei na direção dela seguindo ela pelo horizonte até chegar aqui!"
+face s 0 0
+s
+line "Oh uau."
+
+
+
+
+
+setflag _0.abbie.read.BAA 1
+setflag _0.abbie.branch BAA
+function lobby_tick_time
+goto script 0/lobby/abbie/questions
+
+
+

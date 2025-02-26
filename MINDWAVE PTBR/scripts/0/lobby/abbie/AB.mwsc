@@ -1,0 +1,90 @@
+
+face s 1 0
+s
+line "Você é de Blackout Norte?"
+face a 0 0
+a
+line "Sim!|p| Nos mudamos aqui um mês atrás!"
+face s 0 0
+s
+line "O que você tá achando?"
+face a 1 2
+a
+line "Bem,|p| eu não vivi numa cidade assim desde que eu era pequena."
+face a 0 0
+a
+line "Eu mal tinha um cérebro funcional antes.|p| Diferente de agora."
+face p 0 0
+p
+line "Certo."
+face s 0 1
+s
+line "Boa sorte se ajustando a esse lugar Abbie.|p| Ouvi dizer que não é fácil."
+face a 3 1
+a
+line "Boa sorte?|p| Eu já amo esse lugar!"
+face a 1 0
+a
+line "Meus pais dizem que essa cidade é nauseante de dirigir."
+face a 1 2
+a
+line "Olhar os arranha-céus ainda é assustador!"
+face a 2 2
+a
+line "E eu sinto falta da minha amiga às vezes..."
+face p 0 2
+p
+line "Espera,|p| você tava falando sobre GOSTAR dessa cidade,|p| não tava?"
+face a 4 1
+a
+line "É claro!|p| Como eu não amaria uma cidade com uma torre tão legal no meio?"
+face p 0 0
+p
+line "Eu consigo pensar em algumas razões."
+face a 0 0
+
+a
+line "De qualquer forma Panda,|p| você não me deixou chegar na moral!"
+face s 0 0
+face a 1 0
+a
+line "Tem essa grande loja de hobbies no Mercado Norte que é maior do que a lá de casa."
+face a 3 1
+a
+line "Eu achei fio de tricô brilhante ali.|p|\nEu nem sabia que isso existia!"
+face p 0 2
+p
+line "Como que isso é uma moral?"
+face s 1 0
+s
+line "Mercado norte é legal,|p| é.|p| Mas é meio ocupado."
+face p 1 0
+p
+line "E caro."
+face s 0 1
+s
+line "Você devia considerar vir pro leste algum dia desses."
+face a 1 0
+a
+line "Bem,|p| eu pedi pros meus pais me levarem pra Blackout Leste antes..."
+face a 0 0
+a
+line "...mas eles me disseram pra não ir para as partes ruins da cidade."
+face s 2 0
+face p 0 0
+p
+line "?"
+
+
+
+
+
+
+setflag nickname_panda 1
+setflag _0.abbie.read.AB 1
+setflag _0.abbie.branch AB
+function lobby_tick_time
+goto script 0/lobby/abbie/questions
+
+
+

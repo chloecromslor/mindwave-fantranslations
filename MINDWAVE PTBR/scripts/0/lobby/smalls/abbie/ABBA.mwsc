@@ -1,0 +1,44 @@
+
+face p 0 0
+p
+line "A Abbie era...|p| legal."
+face s 0 1
+s
+line "É,|p| ela era bem legal."
+face p 1 0
+p
+line "Não sei se gosto do quanto ela curtiu esse lugar..."
+face s 0 0
+s
+line "Eu acho que a Abbie só gosta de tudo."
+face s 1 0
+s
+line "Maioria dos de Blackout Norte acham que MINDWAVE é legal de qualquer forma."
+p
+line "É,|p| eu tô convencida que Mindscape tá colocando alguma coisa na água."
+face s 0 2
+s
+line "Não seja chata."
+face s 1 0
+s
+line "Mindscape Co. tem tanto poder sobre essa cidade que muitas gente rica vem se mudar aqui especificamente por MINDWAVE."
+face s 0 1
+s
+line "Então eu não acho que tem nada a ver com a água."
+face s 0 2
+s
+line "A não ser que esteja sugerindo que a Mindscape tá interferindo com o suprimento de água das outras cidades também?"
+face p 0 0
+p
+line "Sabe,|p| eu não duvidaria."
+
+
+
+
+
+
+setflag _0.smalls.abbie 2
+setflag _0.smalls.abbie.branch ABBA
+function lobby_tick_time 0.5
+goto script 0/lobby/smalls/return
+

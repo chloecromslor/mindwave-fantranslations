@@ -1,0 +1,72 @@
+face p 0 1
+p
+line "Honestamente, é meio legal\nque você faz arte abstrata."
+face p 0 0
+p
+line "Quando a gente tá pintando na aula de artes,|p| eu sempre erro um monte."
+face p 0 1
+p
+line "Parece legal só pular a dor de cabeça e pintar cores aleatórias por diversão."
+face s 0 1
+checkflag nickname_panda 1
+goto marker branch26y
+goto marker branch26n
+
+marker branch26y
+
+s
+line "Panda,|p| suas tarefas de artes já são basicamente arte abstrata."
+
+goto marker branch26e
+
+marker branch26n
+
+s
+line "Pandora,|p| suas tarefas de artes já são basicamente arte abstrata."
+
+goto marker branch26e
+
+marker branch26e
+
+
+face l 1 0
+l
+line "Cara, as coisas da Kat são maneiras.|p|\nMeu quarto tá CHEIO das pinturas dela."
+face k 0 0
+k
+line "Eu estive pintando por...|p| um pouquinho agora.|p| Eu tenho várias peças terminadas largadas por aí."
+line "Eu não ligo muito pras minhas pinturas depois que eu termino elas."
+line "Só é relaxante pintar.|p|\nEu deixo ficar de qualquer jeito."
+l
+line "Sua arte FALA comigo.|p|\nÉ tão boa."
+face p 0 0
+face k 0 1
+k
+line "Tanto faz nerd,|p| é menos um\nelogio vindo de você."
+face k 0 2
+k
+line "Mas valeu."
+face s 0 0
+s
+line "Vocês jogam MINDWAVE\num contra o outro?"
+face s 0 2
+s
+line "Como é a mente de uma\npintora abstrata?"
+k
+line "Me disseram que é bem bizarro."
+face l 0 0
+l
+line "Quando a gente vai no fliperama,|p| os oponentes da Kat geralmente ficam SUPER chocados."
+face s 0 0
+face l 1 0
+l
+line "Mas eu só não vejo assim cara."
+face k 0 1
+k
+line "Eu acho que é só por que você é esquisito."
+
+setflag _0.slate_kat.read.BAA 1
+setflag _0.slate_kat.branch BAA
+function lobby_tick_time
+goto script 0/lobby/slate_kat/questions
+

@@ -1,0 +1,101 @@
+face p 0 0
+p
+line "Eu ao menos tenho uma chance de ganhar se tenho tipo,|p| zero experiência?"
+face r 0 0
+r
+line "Bem...|p| é possível?"
+face r 0 1
+r
+line "Provavelmente tem um monte de gente inexperiente nesse lugar."
+face s 2 1
+s
+line "É,|p| você só tem que esperar que não te botem contra um profissional logo de cara."
+face s 0 0
+s
+line "Você vai ganhar experiência enquanto faz seu progresso na torre."
+face p 1 0
+p
+line "Não consigo nem jogar o jogo sem doer a minha cabeça."
+face p 1 2
+p
+line "Eu não vou do nada virar profissional depois de umas poucas batalhas."
+face r 1 0
+r
+line "Em minha experiência,|p| eu descobri que leva um tipo de pessoa em específico pra jogar MINDWAVE profissionalmente."
+line "Complacência é um grande problema quando você tá acostumada a jogar com as mesmas pessoas."
+face r 1 1
+r
+line "Todo mundo é diferente,|p| então eu posso confirmar por jogar em diferentes fliperamas pela cidade."
+face s 1 0
+s
+line "Verdade,|p| eu queria visitar outros fliperamas pra encontrar novos oponentes."
+face r 3 1
+r
+line "Na verdade,|p| o fliperama que eu te vi tem sido ótimo pra variedade de oponentes."
+face r 3 0
+r
+line "Você pode só tá indo nas horas erradas."
+line "Já joguei contra umas pessoas lá que completamente tiraram o meu chão."
+face s 0 1
+s
+line "Sobre isso,|p| qual fliperama você descobriu que tem os piores jogadores de MINDWAVE?"
+face r 2 1
+r
+line "Definitivamente o Mercado Norte."
+face r 2 0
+r
+line "O pessoal do Blackout Norte tende a ver o MINDWAVE mais como uma brincadeira."
+
+checkflag _0.abbie.read.A 1
+goto marker branch1y
+goto marker branch1n
+
+marker branch1y
+
+face p 0 0
+p
+line "Honestamente não é de se surpreender."
+face s 0 0
+s
+line "Ouvi dizer que as filas lá não são boas também."
+p
+line "Isso é um tiro no escuro,|p| mas você já jogou contra aquela garota de cabelo branco ali?"
+face r 2 0
+r
+line "Quem, tipo,|p| alguém de idade?"
+face p 1 0
+p
+line "Não,|p| tipo,|p| alguém da nossa idade."
+face p 0 1
+p
+line "Cabelo branco,|p| tem uma personalidade animada,|p| provavelmente vestindo rosa e gritando muito alto."
+face s 0 1
+s
+line "Potencialmente chorando numa máquina de MINDWAVE."
+face r 3 1
+r
+line "Não,|p| acho que não lutei."
+face r 2 0
+r
+line "Ela é um oponente que você tá preocupada ou algo assim? "
+face p 0 1
+p
+line "Nah,|p| na verdade não,|p| só vendo as minhas chances."
+
+goto marker branch1e
+
+marker branch1n
+face r 0 1
+r
+line "Também é muito caro.|p|\nEu não recomendaria."
+
+goto marker branch1e
+
+marker branch1e
+
+
+setflag _0.roxy.read.ABB 1
+setflag _0.roxy.branch ABB
+function lobby_tick_time
+goto script 0/lobby/roxy/questions
+

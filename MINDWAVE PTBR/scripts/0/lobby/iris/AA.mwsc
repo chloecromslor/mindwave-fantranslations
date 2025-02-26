@@ -1,0 +1,48 @@
+
+face p 1 0
+p
+line "Sabe,|p| a razão do porque eu queria pedir desculpas é que eu não queria ficar envergonhada."
+line "Tipo,|p| se eu tivesse que jogar contra você depois."
+face p 0 0
+p
+line "Eu honestamente não tenho muita experiência com MINDWAVE."
+face p 0 2
+p
+line "Então não queria arriscar com coisas assim."
+face i 0 2
+i
+line "E como isso foi pra você?"
+face p 0 4
+p
+line "Não acho que vou ficar incomodada agora,|p| pelo menos."
+face p 0 0
+p
+line "Eu ainda não quero jogar contra você."
+i
+line "...Por quê?|p| Eu sou assustadora?"
+p
+line "Não...|p| você só é meio estranha."
+face p 0 1
+p
+line "Mas tá tranquilo.|p|\nVocê parece bastante estável."
+face i 2 0
+i
+line "Oh."
+face i 1 0
+i
+line "É,|p| consigo entender isso."
+face i 0 0
+i
+line "Você não tem razão pra se preocupar."
+line "Eu só jogo esse jogo com os meus amigos.|p| Ocasionalmente."
+line "E só aqueles de mentes saudáveis."
+
+
+
+setflag _0.iris.read.AA 1
+setflag _0.iris.branch AA
+function lobby_tick_time
+goto script 0/lobby/iris/questions
+
+
+

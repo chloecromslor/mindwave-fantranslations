@@ -1,0 +1,50 @@
+face p 0 1
+face p 0 1
+p
+line "Kat é bem legal."
+face p 0 0
+p
+line "Se não fosse tão bagunçado,|p| eu com certeza pintaria por diversão."
+face s 0 1
+s
+line "Música é abstrata do seu próprio jeito."
+face s 0 0
+s
+line "E tem muito menos bagunça também."
+p
+line "Tocar notas aleatórias é meio divertido às vezes..."
+line "...Mas eu gosto quando a música que a gente faz realmente soa como alguma coisa."
+face s 0 1
+s
+line "Com certeza."
+face p 1 0
+p
+line "Mas ela parece uma oponente assustadora..."
+face p 1 2
+p
+line "Se for tão bizarro quanto parece,|p|\nTalvez eu vomite de novo."
+face s 1 0
+s
+line "Eu não estaria tão preocupado sobre a ideia de competir contra a Kat."
+face p 0 2
+p
+line "Por quê?|p| Mesmo se ela não tivesse mais experiência que eu,|p| ela é claramente mais sortuda."
+face p 0 0
+p
+line "Ela ganhou a loteria duas vezes achando dois bilhetes."
+s
+line "Talvez seja por isso que você não tem que se preocupar."
+face s 2 1
+s
+line "A sorte dela tem que acabar eventualmente."
+face p 1 0
+p
+line "Não é assim que funciona mano."
+
+
+
+setflag _0.smalls.slate_kat 2
+setflag _0.smalls.slate_kat.branch BAAA
+function lobby_tick_time 0.5
+goto script 0/lobby/smalls/return
+

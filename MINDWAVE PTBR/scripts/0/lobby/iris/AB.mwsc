@@ -1,0 +1,94 @@
+face p 0 0
+p
+line "Eu percebi o seu colar."
+line "Você é religiosa?"
+face p 1 0
+p
+line "Não que eu teria algum problema com isso."
+face i 0 1
+i
+line "Eu só acho que parece legal."
+line "Cruzes têm um formato legal."
+line "Sou provavelmente mais próxima de ser agnóstica,|p| se for pra ser qualquer coisa."
+face i 1 0
+i
+line "Embora|p| eu não seja o tipo de pessoa que pensa muito sobre esse tipo de coisa."
+p
+line "É,|p| eu também."
+face i 0 3
+i
+line "Meus pais são bem religiosos."
+face i 1 0
+i
+line "Eles acham que aqui é algum tipo de lugar satânico."
+face i 2 0
+i
+line "Por causa dos chifres."
+line "...e aquele grande olho bizarro que aparece às vezes."
+face i 0 3
+i
+line "Mas eles me deixaram ir quando eu lembrei a eles sobre o dinheiro."
+face p 0 0
+p
+line "Quero dizer,|p| isso daqui é um prédio DO MAL."
+face i 0 1
+i
+line "Eu prefiro isso do que mais uma laje cinza entupindo o horizonte."
+line "Além do mais,|p| eu esperava que você fosse a última pessoa a criticar como parece essa torre."
+face p 0 2
+p
+line "Hein?"
+i
+line "Com essas cores e os espinhos,|p| você parece que tá tentando fazer cosplay da torre."
+checkflag _0.abbie.met 1
+goto marker branch1Y
+goto marker branch1N
+
+marker branch1Y
+face p 0 2
+p
+line "Você é literalmente a segunda pessoa a me falar isso hoje de noite."
+face p 1 0 
+p
+line "Eu nem tô ofendida.|p| Só tô tipo,|p| chocada?"
+face i 0 1
+i
+line "É eu não quis ofender.|p| Não é como eu me vestiria mas é legal."
+face p 0 0
+p
+line "Eu só acho que a gente não parece tão similar?"
+line "Tipo,|p| acho que o roxo tá aí,|p| mas é só isso."
+line "E isso é uma similaridade bem superficial."
+face p 0 2
+p
+line "Mindscape tem todo esse amarelho e fúcsia rolando que faz parecer meio..."
+line "Tá mais pra um circo do mal,|p| ou algo assim.|p| Nem ferrando eu pareço tão insana."
+face p 1 0
+p
+line "Nem ferrando eu pareço tão sem alma ou insana."
+goto marker branch1E
+
+marker branch1N
+face p 0 0
+p
+line "O quê?|p| Nem ferrando."
+face p 1 0
+p
+line "Nem ferrando eu pareço tão sem alma ou insana"
+face p 1 2
+p
+line "Essa torre tem tipo,|p| uma vibe mais pra um circo do mal."
+goto marker branch1E
+
+marker branch1E
+i
+line "Justo.|p| Eu não gosto muito da Mindscape também."
+line "Mas eu gosto do jogo deles."
+
+setflag _0.iris.read.AB 1
+setflag _0.iris.branch AB
+function lobby_tick_time
+goto script 0/lobby/iris/questions
+
+
+

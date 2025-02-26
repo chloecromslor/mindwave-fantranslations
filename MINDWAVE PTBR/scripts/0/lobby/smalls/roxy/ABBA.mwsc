@@ -1,0 +1,61 @@
+face s 0 0
+s
+line "Você parece nervosa"
+face s 0 1
+s
+line "Preocupada com alguma coisa?"
+face p 1 2
+p
+line "É...|p| falar com a Roxy mais cedo me fez perceber como minhas chances são terríveis."
+face p 0 2
+p
+line "Tem muita gente aqui com mais experiência do que eu."
+s
+line "Só tenta não se preocupar."
+face s 1 0
+s
+line "Esse torneio acontece todo ano."
+line "As pessoas que ganham geralmente não são os profissionais conhecidos."
+face p 1 0
+p
+line "É tem provavelmente tipo,|p| profissionais desconhecidos aqui também."
+face p 0 2
+p
+line "Isso é ainda mais preocupante."
+face s 0 0
+s
+line "Eu não tô dizendo isso."
+line "Eu acho que a imersão da Roxy na cena competitiva pode ser um próprio obstáculo."
+face s 1 0
+s
+line "Ela é acostumada a jogar MINDWAVE só com pessoas que também se dedicam ao jogo."
+face s 2 0
+s
+line "Sua experiência com MINDWAVE pode ser um mundo completamente diferente do que ela tá acostumada."
+face s 0 2
+s
+line "Talvez você seja a profissional desconhecida."
+face p 1 2
+p
+line "Nah cara,|p| eu mal consigo jogar o jogo sem ficar enjoada."
+face s 0 0
+s
+line "Oh bom,|p| só tentando te animar."
+face s 0 3
+s
+line "Se pá,|p| eu que devia tar preocupado."
+face s 0 1
+s
+line "Pelo menos você entrou nesse torneio legalmente."
+
+
+
+
+setflag _0.smalls.roxy 2
+setflag _0.smalls.roxy.branch ABBA
+function lobby_tick_time 0.5
+goto script 0/lobby/smalls/return
+
+
+
+

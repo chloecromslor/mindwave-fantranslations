@@ -1,0 +1,19 @@
+
+face p 0 1
+p
+line "E aí."
+face p 0 0
+p
+line "Parece que a gente ainda tem tempo pra conversar."
+face d 0 0
+d
+line "Legal!"
+
+
+
+
+
+
+goto script 0/lobby/dom/questions
+
+

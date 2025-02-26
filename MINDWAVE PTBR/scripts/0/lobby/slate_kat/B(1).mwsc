@@ -1,0 +1,80 @@
+face s 0 0
+face p 1 0
+p
+line "É meio...|p| estranho pensar sobre todo mundo aqui."
+line "Tipo, todos nós basicamente ganhamos a loteria pra entrar aqui..."
+face p 1 2
+p
+line "...mas só vai ter um\nvencedor nessa multidão enorme."
+face s 1 0
+s
+line "É,|p| essas pessoas podiam só\ndesistir e ir embora."
+face s 0 1
+s
+line "Eu quem vou ganhar esse rolê."
+l
+line "É fácil esquecer quão insanamente\nsortudos somos que Kat e eu até mesmo entramos aqui."
+face p 1 0
+k
+line "Mas vocês dois devem sentir a mesma coisa."
+face s 2 1
+s
+line "É,|p| a gente foi abençoado com certeza."
+face l 1 0
+l
+line "Kat encontrou os bilhetes pra nós dois."
+face s 0 0
+face l 0 0
+l
+line "Então ela quem é a sortuda."
+k
+line "Dei o meu primeiro bilhete pro Ethan porque eu não gostei da ideia de estranhos olharem o meu cérebro."
+face l 1 0
+l
+line "Cara,|p| esse foi o melhor presente de aniversário do ano."
+face k 0 1
+k
+line "Foi o único presente de aniversário que você recebeu."
+face s 0 1
+s
+line "Feliz aniversário atrasado."
+face k 0 0
+k
+line "Enfim, quando eu achei o segundo bilhete,|p| eu pensei que seria estúpido\nperder isso duas vezes."
+l
+line "Que bom que não perdeu cara.|p| Eu taria entediado pra caramba se você não aparecesse hoje."
+face l 0 0
+l
+line "Mas é melhor do que ficar em casa."
+k
+line "Você tem sorte que eu tenho tanta sorte."
+face k 0 1
+k
+line "Não perde sua chance."
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+setflag _0.slate_kat.read.B 1
+setflag _0.slate_kat.branch B
+function lobby_tick_time
+goto script 0/lobby/slate_kat/questions
+
+

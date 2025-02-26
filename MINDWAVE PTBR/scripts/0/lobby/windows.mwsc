@@ -1,0 +1,51 @@
+
+char pandora p left
+char smalls s right
+
+face s 0 0
+s
+line "Tá olhando o quê?|p| As janelas?"
+face p 0 0
+p
+line "É,|p| eu não gosto delas."
+face s 2 0
+s
+line "Eu acho que você tá deixando seu desdém por esse lugar nublar seu julgamento."
+face s 0 1
+s
+line "São só janelas, cara."
+line "Eu as parabenizo pela luz natural que elas deixam entrar."
+face p 1 0
+p
+line "Que outro prédio te deixaria andar até as janelas e tipo,|p| realmente olhar pro lado de fora delas."
+face p 0 0
+p
+line "Não a Mindscape.|p| Por quê?"
+face p 0 2
+p
+line "É por causa da sua auto-importância?"
+line "Eles acreditam que ninguém ia nem PENSAR sobre outra coisa enquanto estão aqui?"
+face p 1 2
+p
+line "Ou eles tão tentando obscurecer o fato que esse lugar é assustador pra caramba?"
+face s 1 0
+s
+line "Talvez eles só não querem pessoas deixando marcas de mão no vidro."
+line "Eles provavelmente poupam uma fortuna em limpadores todo ano que tem esse torneio."
+face p 4 0
+p
+line "..."
+face p 0 0
+p
+line "É,|p| essas são janelas extremamente limpas."
+line "Como eles limpam janelas gigantes assim?"
+face s 0 0
+s
+line "Eu não invejo os limpadores de janela encarregados da Torre Mindscape."
+face s 0 1
+s
+line "Eles devem ser as únicas pessoas que odeiam esse lugar mais do que você."
+
+setflag _0.windows.done 1
+function lobby_tick_time 0.5
+

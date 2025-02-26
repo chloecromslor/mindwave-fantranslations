@@ -1,0 +1,43 @@
+char pandora p left
+char smalls s right
+
+s
+line "Já terminou de olhar por aí?"
+p
+option add name "É, pra mim já deu." marker "yes"
+option add name "Na verdade, não." marker "no"
+options show
+
+marker yes
+
+p
+line "É,|p ,| pra mim já deu.|p .| Vamos só esperar essa coisa começar."
+
+s
+line "Beleza."
+function start_next_round
+skip outro
+goto marker end
+
+marker no
+
+p
+line "Na verdade, não.|p .| Vamos dar mais uma olhada por aí."
+
+face s 2 1
+s
+line "Beleza,|p ,| beleza.|p .| Se você insiste."
+goto marker end
+
+marker end
+
+
+
+
+
+
+
+
+
+
+

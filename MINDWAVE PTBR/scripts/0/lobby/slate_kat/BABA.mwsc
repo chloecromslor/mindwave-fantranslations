@@ -1,0 +1,47 @@
+face s 0 1
+s
+line "Ethan,|p| Kat,|p| foi legal conhecer vocês."
+face l 0 0
+l
+line "Mesma coisa aqui cara.|p| Boa sorte com o jogo vocês dois."
+face p 0 0
+s
+line "Kat,|p| espero que consiga pegar aquele estúdio seu se ganhar. "
+face k 0 2
+k
+line "Valeu."
+l
+line "Seria tão zica.|p| Eu vou ter certeza de que a Kat instale um telão ali."
+line "Dai eu convido vocês pra assistir Fortaleza da Solidão tudo de uma vez. "
+face k 0 1
+k
+line "É,|p| eu não vou fazer isso."
+line "Eu não ia conseguir me concentrar na minha arte com você assistindo sua série estúpida ali. "
+face k 0 2
+k
+line "Mas o resto de vocês tá convidado."
+face l 1 0
+l
+line "Cara, Kat,|p| você SABE que eu não posso convidar ninguém na minha casa pra curtir."
+line "Talvez eu só tenha que te vencer pra ser VOCÊ pegando o MEU estúdio emprestado. "
+face k 0 1
+k
+line "É?|p| A gente vai ver qual de nós vai vencer então."
+s
+line "Hahaha."
+face s 2 1
+s
+line "Até mais pessoal."
+face l 0 0
+l
+line "Vai na paz."
+face k 0 2
+k
+line "Até mais!"
+
+setflag _0.smalls.slate_kat 1
+setflag _0.slate_kat.done 1
+setflag _0.slate_kat.read.BABA 1
+function lobby_tick_time
+
+

@@ -1,0 +1,16 @@
+face p 1 2
+p
+line "Uh,|p| é,|p| isso é tudo que eu queria fazer.  "
+face p 0 0
+p
+line "Então acho que eu vou sair agora,|p| meu amigo tá me esperando logo ali."
+face i 0 0
+i
+line "Tudo bem por mim. "
+face p 0 4
+p
+line "É,|p| te vejo por aí, eu acho."
+i
+line "Até depois."
+setflag _0.pandora.alone 0
+

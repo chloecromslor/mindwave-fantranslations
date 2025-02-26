@@ -1,0 +1,40 @@
+s
+line "É melhor a gente já sair."
+face p 0 0
+p
+line "Valeu pelo conselho.|p| Mesmo não tendo ajudado muito."
+face r 2 0
+r
+line "Meu último conselho,|p| só tenta não se preocupar muito."
+face r 3 0
+r
+line "Lembra que até profissionais podem ter problemas contra jogadores inexperientes."
+face r 1 0
+r
+line "Ficar se estressando pelas suas chances só vai fazer elas ficarem piores."
+line "Tudo o que você pode fazer é ser confiante com o que você tem."
+face p 1 0
+p
+line "Uh,|p| valeu."
+face s 0 1
+s
+line "Boa sorte no torneio,|p| Roxy."
+face r 0 1
+r
+line "..."
+
+setflag _0.smalls.roxy 1
+setflag _0.roxy.read.ABBA 1
+setflag _0.roxy.done 1
+
+function lobby_tick_time
+
+
+
+
+
+
+
+
+
+

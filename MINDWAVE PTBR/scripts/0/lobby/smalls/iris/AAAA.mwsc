@@ -1,0 +1,55 @@
+
+face p 0 2
+p
+line "...Falar com aquela garota talvez tenha sido um erro."
+face s 2 0
+s
+line "Aw qual é,|p| não deve ter sido tão ruim."
+face s 0 0
+s
+line "Você esclareceu a situação da fila,|p| né?"
+face p 0 0
+p
+line "É...|p| Quer dizer,|p| mais ou menos?"
+face p 0 2
+p
+line "Eu ainda não gosto da ideia de jogar contra ela."
+face p 4 0
+p
+line "Eu acho que ela deve ser uma serial killer?"
+face s 0 0
+s
+line "Oh,|p| huh?"
+face p 0 0
+p
+line "Foi só uma piada que ela fez,|p| mas é difícil de dizer com ela."
+face p 0 2
+p
+line "Pelo menos eu não vou ficar toda chocada quando jogar contra ela."
+face s 1 0
+s
+line "Sobre isso..."
+face s 2 0
+s
+line "Eu não sei se realmente funciona assim."
+face p 1 0
+p
+line "Entãoooo...|p| Eu não tinha que falar com ela?"
+face p 1 2
+p
+line "Não importava?"
+face s 0 1
+s
+line "Claro que importava!"
+face s 0 2
+s
+line "Você fez uma amiga."
+face p 0 2
+p
+line "Eu não chamaria ela assim."
+setflag _0.smalls.iris 2
+setflag _0.smalls.iris.branch AAAA
+function lobby_tick_time 0.5
+goto script 0/lobby/smalls/return
+
+

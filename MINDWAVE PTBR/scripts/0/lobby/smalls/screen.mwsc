@@ -1,0 +1,66 @@
+char pandora p left
+char smalls s right
+s
+line "Uma tela com um relógio."
+p
+line "Uma tela com um relógio."
+line "..."
+face p 1 2
+p
+line "Nós todos temos telefones,|p| pra que ter isso?"
+face s 2 0
+checkflag nickname_panda 1
+goto marker branch26y
+goto marker branch26n
+
+marker branch26y
+
+s
+line "Panda,|p| isso é bem redutivo."
+
+goto marker branch26e
+
+marker branch26n
+
+s
+line "Pandora,|p| isso é bem redutivo."
+
+goto marker branch26e
+
+marker branch26e
+
+face s 1 0
+s
+line "É pelo estilo,|p| saca?"
+line "A grandeza de tudo."
+face s 0 2
+s
+line "Estamos AQUI.|p| Na Torre Mindscape!"
+line "O torneio de dez milhões de dólares está a minutos de distância!|p| Estamos numa sala enorme!"
+face p 0 0
+p
+line "...e tudo tem chifres.|p|\nQual é da Mindscape Co. com chifres?"
+face s 1 0
+s
+line "É a marca deles.|p| Isso é bem óbvio."
+face s 0 0
+s
+line "É uma coisa de estilo também.|p| A gente pode ficar nessa pra sempre."
+face p 1 0
+p
+line "Eu prefiro não fazer isso."
+face s 0 2
+s
+line "Admitindo derrota, então."
+line "Escolha suas próximas palavras com cuidado."
+p
+line "...Cara.|p| Você tá sendo esquisito."
+line "Para de ficar do lado da empresa-|p| e-"
+face p 0 3
+p
+line "Esquece que eu perguntei da droga da tela."
+setflag _0.screen.done 1
+function lobby_tick_time 0.5
+
+
+

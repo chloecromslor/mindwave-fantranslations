@@ -1,0 +1,37 @@
+wait for marker line1
+pause
+speaker_voice announcer
+|style font fnt_pixel|Concorrentes!
+resume
+pause at marker panEnd
+|style font fnt_pixel|Torneios de MINDWAVE consistem de centenas de outras pessoas sortudas como você!
+no_text_continue_until marker panEnd
+|style font fnt_pixel|Então por favor lembrem-se de ficarem em fila de forma organizada e permaneçam pacientes!
+resume
+clear
+pause at marker spaceout_effect
+wait for marker line4
+|style font fnt_pixel|Se certifique de ter seu Bilhete de Platina pronto antes do processo de escaneamento, e sem furar fila!
+wait for marker spaceout_effect
+|style font fnt_pixel|Quando você chegar num terminal você será guiado através do nosso processo de verificação de identidade...
+speaker_voice normal
+...
+......
+Você pode andar?
+...
+text_wavy 0 0
+resume
+clear
+no_text_continue_until marker startleEnd
+pause at marker startleEnd
+Ei.
+É sua vez.|p| Pode andar?
+clear
+resume
+wait for marker terminalDialogue
+pause
+speaker_voice terminal
+|style font fnt_pixel|Bem-vindo ao sistema de entrada do torneio da Torre Mindscape!
+|style font fnt_pixel|Por favor dê um passo para frente deste terminal para começar!
+resume
+

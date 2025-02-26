@@ -1,0 +1,70 @@
+face p 0 2
+p
+line "...Foi mal por ter te segurado na fila antes."
+face i 0 0
+i
+line "..."
+face i 0 1
+i
+line "OK."
+line "Honestamente,|p| eu acho que eu nem me importei com isso lá atrás."
+line "Muito menos agora."
+line "Se qualquer coisa,|p| o fato que você tá se desculpando me incomoda."
+line "Você tá fazendo isso virar um problema trazendo esse assunto de volta."
+line "Agora eu tenho a obrigação social de te fazer sentir melhor por algo que eu nem lembro."
+face i 0 0
+i
+line "..."
+p
+line "..."
+i
+line "Então...|p| desculpas aceitas,|p| se é isso que você queria ouvir."
+p
+line "Okay você tá sendo um pouquinho mais agressiva sobre isso do que eu esperava."
+i
+line "É, é porque você não me conhece."
+p
+line "Eu só tava tentando pedir desculpas."
+face i 0 0
+i
+line "Eu não gosto de ser posta em situações sociais desconfortáveis."
+face p 0 3
+p
+line "Foi VOCÊ que fez isso ficar desconfortável."
+face p 1 2
+p
+line "Foi você que embolou tudo numa grande coisa só."
+face i 0 2
+i
+line "Quero dizer..."
+face i 1 0
+i
+line "OK.|p| Desculpa."
+face i 2 0
+i
+line "Eu não tava tentando ser grosseira."
+face p 0 0
+p
+line "Te entendo."
+face p 0 1
+p
+line "Mas você fala bem mais do que eu."
+face i 0 3
+i
+line "Verdade."
+face p 0 0
+p
+line "..."
+face i 0 1
+setflag _0.iris.read.A 1
+setflag _0.iris.branch A
+function lobby_tick_time
+p
+line "|style color gray|(Se eu só sair agora eu acho que vou me sentir meio estúpida.)"
+
+goto script 0/lobby/iris/questions
+
+
+
+
+

@@ -1,0 +1,103 @@
+
+face a 1 2
+a
+line "Pandora,|p| Smalls,|p| foi legal conversar com vocês!"
+face a 2 2
+a
+line "Mas acho que todos temos que ir em breve..."
+face a 1 2
+a
+line "...então,|p| posso ter seus números?"
+face s 0 1
+s
+line "Claro,|p| aqui."
+line "E também,|p| sinta-se livre de chamar a gente se quiser curtir juntos."
+face p 1 0
+p
+line "Eu acho que eu não me importaria de ir lá..."
+line "...mas a gente só vai,|p| tipo,|p| vadiar num parque ou algo assim."
+line "Qualquer outra coisa é muito cara pra mim."
+face a 0 0
+a
+line "Tudo bem!|p| Eu posso pagar pra vocês dois!"
+face p 4 0
+p
+line "Oh,|p| isso é ...|p| legal da sua parte."
+face p 0 1
+p
+line "A gente vai nessa então."
+face p 1 0
+p
+line "..."
+face p 0 1
+p
+line "Legal te conhecer,|p| Abbie,|p| te vemos por aí."
+line "Espero que você veja sua amiga de novo."
+face a 4 1
+a
+line "Oh minha nossa,|p| obrigada!"
+face a 0 0
+a
+line "Espera,|p| antes de você ir!"
+face p 0 0
+p
+line "O que f-|skip| "
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+setflag _0.smalls.abbie 1
+setflag _0.abbie.read.BABA 1
+setflag _0.abbie.done 1
+function lobby_timer_set_interrupt 0
+function lobby_tick_time
+end_transition perlin
+sequence id "sqcs_0_abbiehug" script "sequence/0/abbiehug"
+
+
+
+
+
+
+
+

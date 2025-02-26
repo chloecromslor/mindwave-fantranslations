@@ -1,0 +1,27 @@
+char pandora p left
+char smalls s right
+
+p
+line "Esses tubos são..."
+face p 0 2
+p
+line "...bem esquisitos."
+face s 1 0
+s
+line "O que será que tem neles?"
+face p 0 0
+p
+line "Deve ser só tipo,|p| eletricidade e tal."
+line "Só, me pergunto por que tem que ser tão grande.|p| E nas nossas caras."
+face s 0 0
+s
+line "Eu não diria nas nossas caras."
+line "Eles parecem tipo uns cem pés daqui pra mim."
+face p 0 1
+p
+line "Cala a boca.|p| Você sabe o que eu quis dizer."
+face s 2 1
+s
+line "..."
+setflag _0.ceiling.done 1
+function lobby_tick_time 0.5

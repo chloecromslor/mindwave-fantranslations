@@ -1,0 +1,117 @@
+face s 0 1
+face p 0 0
+p
+line "Eu vou falar."
+line "Eu não acho a torre legal.|p|\nNem um pouco."
+face p 0 2
+p
+line "Na verdade é até meio desanimador,|p| vocês não acham?"
+face s 2 1
+s
+line "Foi mal,|p| eu tô com a Abbie nessa,|p| esse é O marco da cidade."
+face s 0 1
+s
+line "Se você não conceder que é pelo menos meio legal estar dentro dela..."
+face s 0 2
+s
+line "...então eu acho que você tá só querendo ser do contra."
+face a 1 2
+a
+line "É, é tão alta que eu tive que dobrar meu pescoço pra ver o topo enquanto eu tava na fila!"
+face a 4 0
+face s 0 0
+a
+line "E a tela com o olho?|p|\ntãããoo legal!"
+face p 1 0
+p
+line "Tenta dizer isso quando o olho tá sempre virado pra sua janela."
+face p 1 2
+p
+line "Porque eu juro por Deus,|p| tá SEMPRE olhando pra mim quando eu tô tentando dormir."
+face s 2 0
+face a 0 0
+s
+line "Isso é uma ilusão de ótica."
+line "Ele não pode realmente encarar você."
+face p 0 0
+p
+line "Ah é?|p| Ainda é assustador."
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+setflag _0.abbie.read.ABB 1
+setflag _0.abbie.branch ABB
+function lobby_tick_time 2
+goto script 0/lobby/abbie/questions
+

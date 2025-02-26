@@ -1,0 +1,58 @@
+
+face p 1 0
+p
+line "Panda..."
+face s 1 0
+s
+line "Panda."
+face s 0 1
+s
+line "Parece bem legal,|p| não é?"
+face p 0 2
+p
+line "Cara,|p| sei lá."
+s
+line "Você vai ter que se acostumar com ele se a gente vai sair com a Abbie depois."
+face s 0 2
+s
+line "Por que não começar agora?"
+face p 0 0
+p
+line "Sobre isso..."
+face p 1 0
+p
+line "Abbie é tipo,|p| de um mundo completamente diferente do nosso."
+line "Eu não acho que ela se daria bem com a gente."
+face p 1 2
+p
+line "Talvez a gente seria uma má influência nela?"
+face s 1 0
+s
+line "Nah.|p| Os únicos crimes que a gente comete é vadiar e atravessar a rua sem olhar os dois lados antes."
+face p 0 2
+p
+line "Você também entrou aqui de fininho mano."
+face s 2 1
+s
+line "É mas isso foi só uma vez."
+face s 0 0
+s
+line "Abbie já fez isso repetidas vezes."
+face s 0 1
+s
+line "Se pá,|p| ela que seria uma má influência na gente."
+setflag _0.smalls.abbie 2
+setflag _0.smalls.abbie.branch BBA
+function lobby_tick_time 0.5
+goto script 0/lobby/smalls/return
+
+
+
+
+
+
+
+
+
+
+

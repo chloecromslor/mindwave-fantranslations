@@ -1,0 +1,131 @@
+set a name mystery
+face s 0 1
+s
+line "Que tal ela?"
+p
+line "Não é geralmente o tipo de pessoa com quem eu iria conversar."
+face s 0 2
+s
+line "...Essa é a ideia."
+face p 1 2
+p
+line "Ugh..."
+face p 0 2
+p
+line "Beleza."
+face p 1 0
+p
+line "Mas você chama ela primeiro."
+face s 2 1
+s
+line "Pode crê."
+face s 0 0
+s
+line "Yo!"
+face a 1 0
+a
+line "..."
+face a 0 0
+a
+line "Huh?"
+face a 4 2
+a
+line "*SUSPIRO*"
+face a 3 1
+a
+line "OIEEEEE!!!"
+face p 4 0
+p
+line "Ei..."
+a
+line "|speed 1.5|Esse lugar não é tão LEGAL?"
+face a 1 0
+a
+line "|speed 1.5|O teto é tão alto!"
+face a 4 1
+a
+line "|speed 1.5|Tem tanta gente!"
+face a 1 0
+a
+line "|speed 1.5|Oh!|p| Garota Roxa!"
+line "|speed 1.5|Amei sua roupa!|p| \nEsses braceletes espinhentos e os brincos de lua...|p| Tão fofo!"
+face a 0 0
+a
+line "|speed 1.5|E essas cores,|p| é como se você tivesse vindo vestida pra ocasião,|p| amei isso."
+
+checkflag _0.iris.read.AB 1
+goto marker branch1y
+goto marker branch1n
+
+marker branch1y
+face p 1 0
+p
+line "Você é a segunda pessoa a dizer isso sobre minhas roupas,|p| por acaso."
+face p 0 1
+p
+line "Mas tá tudo bem,|p| eu acho que é engraçado.|p| Valeu."
+
+goto marker branch1e
+
+marker branch1n
+face p 0 4
+p
+line "Oh eu-"
+face p 4 0
+p
+line "Eu não tinha pensado nisso."
+line "Valeu eu acho?"
+
+goto marker branch1e
+
+marker branch1e
+face p 0 4
+p
+line "|style color gray|(Mas eu não acho que eu tava tentando ser \"fofa\".)"
+face a 0 0
+a
+line "E eu acho que você parece bem legal também!"
+face a 1 2
+a
+line "..."
+face a 0 0
+a
+line "Oh!|p| Eu quase esqueci,|p| quais são seus nomes?"
+face a 1 0
+a
+line "Eu sou a Abbie,|p| eu devia ter começado com isso,|p| hehe."
+set a name abbie
+face s 0 1
+s
+line "Bom,|p| ei Abbie.|p| Eu sou o Smalls,|p| ela é a Pandora."
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+setflag _0.abbie.met 1
+incflag _0.chars_met 1
+
+goto script 0/lobby/abbie/questions
+

@@ -1,0 +1,78 @@
+face s 0 0
+face p 0 0
+s
+line "Então você TEVE efeitos colaterais,|p| mas tá bem agora?"
+face r 0 0
+r
+line "É,|p| basicamente sim."
+face s 1 0
+s
+line "Pra poder sossegar a Pandora,|p| qual é o seu segredo?"
+face p 0 0
+p
+line "Você bota um chapéu de alumínio antes de começar a jogar?"
+face r 3 0
+r
+line "Não."
+face r 3 1
+r
+line "Meu cabelo é grande demais pra isso."
+face p 0 1
+p
+line "Justo."
+face r 2 0
+r
+line "Mas sério,|p| depende do que o problema é."
+face p 0 0
+r
+line "O que funcionou pra mim foi...|p| eu acho que você poderia chamar de compartimentalização?"
+face s 0 0
+s
+line "Você quer dizer entrar em um estado mental diferente enquanto você não tá jogando"
+r
+line "Exatamente."
+face p 0 2
+p
+line "Parece não muito saudável de certa forma."
+r
+line "Funciona pra mim."
+line "Quando eu havia me juntado ao time,|p| comecei a me envolver em toda interação social como se fosse uma batalha de MINDWAVE."
+face r 1 0
+r
+line "A única razão pela qual eu parei foi,|p| ironicamente,|p| porque tava afetando a minha performance no MINDWAVE."
+face r 0 0
+r
+line "O estresse de tentar \"vencer\" cada interação ficou pesado demais."
+line "Então eu parei."
+face p 1 2
+p
+line "Parece loucura."
+face s 0 1
+s
+line "Nah,|p| você vê a mesma coisa em todo \"esporte de verdade.\""
+face s 0 0
+s
+line "Eu acho que é algo tipo,|p| 73% dos atletas desenvolvem algum tipo de efeito colateral de longo prazo na área deles. "
+face p 4 0
+p
+line "Huh,|p| isso é verdade?"
+face s 2 1
+face p 0 4
+s
+line "Nah,|p| inventei o número agorinha."
+face s 0 1
+s
+line "...mas provavelmente é algo assim."
+face r 1 0
+r
+line "O sentimento é o mesmo."
+face p 0 0
+face r 2 0
+r
+line "Se dedicar pra qualquer coisa a esse ponto não é o melhor para o seu corpo ou mente."
+
+setflag _0.roxy.read.AAB 1
+setflag _0.roxy.branch AAB
+function lobby_tick_time
+goto script 0/lobby/roxy/questions
+

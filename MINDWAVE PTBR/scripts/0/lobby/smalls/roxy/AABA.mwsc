@@ -1,0 +1,43 @@
+face p 1 0
+p
+line "Uma coisa que eu tô pensando..."
+face p 0 0
+p
+line "Por que a Roxy joga MINDWAVE?"
+line "Ela parece bem consciente dos potenciais riscos."
+face s 1 0
+s
+line "Devia ter perguntado pra ela ao invés de pra mim."
+face p 0 2
+p
+line "Sei lá,|p| talvez teria sido rude."
+face p 1 2
+p
+line "MINDWAVE parece toda a paixão dela."
+face s 2 0
+s
+line "Se eu tivesse que adivinhar,|p| eu não acho que é tão diferente das suas paixões."
+face p 0 2
+p
+line "Discordo completamente.|p| Música é uma forma de arte."
+line "E mais,|p| tocar a guitarra não me deixa enjoada."
+face s 0 2
+s
+line "MINDWAVE não te deixa com calos nos dedos."
+face s 0 0
+s
+line "Você teve que lidar com a dor por um tempo quando tava aprendendo no começo."
+face s 1 0
+s
+line "É só algo que você teve que aguentar pra chegar onde tá agora."
+face p 0 0
+p
+line "..."
+line "Nah,|p| ainda discordo.|p| É diferente."
+
+
+setflag _0.smalls.roxy 2
+setflag _0.smalls.roxy.branch ABAA
+function lobby_tick_time 0.5
+goto script 0/lobby/smalls/return
+

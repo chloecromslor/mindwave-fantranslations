@@ -1,0 +1,17 @@
+
+pause at marker stareend
+wait for marker line1
+speaker_voice announcer_small
+|style font fnt_pixel|Parabéns,|p| PANDORA!
+|style font fnt_pixel|Você foi boa o suficiente para ir ao Round 2!
+clear
+jump to marker backstart
+resume
+
+pause at marker backend
+wait for marker line2
+|style font fnt_pixel|Você está sendo levada para o próximo andar.
+|style font fnt_pixel|Quando as portas se abrirem,|p| por favor saia e aguarde o próximo round do torneio.
+clear
+jump to marker openstart
+resume

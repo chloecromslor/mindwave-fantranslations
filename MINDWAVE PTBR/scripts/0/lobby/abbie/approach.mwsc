@@ -1,0 +1,19 @@
+face s 0 1
+s
+line "Ei,|p| a gente voltou."
+face a 0 0
+a
+line "Ei pessoal!|p| Como vai?"
+
+
+
+
+
+
+
+
+
+
+
+goto script 0/lobby/abbie/questions
+

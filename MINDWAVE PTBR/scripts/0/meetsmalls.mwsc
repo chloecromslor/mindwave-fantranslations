@@ -1,0 +1,77 @@
+char pandora p left
+char smalls s right
+face p 3 0
+p
+line "...Smalls!?"
+face s 0 2
+s
+line "Eae."
+face p 0 2
+p
+line "Achei que você não tivesse um bilhete?"
+face s 1 0
+s
+line "Nah,|p| eu não tinha."
+p
+line "Como você entrou então?"
+face s 0 1
+s
+line "Segredo de negócios."
+face p 1 2
+p
+line "O que você fez...?"
+face s 2 0
+s
+line "Segurança tava super relaxada."
+face s 2 1
+s
+line "Não-existente, até."
+face p 0 2
+p
+line "Cara."
+face s 0 0
+s
+line "Só meio que...|p| entrei por uma porta nos fundos."
+line "Vaguei por uns corredores até eu achar essa sala massiva cheia de gente."
+face p 0 0
+p
+line "Quer dizer,|p| que bom que você tá aqui."
+face p 0 1
+p
+line "Definitivamente vai fazer essa coisa inteira ser menos pé no saco."
+face p 1 0
+p
+line "Espero que os seguranças não apareçam de repente pra te chutar daqui."
+face s 0 1
+s
+line "Dedos cruzados."
+face p 0 2
+p
+line "Se perguntarem,|p| eu vou dizer que não somos associados."
+face s 0 0
+s
+line "Parece justo."
+face p 0 1
+p
+line "Mas olha,|p| sério mesmo-"
+skip outro
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

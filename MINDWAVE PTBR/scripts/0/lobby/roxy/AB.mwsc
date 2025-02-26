@@ -1,0 +1,89 @@
+face p 0 0
+face s 0 0
+checkflag nickname_panda 1
+goto marker branch26y
+goto marker branch26n
+
+marker branch26y
+
+s
+line "Efeitos colaterais de lado,|p| você tem algumas dicas pra Panda? "
+
+goto marker branch26e
+
+marker branch26n
+
+s
+line "Efeitos colaterais de lado,|p| você tem algumas dicas pra Pandora? "
+
+goto marker branch26e
+
+marker branch26e
+
+face p 1 2
+p
+line "Você vai realmente ingorar que MINDWAVE poderia tipo,|p| apodrecer seu cérebro ou algo assim?"
+face s 2 1
+s
+line "Não é grande coisa.|p| Eu estive bem até agora. "
+face p 0 4
+p
+line "Eu não entendo você."
+face s 0 1
+s
+line "E você também não entende o MINDWAVE."
+line "Você precisa de toda a ajuda que conseguir."
+face r 2 0
+r
+line "É tudo intuição na real."
+line "Todo mundo tem um modelo mental diferente de como o MINDWAVE interaje com os seus cérebros."
+face r 3 0
+r
+line "Esse seria um bom lugar pra começar."
+face p 0 0
+p
+line "Tá certo,|p| como eu formo o meu próprio modelo mental?"
+face r 2 0
+r
+line "Não é uma coisa que explicar ajudaria."
+line "Só joga o jogo."
+face p 4 0
+face s 0 0
+s
+line "Eu sei como é."
+line "Só tenta imaginar que seus pensamentos são líquidos."
+line "Esse líquido é mais ou menos viscoso dependendo do quão limpa sua mente tá."
+face r 3 0
+r
+line "Eu só não entendo."
+face p 4 0
+p
+line "O quê,|p| tipo o seu suco de cérebro?"
+face s 2 0
+s
+line "Deixa pra lá.|p|\nEu não quero falar sobre isso."
+r
+line "Exercícios pro córtex cingulado anterior são úteis não importa o seu estilo de jogatina."
+face s 0 0
+face p 0 0
+p
+line "Não, você me perdeu por completo aí."
+r
+line "É um exercício essencial para a canalização de memórias."
+p
+line "..."
+r
+line "Ah me desculpa,|p| tô acostumada a falar com pessoas que sabem alguma coisa de MINDWAVE."
+face p 1 0
+p
+line "Ok,|p| grossa."
+face r 0 0
+r
+line "Não foi um insulto."
+line "Só não consigo te dar muitos conselhos sem o conhecimento fundamental."
+
+setflag _0.roxy.read.AB 1
+setflag _0.roxy.branch AB
+function lobby_tick_time
+goto script 0/lobby/roxy/questions
+

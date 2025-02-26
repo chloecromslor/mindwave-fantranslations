@@ -1,0 +1,77 @@
+
+face p 0 0
+face s 0 0
+s
+line "Parece que você e a Pandora decidiram que a gente vai fazer um collab."
+face s 0 0
+s
+line "Tô de boa com isso.|p| Só vou precisar do seu contato pra te ligar depois."
+d
+line "Ah é,|p| vou escrever aqui procê."
+face p 0 0
+d
+line "Mas sabe no que eu tava pensando?"
+line "A gente precisa tocar tipo,|p| aqui mesmo."
+s
+line "O quê,|p| na Torre Mindscape?"
+face s 2 0
+s
+line "Não sei nem quem que a gente precisa pedir permissão pra fazer isso..."
+face s 0 1
+s
+line "...mas seria legal.|p| \nEsse lugar definitivamente foi feito pra aguentar um festival."
+face p 0 2
+p
+line "Ah,|p| nem a pau."
+face p 0 3
+face s 0 3
+p
+line "De jeito nenhum eu iria fazer alguma coisa pra Mindscape-"
+face p 0 0
+p
+line "Na verdade não,|p| eu adoraria tocar aqui ESPECIFICAMENTE sem a permissão deles."
+face p 0 1
+p
+line "Tipo,|p| levar nossos instrumentos pra entrada e começar a tocar até eles nos botarem pra fora."
+line "Ei,|p| quer fazer isso, Dom?"
+d
+line "Pode crer,|p| quando?"
+face p 0 0
+p
+line "Uhh...|p| não tô com as minhas coisas,|p| então não agora,|p| mas..."
+line "A gente poderia se encontrar na entrada pra começar a bolar umas ideias."
+face p 0 1
+p
+line "Você tá dentro, Smalls?"
+face s 0 1
+s
+line "Não acho que posso recusar."
+p
+line "Ok então.|p| A gente se vê mais tarde, Dom."
+d
+line "Tá certo,|p| até."
+p
+line "Até."
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+setflag _0.smalls.dom 1
+setflag _0.dom.done 1
+setflag _0.dom.read.AAA 1
+function lobby_tick_time 2
+
+
+
+
+

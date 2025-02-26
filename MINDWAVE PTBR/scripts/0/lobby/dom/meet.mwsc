@@ -1,0 +1,78 @@
+set d name mystery
+face p 0 0
+p
+line "O moletom daquele cara é legal."
+face s 0 0
+s
+line "Você quer perguntar pra ele onde ele comprou?"
+face p 1 0
+p
+line "Não sei,|p| meio que não?|p|\nEu só achei legal."
+face s 0 1
+s
+line "Quero dizer,|p| eu posso ir perguntar pra ele se você quiser."
+p
+line "Eu não-|p 30| |skip| "
+face d 0 0
+d
+line "Yo."
+face p 0 0
+p
+line "Ah- ãh,|p| ei?"
+face d 1 0
+d
+line "Dá uma escutada nisso daqui rapidinho."
+face d 1 1
+function lb0_scr_dom_music 1
+
+d
+line "..."
+face s 0 3
+face p 0 4
+s
+line "..."
+p
+line "..."
+d
+line "..."
+function lb0_scr_dom_music 0
+p
+line "..."
+face d 1 0
+d
+line "E aí,|p| o que cês acharam?"
+face s 0 0
+face p 0 2
+p
+line "O que é isso?"
+face d 1 0
+d
+line "Minha música,|p| espero que cês tenham curtido."
+face p 0 0
+p
+line "Cara,|p| não sei."
+face p 1 0
+p
+line "Me dá um tempo pra\npensar primero."
+face d 0 1
+d
+line "Ah,|p| tá ok."
+face d 0 0
+d
+line "Meu nome é Dom,|p| falando nisso.|p| "
+line "Meus amigos me chamam de Mixmaster D mas é meio brega, então só Dom tá de boa,|p| haha."
+set d name dom
+face p 4 0
+p
+line "Vou te chamar de Dom."
+face p 0 0
+p
+line "Eu sou a Pandora."
+line "Ele é o Smalls."
+setflag _0.dom.met 1
+incflag _0.chars_met 1
+goto script 0/lobby/dom/questions
+
+
+
+

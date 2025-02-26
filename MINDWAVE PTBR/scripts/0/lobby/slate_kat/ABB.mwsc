@@ -1,0 +1,53 @@
+face s 0 0
+face p 0 0
+p
+line "Então vocês jogam muito MINDWAVE?"
+face l 0 0
+l
+line "Cara, é,|p| a gente joga\njunto no fliperama\ntodo sábado."
+face s 1 0
+s
+line "E coisa de Fortaleza da Solidão\naparece frequentemente?"
+face k 0 2
+k
+line "De alguma forma,|p| não muito frequentemente."
+line "É honestamente um matchup bem legal."
+line "É legal ter uma pausa das\ncoisas de nerd do Ethan."
+face s 0 0
+l
+line "Absolutamente,|p| só tem\nvibes positivas aqui."
+face s 1 0
+s
+line "Eu totalmente queria ter alguém pra frequentemente jogar contra."
+face p 0 2
+p
+line "Não pergunta pra mim.|p| Eu não tenho vontade de dar pra Mindscape Co. um monte de escaneamentos do meu cérebro."
+line "Único motivo que eu tô aqui agora\né que eu seria estúpida de perder\nalgo assim."
+l
+line "Nahhhhh,|p| nem se preocupa com isso.|p|\nEles não salvam escanemantos do seu cérebro."
+face l 1 0
+l
+line "Eu li o EULA de frente ao verso\n porque a Kat tava toda preocupada sobre isso da primeira vez que a gente jogou."
+face k 0 1
+face s 0 0
+k
+line "Eu não queria eles salvando nada\ndo meu cérebro também.|p|\nIsso seria super esquisito."
+face p 0 0
+p
+line "Não é estranho ver as\nmentes dos outros assim?"
+face p 1 0
+p
+line "Parece meio pessoal de mais."
+face k 0 0
+k
+line "Não na verdade,|p| eu honestamente tô mais confortável\ncom estranhos vendo meu cérebro."
+face k 0 2
+k
+line "Eu só tô agora aqui porque é,|p| seria estúpido perder algo assim."
+
+setflag _0.slate_kat.read.AAA 1
+setflag _0.slate_kat.branch AAA
+function lobby_tick_time
+goto script 0/lobby/slate_kat/questions
+
+

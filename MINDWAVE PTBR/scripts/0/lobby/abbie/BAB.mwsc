@@ -1,0 +1,84 @@
+face p 0 0
+face s 0 0
+s
+line "Você parece gostar de Blackout,|p| como você já quer se mudar de volta?"
+face a 0 0
+a
+line "Bem,|p| eu realmente amo esse lugar!"
+face a 1 0
+a
+line "É mais bonito do que qualquer coisa que eu já vi antes."
+line "Os arranha-céus...|p| todas as luzes..."
+face a 0 0
+a
+line "...É tipo-"
+line "Tudo parece tão novo e emocionante,|p| mas estranhamente nostálgico?"
+face p 0 2
+p
+line "Por que você quer se mudar se você realmente gosta?"
+face p 0 1
+p
+line "O fio de costura brilhante é melhor de onde você veio?"
+face a 1 0
+a
+line "Não...|p| tudo é só... melhor aqui!"
+face a 0 0
+a
+line "Eu nem SABIA que fio de costura brilhante era uma coisa até eu ver aqui."
+face a 1 2
+a
+line "Mas é muito difícil gostar disso quando eu tô sempre sozinha."
+face a 2 2
+a
+line "Mesmo depois de viver aqui por um mês,|p| eu ainda não fiz nenhum amigo..."
+face a 2 2
+a
+line "Eu queria que a Jenny estivesse aqui..."
+line "...então eu não teria que me importar de fazer amigos na escola."
+face p 1 0
+p
+line "Ei..."
+line "Se o problema é sua amiga não estar aqui,|p| você não pode tipo..."
+face p 4 0
+p
+line "Chamar ela aqui ao invés disso?"
+face s 0 1
+s
+line "É.|p| Uma estudante do ensino médio vai adotar sua amiga,|p| que também é do ensino médio."
+face p 1 1
+p
+line "É,|p| eu talvez seja uma idiota."
+a
+line "Eu não acho que você é uma idiota Panda!"
+face p 0 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+setflag nickname_panda 1
+setflag _0.abbie.read.BAB 1
+setflag _0.abbie.branch BAB
+function lobby_tick_time
+goto script 0/lobby/abbie/questions
+
+

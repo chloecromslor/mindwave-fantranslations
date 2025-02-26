@@ -1,0 +1,39 @@
+face p 0 1
+p
+line "Ethan,|p| Kat,|p| foi\nlegal conhecer vocês."
+face s 0 1
+s
+line "Boa sorte com o jogo vocês dois."
+face k 0 0
+k
+line "Eu não preciso de sorte.|p|\nMas o Ethan precisa."
+face k 0 1
+k
+line "Não faz eu me arrepender de vir aqui perdendo imediatamente."
+face l 1 0
+l
+line "Oh não se preocupa cara."
+line "Minha vontade de completar a minha\ncoleção de F.D.S vai me\ncarregar até o final dessa coisa."
+k
+line "Por que você acha que isso vai\nfazer eu me arrepender menos?"
+face s 0 1
+k
+line "Eu tô torcendo contra você se você vai gastar o que ganhar assim."
+face k 0 0
+k
+line "Na verdade,|p| eu não pretendo\ndar mole com qualquer um de vocês."
+face k 0 2
+k
+line "Mas boa sorte também. "
+face p 0 0
+p
+line "Até mais pessoal."
+face l 0 0
+l
+line "Paz."
+
+setflag _0.smalls.slate_kat 1
+setflag _0.slate_kat.done 1
+setflag _0.slate_kat.read.AABA 1
+function lobby_tick_time
+

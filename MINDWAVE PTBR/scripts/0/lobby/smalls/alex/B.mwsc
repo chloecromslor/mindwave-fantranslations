@@ -1,0 +1,130 @@
+face p 0 1
+p
+line "Não esquece os vinte pila que você me deve."
+face s 2 1
+s
+line "É é,|p| eu vou transferir pra você assim que eu ganhar."
+face p 0 0
+p
+line "Pra ser honesta,|p| eu deveria ter apostado mais."
+face p 1 0
+p
+line "Falar com pessoas aqui tá me dando um sentimento estranho sobre o torneio."
+face s 0 0
+s
+line "Vai ficar tudo beeeem."
+face p 0 2
+p
+line "Nah,|p| não confio no seu julgamento depois que você tava completamente errado sobre Alex."
+line "Tipo,|p| é,|p| é claro que alguém claramente evitando interação não queria falar com a gente."
+face s 1 0
+s
+line "Você sabe que isso não é verdade."
+checkflag _0.abbie.met 1
+goto marker branch7y
+goto marker branch7n
+marker branch7y
+
+
+face s 0 1
+s
+line "Abbie parecia precisar de alguma companhia."
+line "Ela não teve nenhum problema em conversar até nossos ouvidos caírem."
+checkflag _0.abbie.done 1
+goto marker branch2y
+goto marker branch2n
+marker branch2n
+face s 2 1
+s
+line "Honestamente,|p| talvez a gente devia voltar e falar com ela mais..."
+face s 0 2
+s
+line "Ou a gente pode falar com mais pessoas novas."
+marker branch2y
+goto marker branch1e
+
+marker branch7n
+checkflag _0.roxy.met 1
+goto marker branch3y
+goto marker branch3n
+marker branch3y
+
+face s 0 1
+s
+line "Roxy tava no celular dela e ela parecia legal."
+face s 0 0
+s
+line "Bem,|p| legal o suficiente."
+goto marker branch1e
+
+marker branch3n
+checkflag _0.dom.met 1
+goto marker branch4y
+goto marker branch1e
+marker branch4y
+
+face s 0 1
+s
+line "Dom tava no seu celular e estava mais do que feliz de se aproximar da gente."
+
+checkflag _0.dom.read.ABAA 1
+goto marker branch5y
+goto marker branch1e
+marker branch5y
+
+face s 2 1
+s
+line "E agora a gente tem alguém legal pra fazer um show com a gente."
+
+
+goto marker branch1e
+marker branch1e
+
+face s 0 1
+s
+line "Absolutamente tem pessoas aqui que seriam legais de conversar."
+face s 1 0
+s
+line "Eu só tava errado sobre uma,|p| isso é tudo."
+face s 0 1
+s
+line "Nada pra fazer exceto seguir em frente e falar com outra pessoa."
+face p 0 1
+p
+line "Ah é?|p| Você quer continuar me arrastando pra falar com as pessoas? "
+face p 0 0
+p
+line "Como você pretende me convencer disso?|p| Vai continuar me subornando com apostas fáceis?"
+face s 1 0
+s
+line "Hmm,|p| bem eu quero meus vinte dólares de volta..."
+face s 0 1
+s
+line "Talvez eu devesse aceitar a falácia do apostador."
+face s 0 2
+s
+line "Que tal a gente ir dobro ou nada na próxima pessoa que a gente conhecer?"
+p
+line "Mano,|p| se a gente continuar conhecendo gente que nem Alex, é bom você torcer pra ganhar esse torneio."
+
+setflag _0.smalls.alex 2
+setflag _0.smalls.iris.branch B
+function lobby_tick_time 0.5
+goto script 0/lobby/smalls/return
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
