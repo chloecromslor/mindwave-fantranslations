@@ -1,0 +1,83 @@
+face s 1 0
+s
+line "Beleza,|p| eu devia perguntar..."
+face s 0 0
+s
+line " ...vocês são irmão e irmã?"
+face k 0 1
+face l 1 0
+k
+line "..."
+face k 0 0
+face l 0 0
+k
+line "...VOCÊS são irmãos?"
+face p 4 0
+face s 0 3
+s
+line "..."
+face p 0 1
+face s 2 0
+s
+line "Okay,|p| entendi o ponto."
+face s 1 0
+s
+line "Mesmo assim,|p| essa é a vibe que eu peguei."
+face s 0 0
+s
+line "Você sabe o que eu quero dizer,|p| certo?"
+face l 0 0
+l
+line "Cara,|p| eu não pareço nada com a Kat."
+k
+line "É,|p| o Ethan é beeem mais alto que eu."
+l
+line "Pois é,|p| os dois dos meus irmãos mais velhos são da minha altura.|p| Meu irmão mais novo tá chegando lá também."
+face k 0 2
+k
+line "Pshht,|p| é.|p| Você vem de uma família de esquisitos."
+face p 0 0
+p
+line "Como vocês se conhecem então?"
+l
+line "Kat era a criança nova no uhhh..."
+face k 0 0
+k
+line "Terceiro ano.|p| Foi há 7 anos atrás."
+face l 1 0
+l
+line "É,|p| foi no terceiro ano.|p| Ela apereceu há alguns meses no meio do ano escolar."
+face l 0 0
+l
+line "A gente se juntou pra um projeto em grupo.|p| Mais ninguém queria ficar com qualquer um de nós."
+face s 0 0
+s
+line "Poxa,|p| por quê?|p| Vocês são legais."
+l
+line "Colegas de classe não gostavam do quanto eu falava das séries que eu gostava."
+face l 1 0
+l
+line "Eles não pareciam gostar da Kat também.|p| Não faço ideia do porquê,|p| a Kat é super de boa."
+line "Muito fácil de conversar."
+face l 0 0
+l
+line "Então a gente só continuou\njuntos."
+face k 0 2
+k
+line "A gente tirou um A naquele projeto \npor acaso."
+face s 0 1
+s
+line "Maneiro."
+l
+line "Eu fiz maioria do trabalho."
+face k 0 0
+k
+line "Eu te escutei tagarelar sobre seja lá qual série você tava vendo naquela semana."
+line "A gente basicamente colocou o mesmo esforço."
+
+setflag _0.slate_kat.read.BAB 1
+setflag _0.slate_kat.branch BAB
+function lobby_tick_time
+goto script 0/lobby/slate_kat/questions
+
+

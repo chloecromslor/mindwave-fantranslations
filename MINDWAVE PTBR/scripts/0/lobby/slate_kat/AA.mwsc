@@ -1,0 +1,67 @@
+face s 0 0
+face p 0 0
+p
+line "Okay então...|p| que outros planos\nvocê tem pro seu dinheiro?"
+face p 0 1
+p
+line "...Além de dar presentes pra pessoas que te ouvem falar sobre desenhos."
+face s 2 0
+s
+line "Você diz isso como se fosse uma má ideia."
+face s 0 1
+s
+line "Eu sou elegível,|p| né?"
+face l 0 0
+l
+line "Eu nem pensei\nasobre isso."
+line "Talvez eu compre aquela edição ultra rara de F.D.S que eu tô de olho há um tempo."
+k
+line "Quer dizer a mesma série que você já assiste o tempo inteiro?"
+face p 4 0
+p
+line "Huh,|p| me pergunto se a cópia que meu pai\ntem secretamente vale bastante."
+l
+line "A capa tem um castelo\nmalvadão nele?"
+face p 0 0
+p
+line "Nah.|p| Acho que era uma bola de cristal."
+l
+line "Você tá sem sorte aí então."
+line "Esse é o corte original.|p| Você\nencontra isso em qualquer caixa de liquidação\nem toda loja de eletrônicos vintage."
+face p 1 0
+p
+line "Droga,|p| valeu a pena a tentativa."
+l
+line "F.D.S flopou pra caramba aqui."
+line "Então como último esforço,|p| eles revisaram a série inteira pra ser-|p 30| |skip| "
+face l 1 0
+k
+line "Realmente boa?"
+l
+line "Bom, possivelmente.|p|\nEu nunca vi!"
+face l 0 0
+l
+line "Eu vi que eles poliram um monte,|p| mas todo mundo sortudo o suficiente pra ter\nmantém suas cópias lacradas."
+line "Então é impossivel achar\nalguma arquivada online."
+face p 0 0
+p
+line "Isso é bem paia."
+face p 0 2
+face k 0 0
+p
+line "Por que as pessoas gastariam dinheiro\nem algo só pra manter\nlacrado na prateleira?"
+l
+line "Fala tuas verdades mana."
+line "Se você não pode realmente usar,|p|\nvocê realmente sequer possui isso?"
+face l 1 0
+l
+line "Kat é a mana."
+face k 0 1
+k
+line "Eu não sou."
+
+setflag _0.slate_kat.read.AA 1
+setflag _0.slate_kat.branch AA
+function lobby_tick_time
+goto script 0/lobby/slate_kat/questions
+

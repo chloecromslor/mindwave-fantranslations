@@ -1,0 +1,62 @@
+p
+line "Eu acho que eu vou ir atrás do Smalls."
+k
+line "Oh beleza.|p| Te vejo por aí eu acho?"
+face p 1 0
+face s 0 0
+p
+line "..."
+set k x -200
+set s dir -1
+set s side 1
+set l x +20
+set s x -75
+set l front_when_speak 0
+l
+line "...e basicamente,|p| O Exílio Dormente fica nesse pico-|p 30| |skip| "
+face s 0 1
+
+checkflag nickname_panda 1
+goto marker branch26y
+goto marker branch26n
+
+marker branch26y
+
+s
+line "Oh ei Panda.|p| Já ficou entediada?"
+
+goto marker branch26e
+
+marker branch26n
+
+s
+line "Oh ei Pandora.|p| Já ficou entediada?"
+
+goto marker branch26e
+
+marker branch26e
+
+face p 0 2
+
+p
+line "Sei lá,|p| conversa só meio que morreu."
+face l 0 0
+l
+line "E aí Pandora?|p| Eu tava prestes a contar ao Smalls sobre o melhor arco."
+line "Você pode escutar se quiser."
+face p 0 0
+p
+line "Tô de boa."
+face p 1 0
+p
+line "Smalls a gente pode ir?"
+face s 0 3
+s
+line "Oh,|p| claro."
+face s 0 0
+s
+line "Até mais Ethan."
+
+setflag _0.pandora.alone 0
+setflag _0.pandora.kat 1
+

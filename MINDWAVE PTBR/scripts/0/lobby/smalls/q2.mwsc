@@ -1,0 +1,101 @@
+p
+line "Então.|p| Você entrou na rataria."
+set s pose 2
+face s 0 1
+s
+line "Entrei!"
+
+set p pose 1
+p
+line "Primeiramente.|p|\nPor quê?"
+line "Esse é o tipo de coisa que você ia me encher o saco por sequer pensar em fazer."
+face s 0 0
+s
+line "É,|p| mas eu sabia que você não ia conseguir curtir sem mim."
+line "Especialmente porque você quase desmaiou da última vez que jogou."
+face p 1 0
+p
+line "Eu não passei nem perto de desmaiar...|p|\nEu só vomitei."
+s
+line "Bem,|p| se eu tivesse uma dor de cabeça tão ruim que me fizesse vomitar,|p| eu pelo menos iria querer um amigo ali pra me consolar."
+
+face p 0 2
+p
+line "Então você vai chamar os paramédicos se eu morrer."
+face s 0 0
+s
+line "Nah,|p| meu celular tá sem sinal aqui."
+
+face s 2 1
+s
+line "Mas você pode reclamar pra mim quando quiser."
+face p 1 2
+p
+line "Eu vou tá morta. "
+
+face s 0 0
+s
+line "Pois é."
+line "Se um jogo fosse tão ruim que ele te mata,|p| eu esperaria uma reclamação. "
+face p 0 0
+p
+line "Oh você não ia parar de ouvir sobre, cara."
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+setflag _0.smalls.q2 2
+function lobby_tick_time 0.5
+goto script 0/lobby/smalls/return
+
+

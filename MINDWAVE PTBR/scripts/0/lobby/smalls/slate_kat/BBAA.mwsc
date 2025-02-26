@@ -1,0 +1,47 @@
+
+face p 0 2
+p
+line "Você tinha que me deixar sozinha no meio de uma conversa?"
+face p 0 4
+p
+line "Eu não tava pronta pra falar com a Kat sozinha tão de repente."
+face s 2 0
+s
+line "Ehh,|p| você provavelmente tava bem."
+face s 0 2
+s
+line "Certo?"
+face p 0 0
+p
+line "..."
+face p 0 2
+p
+line "Se eu disser que sim você vai usar como tipo,|p| uma desculpa."
+line "Eu não quero te encorajar a continuar fazendo coisa assim."
+face s 1 0
+s
+line "Beleza, beleza."
+face s 0 1
+s
+line "Eu vou só guardar meu \"Eu te disse\" pra quando você me agradecer depois."
+face p 1 0
+p
+line "Cara,|p| não me faz eu me arrepender por entreter isso."
+s
+line "Eu me desculparia,|p| mas eu não me arrependo de aprender sobre F.D.S do Ethan."
+face s 1 0
+s
+line "A gente só parou de falar sobre porque eu não queria mais spoilers."
+face s 0 1
+s
+line "Eu tava engajado no segundo que ele me contou do arco onde Slate infiltra o pico Knelburniano."
+p
+line "Só não vaza assim de novo.|p| Por favor."
+s
+line "Sem promessas."
+
+setflag _0.smalls.slate_kat 2
+setflag _0.smalls.slate_kat.branch BBAA
+function lobby_tick_time 0.5
+goto script 0/lobby/smalls/return
+

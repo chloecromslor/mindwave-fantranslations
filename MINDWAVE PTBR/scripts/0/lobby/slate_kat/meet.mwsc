@@ -1,0 +1,122 @@
+set k name mystery
+face p 0 0
+p
+line "Eu acho que eu reconheço aquele cara alto ali."
+face s 0 0
+s
+line "Aquele conversando com a menina\nde cabelo rosa?"
+
+checkflag _0.iris.met 1
+goto marker branch1y
+goto marker branch1n
+
+marker branch1y
+
+face s 0 3
+s
+line "Ele era outra pessoa que você atrasou na fila ou algo assim?"
+face p 1 0
+p
+line "Não cara cala a boca.|p| Ele é tipo-"
+
+goto marker branch1e
+
+marker branch1n
+goto marker branch1e
+
+marker branch1e
+face l 1 0
+face p 0 1
+p
+line "Ele tá fazendo cosplay de um personagem que eu reconheço."
+face s 0 0
+s
+line "Oh?"
+line "Qual é esse?"
+face p 1 0
+p
+line "Esse é o \"Slate.\"|p| Só um personagem desse desenho que eu conheço. "
+s
+line "Como se chama? "
+face p 0 0
+p
+line "Uh,|p| eu acho que era \nFortaleza da Solidão.\n"
+face s 0 1
+s
+line "Não me parece familiar,|p| foi mal."
+
+
+
+
+s
+line "Por que você não vai lá nerdolar sobre com ele?"
+face p 1 0
+p
+line "Eu não \"nerdolo.\""
+face p 0 2
+p
+line "...mas sabe,|p| eu quero \ndizer que eu gostei do cosplay."
+face p 0 0
+p
+line "*ahem*...|p|\nYo!"
+l
+line "Kaatttt,|p| eu tô te dizendo,|p| esses\ntubos provavelmente transportam-|p 30| |skip| "
+face k 0 0
+checkflag _0.chars_met 0
+goto marker 2y
+goto marker 2n
+marker 2y
+k
+line "Ethan,|p| acho que aquela garota tá tentando chamar sua atenção."
+setflag _0.Ethan 1
+goto marker 2e
+marker 2n
+k
+line "Acho que aquela garota tá tentando chamar sua atenção."
+
+marker 2e
+
+
+
+face l 0 0
+l
+line "É sério?"
+p
+line "Ei,|p| isso é um cosplay do Slate?"
+l
+line "É sim!|p| Eu mesmo fiz."
+face l 1 0
+l
+line "Kat eu te disse que ALGUÉM ia reconhecer Fortaleza da Solidão."
+face k 0 1
+set k name kat
+k
+line "É uma das mil e poucas\npessoas aqui."
+l
+line "Cara,|p| você tem que considerar o tamanho da amostra. "
+face l 0 0
+l
+line "Tem só um milionésimo da população inteira de Blackout aqui agora."
+face l 1 0
+l
+line "Um fã aqui é igual a dez\nmil fãs ao redor da cidade. "
+face k 0 2
+k
+line "Isso não faz sentido."
+line "Mesmo se fizesse,|p| você ainda seria um bobão por vestir isso aqui."
+
+
+face s 0 1
+s
+line "Eu sou o Smalls por acaso,|p| e a nossa fanática de Fortaleza da Solidão aqui é a Pandora."
+face l 0 0
+face p 1 0
+p
+line "Eu posso me introduzir eu mesma, sabe."
+
+
+setflag _0.slate_kat.met 1
+incflag _0.chars_met 2
+
+goto script 0/lobby/slate_kat/questions
+

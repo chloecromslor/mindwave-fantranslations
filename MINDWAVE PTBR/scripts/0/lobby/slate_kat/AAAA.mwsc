@@ -1,0 +1,51 @@
+
+face l 1 0
+l
+line "Oh, por acaso,|p| Kat,|p| você já ligou pra sua vovó?"
+line "Ela pediu pra gente ligar\npra ela quando chegasse aqui."
+face k 0 1
+k
+line "Éééé,|p| eu acho que eu tenho que fazer isso."
+line "Ela vai se preocupar a noite inteira se eu não der uma ligada pra ela antes do torneio começar. "
+face k 0 0
+k
+line "Então é melhor a gente ir nessa."
+face p 0 0
+face s 0 1
+s
+line "É,|p| não deixa ela se preocupar."
+line "Pandora e eu temos que ir também."
+face s 0 1
+s
+line "Temos mais pessoas pra conhecer."
+k
+line "Até mais! "
+face l 0 0
+l
+line "Vai na paz!"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+setflag _0.smalls.slate_kat 1
+setflag _0.slate_kat.done 1
+setflag _0.slate_kat.read.AAAA 1
+function lobby_tick_time
+

@@ -1,0 +1,152 @@
+face s 0 0
+checkflag nickname_panda 1
+goto marker branch22y
+goto marker branch22n
+
+marker branch22y
+
+s
+line "Panda,|p| você e o Slate deviam\nme contar sobre essa série."
+
+goto marker branch22e
+
+marker branch22n
+
+s
+line "Pandora,|p| você e o Slate deviam\nme contar sobre essa série."
+
+goto marker branch22e
+
+marker branch22e
+
+
+
+face p 0 2
+p
+line "A gente tá nesse evento elusivo maluco cheio de chifres e carinhas sorridentes..."
+
+
+face p 4 0
+p
+line "...mas você quer falar de desenhos."
+face k 0 0
+face p 1 0
+p
+line "Além do mais,|p| eu só me lembro vagamente dos\ndetalhes."
+
+
+face l 0 0
+l
+line "Nem se preocupa.|p| Eu amo\nfalar sobre essa série."
+line "Fortaleza da Solidão, é esse antigo\nanime dos anos 30 sobre uma guerra eterna."
+line "É irado.|p| Ele mistura coisas medievais\ncom coisas cyberpunk."
+
+
+
+
+
+
+face s 0 1
+checkflag nickname_panda 1
+goto marker branch26y
+goto marker branch26n
+
+marker branch26y
+
+s
+line "Como você conhece essa série, Panda?"
+line "Não parece ser do seu tipo."
+
+goto marker branch26e
+
+marker branch26n
+
+s
+line "Como você conhece essa série, Pandora?"
+line "Não parece ser do seu tipo."
+
+goto marker branch26e
+
+marker branch26e
+
+face p 1 2
+p
+line "Não é como se fosse minha coisa\nmais favorita do mundo."
+face p 0 0
+p
+line "Meu pai tinha uma cópia jogada por aí,|p|então eu assistia às vezes."
+face k 0 2
+k
+line "Quão velho é o seu pai??"
+face p 0 2
+p
+line "Sei lá,|p| tipo uns 40 por aí."
+l
+line "Caaaara,|p| Pandora,|p| você com certeza concorda comigo sobre os Cibo-Mantes serem a facção mais legal né?"
+face p 1 0
+p
+line "Eu mal lembro de qualquer coisa sobre a outra,|p| então acho que sim?"
+face p 0 2
+p
+line "Eles eram os híbridos de humano-demônio,|p| não?"
+face k 0 0
+k
+line "Não,|p| essa é a facção do \"Slate\"."
+line "A gente tá falando dos Knellianos.|p| Eles são os espíritos mecânicos."
+face s 0 0
+face p 4 0
+p
+line "Ah é."
+k
+line "\"Slate\" é um Cibo-Mante."
+face p 0 0
+p
+line "Uh,|p| okay."
+face s 0 1
+checkflag nickname_panda 1
+goto marker branch29y
+goto marker branch29n
+
+marker branch29y
+
+s
+line "Panda,|p| a gente tem que assistir\nessa série alguma hora."
+
+goto marker branch29e
+
+marker branch29n
+
+s
+line "Pandora,|p| a gente tem que assistir\nessa série alguma hora."
+
+goto marker branch29e
+
+marker branch29e
+
+l
+line "Daoooora.|p| Isso significa que\nos quatro de nós somos TODOS fãs."
+line "Que significa que provavelmente tem quarenta mil fãs pela cidade agora."
+face k 0 1
+k
+line "Ainda não faz sentido."
+
+k
+line "Mas seria trinta mil.|p|\nEu não sou uma fã."
+face l 1 0
+l
+line "Não.|p| Você é uma total\nnerd de F.D.S.|p| Você sabe de tudo."
+face p 0 0
+l
+line "Você é uma fã honorária."
+k
+line "Ethan,|p| eu só sei de uma coisa sobre\nisso porque você nunca para\nde falar sobre."
+line "Você tem sorte de eu tolerar isso."
+l
+line "Absolutamente, cara."
+line "Quando eu vencer,|p| eu te compro algo legal\npra mostrar minha apreciação."
+
+setflag _0.slate_kat.read.A 1
+setflag _0.slate_kat.branch A
+function lobby_tick_time 2
+goto script 0/lobby/slate_kat/questions
+

@@ -1,0 +1,45 @@
+face p 0 0
+p
+line "Pra ser honesta,|p| eu realmente não lembro sobre o que Fortaleza da Solidão era sobre."
+face p 1 0
+p
+line "Meu pai tinha uma cópia que eu assistia às vezes,|p| mas eu acho que eu não entendia nada."
+face s 0 1
+s
+line "Huh,|p| eu devia ter perguntado a ele sobre então."
+line "Aposto que o Ethan te daria um resumo bem necessário."
+p
+line "Acho que eu tô de boa."
+face s 2 0
+s
+line "Justo."
+face s 0 2
+s
+line "Deve ser melhor assistir sem saber de nada."
+face p 1 2
+p
+line "A gente não vai assistir Fortaleza da Solidão."
+face s 0 1
+s
+line "Qualé,|p| pelo menos dá uma chance."
+face p 4 0
+p
+line "..."
+face p 0 2
+p
+line "A gente pode assistir UM episódio,|p| mas se for ruim pra mim deu."
+face s 2 1
+s
+line "Você não pode basear sua opinião em só um episódio."
+face p 1 0
+p
+line "Tá,|p| dois episódios,|p| mas se os dois forem ruins eu nunca vou te deixar me enganar pra assistir coisa de nerd de novo."
+
+
+
+setflag _0.smalls.slate_kat 2
+setflag _0.smalls.slate_kat.branch ABAA
+function lobby_tick_time 0.5
+goto script 0/lobby/smalls/return
+
+

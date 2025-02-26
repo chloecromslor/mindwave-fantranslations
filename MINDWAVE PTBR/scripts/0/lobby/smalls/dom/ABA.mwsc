@@ -1,0 +1,73 @@
+
+
+
+p
+line "Cara. "
+face p 1 0
+p
+line "O Dom me deixou completamente desarmada."
+line "Tipo,|p| normalmente eu imediatamente acharia que alguém que se introduz assim tá tentando te encher o saco."
+face p 0 1
+p
+line "Mas sei lá,|p| eu meio que curti o cara."
+face s 0 1
+s
+line "Eu também.|p| Eu só queria que a gente pudesse falar mais sobre música."
+face s 0 0
+s
+line "Eu quero conectar mais com outros produtores."
+line "Eu tenho medo de estagnar se eu ficar na minha própria bolha."
+face p 0 0
+p
+line "Eu toparia sair com ele algum dia."
+line "É uma pena que a gente não pegou o contato dele..."
+face p 0 2
+p
+line "Ei,|p| você não podia ter dado o seu número pra ele num papel ou algo assim?"
+face s 0 3
+s
+line "Oh."
+face s 0 0
+s
+line "Isso é completamente minha culpa,|p| é."
+face s 1 0
+s
+line "Mas,|p| pra ser honesto,|p| quando ele falou a coisa sobre o \"celular de música,\" dele|p| todo pensamento racional saiu do meu cérebro."
+line "Pensando sobre isso cinicamente,|p| parece algo que ele disse pra evitar dar o contato dele pra gente."
+face p 1 0
+p
+line "Nah cara,|p| eu realmente acredito que ele tava sendo honesto."
+face p 0 0
+p
+line "Ele parecia bobão o suficiente pra realmente fazer isso."
+face s 0 1
+s
+line "Parece justo.|p| Por que não deu o seu número pra ele você mesma então?"
+face p 0 4
+p
+line "Eu não vou dar meu número pra um cara que eu acabei de conhecer,|p| Smalls."
+face p 0 0
+p
+line "A gente pode só falar com ele lá fora quando o torneio acabar,|p| de qualquer forma."
+face s 0 0
+s
+line "Nesse caso,|p| só espero que a gente possa encontrar ele no meio do mar de gente na entrada."
+p
+line "Ele provavelmente vai encontrar a gente primeiro.|p|\nO cara parece místico assim."
+face s 0 2
+s
+line "Isso parece certo,|p| é."
+
+
+
+
+
+
+setflag _0.smalls.dom 2
+setflag _0.smalls.dom.branch ABA
+function lobby_tick_time 0.5
+goto script 0/lobby/smalls/return
+
+
+
+

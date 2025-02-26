@@ -1,0 +1,110 @@
+face p 0 0
+p
+line "Qual é a do-|p 20| |skip| "
+face s 0 1
+s
+line "Slate, você devia me contar sobre Fortaleza da Solidão."
+face l 0 0
+face p 1 2
+l
+line "Claro cara. Eu adoraria."
+line "Fortaleza da Solidão, é esse antigo anime dos anos 30-|p 20| |skip| "
+face k 0 1
+k
+line "Talvez leva pra outro lugar?"
+line "Nem todo mundo liga pra ouvir do seu anime chato."
+face l 1 0
+l
+line "Oh,|p| claro.|p| Smalls e eu estaremos logo ali."
+face l 0 0
+l
+line "Se qualquer um de vocês se importar de nos juntar."
+set l x -250
+wait 1 second
+set k x 0
+face s 0 2
+checkflag nickname_panda 1
+goto marker branch26y
+goto marker branch26n
+
+marker branch26y
+
+s
+line "Já volto, Panda."
+
+goto marker branch26e
+
+marker branch26n
+
+s
+line "Já volto, Pandora."
+
+goto marker branch26e
+
+marker branch26e
+
+set s x -200
+face p 0 0
+p
+line "..."
+face k 0 0
+k
+line "..."
+set p x 0
+k
+line "Conhecendo como o Ethan fica quando\nfala sobre aquela série..."
+line "Eles vão demorar um tempo."
+face p 1 0
+p
+line "..."
+k
+line "Uh,|p| você ia perguntar alguma coisa?"
+face p 4 0
+p
+line "Quê?"
+k
+line "Agora há pouco,|p| antes do Ethan\ne seu amigo saírem."
+line "Você tava dizendo alguma coisa."
+face p 1 0
+p
+line "Ah,|p| é,|p| uh..."
+face p 0 0
+p
+line "Era só uma pergunta pro Slate."
+face p 0 2
+p
+line "Ou uhhhh...|p| Ethan?"
+k
+line "Oh."
+face p 0 0
+p
+line "É."
+k
+line "Você poderia perguntar só pra mim?"
+face k 0 2
+k
+line "Eu conheço ele bem o suficiente."
+face p 1 2
+p
+line "Eu acho?|p| Eu ia só\nperguntar sobre a casa dele."
+face k 0 0
+k
+line "A casa dele?|p| Beeeeleza,|p| bem\nnão tem muito o que dizer sobre."
+line "Ele vive com a família dele num apartamentozinho ruim."
+line "É super claustrofóbico."
+face p 1 0
+p
+line "Oh,|p| beleza."
+face p 1 0
+p
+line "Então a família dele não é a sua família?|p| Tipo,|p| vocês não são relacionados."
+k
+line "Não."
+
+setflag _0.pandora.alone 1
+setflag _0.slate_kat.read.BB 1
+setflag _0.slate_kat.branch BB
+function lobby_tick_time
+goto script 0/lobby/slate_kat/questions
+
+

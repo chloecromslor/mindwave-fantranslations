@@ -1,0 +1,93 @@
+
+face s 0 0
+s
+line "Seu nome real é Ethan então?"
+face l 0 0
+l
+line "Pois é.|p| É isso que meus amigos me chamam."
+face k 0 1
+k
+line "Amiga*."
+face l 1 0
+l
+line "Não é verdade.|p| Seus avós me chamam de Ethan."
+line "Eles são meus amigos também."
+face s 1 0
+s
+line "Então,|p| vocês não são irmãos."
+k
+line "Ethan é um incômodo que fica pela minha casa diariamente..."
+face k 0 2
+k
+line "...mas não a gente não é relacionado."
+face l 0 0
+l
+line "Minha casa fica muito barulhenta\nquando meus irmãos tão em casa."
+line "E mais,|p| não tem ninguém ali que gosta de me ouvir falar sobre Fortaleza da Solidão."
+face s 0 0
+l
+line "Amo minha família,|p| mas é um PARAÍSO sair de perto daquele pessoal."
+face l 1 0
+l
+line "Os avós da Kat são muito mais legais."
+face k 0 0
+k
+line "A ideia de paraíso do Ethan é uma casa cheia de gente velha chata."
+face l 0 0
+l
+line "Paz e tranquilidade,|p| cookies de graça,|p| e dois velhinhos pra curtir comigo\né paraíso pra mim."
+face p 0 0
+p
+line "Você...|p| conversa com eles sobre\ndesenhos também?"
+l
+line "Sim.|p| O vovô da Kat e\neu podemos conversar por horas."
+face k 0 1
+k
+line "Ele não entende nada\nque você tá falando por acaso."
+face l 1 0
+l
+line "Eu não importo de me repetir.|p|\nSó significa mais conversa\npra nós dois."
+face l 0 0
+l
+line "Ele tem um monte de histórias\nque ele ama me contar."
+face k 0 0
+k
+line "Histórias de gente velha.|p|\nDa vida dele e tal."
+face l 1 0
+l
+line "Exato.|p| Ele é um tagarela."
+face l 1 0
+l
+line "Eu curto ver aquela luz em seus\nolhos não importa quantas vezes\nele conte as mesmas histórias."
+face k 0 1
+k
+line "..."
+face l 0 0
+l
+line "Eu ficaria lá o tempo todo,|p| mas eu sou muito alto pra dormir no sofá deles."
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+setflag _0.slate_kat.read.AB 1
+setflag _0.slate_kat.branch AB
+function lobby_tick_time 2
+goto script 0/lobby/slate_kat/questions
+

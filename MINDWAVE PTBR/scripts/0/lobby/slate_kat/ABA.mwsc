@@ -1,0 +1,73 @@
+face p 0 0
+face s 0 1
+s
+line "Ethan,|p| você disse que fez\nessa fantasia sozinho?"
+l
+line "É.|p| Não é perfeito,|p|\nmas eu gostei de como ficou."
+face p 0 1
+p
+line "Ficou maneiro."
+face s 0 1
+s
+line "Concordo."
+l
+line "Muito obrigado.|p| Kat não pôde apreciar isso tanto quanto vocês."
+face k 0 1
+k
+line "Eu não aprecio porque\né super vergonhoso."
+face s 0 0
+s
+line "Ei,|p| isso é meio longe."
+l
+line "Nah, ela tem um ponto.|p| Vestir pra igreja não foi minha melhor decisão."
+face p 0 0
+p
+line "Vocês vão pra igreja juntos?"
+face l 0 0
+l
+line "Nah,|p| Kat vai com os avós dela.|p| Eu só fui uma vez."
+face l 1 0
+l
+line "Eu nunca te vi vestida tão formalmente antes disso."
+face k 0 0
+k
+line "Eu não queria realmente ir,|p| mas\neles sempre me arrastam junto."
+line "Eles insistiram em levar o Ethan\nnaquele domingo também."
+face s 2 1
+s
+line "Oh cara,|p| eles devem ter\nse arrependido da decisão."
+face k 0 0
+k
+line "É...|p| vovó acabou escrevendo uma carta de desculpas pela cena que causou."
+face l 0 0
+face s 0 0
+l
+line "Mas foi absolutamente engraçado.|p|\nUm cara me deu esse\npanfleto religioso."
+face l 1 0
+l
+line "Eu emoldurei ele no meu quarto."
+face k 0 2
+k
+line "É,|p| ele achou que sua fantasia era demoníaca."
+face p 0 2
+p
+line "Cara,|p| a cidade Blackout é a\ncapital do Mindscape."
+face p 0 0
+p
+line "Tudo aqui é\nrebocado com chifres."
+face p 0 1
+p
+line "Se alguma coisa é demoníaca,|p|\né a Mindscape Co."
+face l 0 0
+l
+line "Caaara você tá absolutamente certo.|p|\nEsse lugar é totalmente demoníaco."
+line "É tão legal."
+face p 0 4
+p
+line "..."
+setflag _0.slate_kat.read.ABA 1
+setflag _0.slate_kat.branch ABA
+function lobby_tick_time
+goto script 0/lobby/slate_kat/questions
+
+

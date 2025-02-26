@@ -1,0 +1,74 @@
+face p 0 0
+p
+line "O que é sua casa então?"
+k
+line "O que é|p| minha casa?"
+face p 1 0
+p
+line "É,|p| sei lá."
+k
+line "Eu não quero te contar isso."
+face p 0 2
+p
+line "Mano,|p| eu não tô perguntando pelo seu\nendereço nem nada assim."
+line "Eu tô perguntando como é onde você vive."
+face p 1 2
+p
+line "Só parecia uma pergunta relevante."
+k
+line "Eu ainda não quero te contar isso."
+line "Eu não tô realmente confortável te contando\nsobre a minha situação de vida."
+p
+line "...Okay?"
+line "Eu realmente não sei como continuar\na conversa então."
+face p 0 2
+p
+line "Você tá deixando meio difícil."
+k
+line "EU tô deixando difícil?"
+face p 0 0
+p
+line "..."
+k
+line "...Me conta sobre você?"
+face p 1 0
+p
+line "Sobre mim?"
+line "Sei lá,|p| esse lugar tem uma atmosfera estranha."
+face p 1 2
+p
+line "Não sou boa em falar com gente nova."
+k
+line "Eu entendo isso.|p| Eu não estaria aqui se estivesse sozinha."
+face p 0 0
+p
+line "O que mais...|p| Eu toco um pouco de música."
+face p 0 1
+p
+line "Smalls e eu somos meio que uma dupla."
+face k 0 2
+k
+line "Legal.|p| Meu senso de ritmo nunca foi bom o suficiente pra tocar nenhum instrumento."
+line "Mas eu gosto de pintar.|p| Nada tangível,|p| só peças abstratas."
+line "Eu estive fazendo por,|p| o quê?|p| uns 7 anos agora?"
+face p 0 0
+p
+line "Legal..."
+face k 0 0
+face p 1 0
+p
+line "Eu também tô com um pouco de medo do torneio."
+line "Tipo,|p| mais do que só perder."
+face k 0 0
+k
+line "O que,|p| você tem medo das mentes\nque vai encontrar?"
+face p 0 0
+p
+line "Eu tô pensando mais nas pessoas por trás dessas mentes."
+
+setflag _0.slate_kat.read.BBB 1
+setflag _0.slate_kat.branch BBB
+function lobby_tick_time
+setflag _0.pandora.alone 0
+goto script 0/lobby/slate_kat/questions
+

@@ -1,0 +1,43 @@
+face s 0 1
+s
+line "Depois dessa,|p| a gente devia assistir um pouco de Fortaleza da Solidão."
+face p 0 0
+p
+line "Cara,|p| não é tão interessante quanto o Slate fez parecer."
+face p 1 0
+p
+line "Tem uma razão pra ninguém falar sobre hoje em dia."
+face p 0 1
+p
+line "Se o disco do meu pai valer alguma coisa,|p| eu ia vender sem nem pensar duas vezes."
+face p 1 2
+p
+line "Desse jeito vir aqui valeria alguma coisa.|p| Mesmo se eu acabar perdendo."
+face s 0 1
+s
+line "Não fala assim,|p| essa experiência é valiosa do seu próprio jeito."
+face s 1 0
+s
+line "Você também admitiu mal lembrar da série.|p| Eu acho que ela merece uma reassistida."
+face s 0 1
+s
+line "Pode até ser melhor do que o Slate fez parecer,|p| você só tem que dar uma chance."
+face p 0 0
+p
+line "Cara eu não sei,|p| é só coisa de nerd."
+face p 0 4
+p
+line "A gente pode ver UM episódio,|p| mas se for ruim pra mim deu."
+face s 2 1
+s
+line "Você não pode basear sua opinião em só um episódio."
+face p 1 0
+p
+line "Tá,|p| dois episódios,|p| mas se os dois forem ruins eu nunca vou te deixar me enganar pra assistir coisa de nerd de novo."
+
+
+setflag _0.smalls.slate_kat 2
+setflag _0.smalls.slate_kat.branch AABA
+function lobby_tick_time 0.5
+goto script 0/lobby/smalls/return
+

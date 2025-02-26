@@ -1,0 +1,74 @@
+p
+line "..."
+k
+line "Você só não curte falar comigo ou algo assim?"
+face p 0 0
+p
+line "Nah,|p| não é isso,|p| Smalls só saiu meio do nada ali."
+k
+line "O que,|p| seu problema é isso?"
+line "Ter que falar comigo de repente um a um?"
+p
+line "É.|p| Eu não sou muito incrível\nem falar com gente nova."
+face p 0 0
+p
+line "Não é nada contra você."
+k
+line "Entendi."
+face p 1 0
+p
+line "..."
+k
+line "Eu entendo isso..."
+line "Quando eu transferi de escolas, eu nunca quis falar com ninguém."
+face k 0 2
+k
+line "Todos os meus colegas de classe achavam que eu era estranha."
+face k 0 0
+k
+line "Exceto o Ethan.|p| Isso é porque ele era tão estranho quanto eu."
+line "Então eu só me acostumei a\nconviver com ele."
+face p 0 0
+p
+line "E se eu tô sendo honesta,|p| Smalls é quem tá me empurrando a ser um pouco mais social."
+face p 0 2
+p
+line "Eu não esperava ele me deixar\nno vácuo assim."
+face k 0 2
+k
+line "Isso é engraçado."
+face k 0 0
+k
+line "Ethan é meio desajeitado,|p|\nmas ele é certamente social."
+line "Andar com ele me fez\nfalar mais com as pessoas."
+face k 0 2
+k
+line "Agora ele é o mais estranho\nde nós dois."
+face p 0 1
+p
+line "Eu entendo isso."
+line "Honestamente,|p| eu-|p 20| |skip| "
+set s x -70
+set p x +45
+face l 0 0
+face p 4 0
+s
+line "Yo, a gente voltou."
+set k x +67
+set l x -48
+l
+line "Eae pessoal."
+face s 2 1
+s
+line "Pandora,|p| como você não me contou sobre Fortaleza da Solidão antes?"
+face s 0 2
+s
+line "Ethan fez parecer tipo\na melhor série de todas."
+
+
+setflag _0.slate_kat.read.BBA 1
+setflag _0.pandora.alone 0
+setflag _0.slate_kat.branch BBA
+function lobby_tick_time
+goto script 0/lobby/slate_kat/questions
+

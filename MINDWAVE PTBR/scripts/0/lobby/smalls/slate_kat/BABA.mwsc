@@ -1,0 +1,39 @@
+face p 0 1
+p
+line "Kat é meio legal."
+face s 0 1
+s
+line "É,|p| ela é daora."
+line "Eu teria amado um Bilhete de Platina como presente de aniversário ano passado."
+face p 0 2
+p
+line "Você não precisava,|p| você entrou de fininho e tá aqui de qualquer forma."
+face s 2 1
+s
+line "É,|p| mas isso pesa tanto na minha consciência."
+face s 0 1
+s
+line "O melhor presente que eu recebi foi aquele toca-fitas vintage daora da Lineage Músicas."
+line "Não graças a você.|p|\nComprei eu mesmo."
+face p 0 2
+p
+line "Mano,|p| eu que te dei o cupom."
+face s 1 0
+s
+line "De quanto tempo atrás?|p| Tava expirado faz tempo quando eu fui usar."
+face p 1 0
+p
+line "Oh,|p| foi mal.|p|\nEu sou meio sem grana."
+face s 0 1
+s
+line "É de boa.|p| O que conta é a intenção."
+face p 0 1
+p
+line "Se eu vencer,|p| eu te dou algo melhor esse ano."
+
+
+setflag _0.smalls.slate_kat 2
+setflag _0.smalls.slate_kat.branch BABA
+function lobby_tick_time 0.5
+goto script 0/lobby/smalls/return
+

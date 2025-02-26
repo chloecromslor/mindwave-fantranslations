@@ -1,0 +1,43 @@
+face p 0 0
+p
+line "Sabe,|p| eu acabei de perceber...|p| Eu esqueci de pegar o nome daquela garota.|p|"
+face s 1 0
+s
+line "Você esclareceu a situação da fila pelo menos,|p| certo?"
+face p 0 2
+p
+line "É...|p| Quer dizer,|p| mais ou menos?"
+line "Eu ainda não gosto da ideia de jogar contra ela."
+face p 1 0
+p
+line "Quer dizer,|p| ela é legal e tal."
+face p 0 0
+p
+line "Mas tem alguma coisa estranha sobre ela."
+face p 0 2
+p
+line "Ela tá planejando investir na Mindscape Co. se ela ganhar."
+face s 1 0
+s
+line "Honestamente não é uma má ideia."
+face s 0 1
+s
+line "Ter ações nessa empresa é provavelmente um investimento lucrativo."
+p
+line "Cara,|p| eu não acredito em você."
+face p 1 2
+p
+line "Jogar MINDWAVE secretamente transforma as pessoas em escravos corporativos?"
+face s 0 0
+s
+line "Provavelmente não."
+face s 0 1
+s
+line "Mas,|p| se eu acabar comprando ações deles,|p| eu espero que sim."
+
+setflag _0.smalls.iris 2
+setflag _0.smalls.iris.branch ABAA
+function lobby_tick_time 0.5
+goto script 0/lobby/smalls/return
+
+
