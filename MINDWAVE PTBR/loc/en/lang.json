@@ -1,0 +1,128 @@
+{
+	"language": "English",
+	"language_iso": "en",
+	"system":{
+		"photosensitivity_warning":[
+			"AVISO DE FOTOSSENSIBILIDADE",
+			"MINDWAVE contém visuais como luzes piscando que podem causar convulsões epiléticas.\nUma pequena porcentagem de pessoas pode sofrer convulsões epiléticas quando expostas a visuais fortes como padrões repetidos ou luzes piscando.\nDiscrição do espectador é aconselhada."
+		],
+		"controls_disclaimer":"MINDWAVE faz uso de teclado e mouse QWERTY.\nTrackpads não são recomendados, e gamepads não são suportados.",
+		"cutscene":{
+			"paused_text": "PAUSADO",
+			"skip_button": "Pular",
+			"skipping_text": "Pulando..."
+		},
+		"gameplay":{
+			"pause_screen":{
+				"paused_text": "PAUSADO",
+				"exit_button": "Sair do Jogo"
+			},
+			"results_screen":{
+				"score_text": "PONTUAÇÃO\n"
+			}
+		}
+	},
+	"character_names":{
+		"mystery": "???",
+		"pandora": "Pandora",
+		"smalls": "Smalls",
+		"terminal": "Terminal",
+		"abbie": "Abbie",
+		"alex": "Alex",
+		"dom": "Dom",
+		"iris": "???",
+		"roxy": "Roxy",
+		"slate": "Slate",
+		"kat": "Kat"
+	},
+	"menus":{
+		"main":{
+			"press_space": "APERTE ESPAÇO",
+			"character_select_locked": "Vença o primeiro oponente no Modo História para desbloquear Seleção de Mentes!",
+			"quit_confirm": "Tem certeza que quer sair?",
+			"popup_button_ok": "OK",
+			"popup_button_yes": "SIM",
+			"popup_button_no": "NÃO"
+		},
+		"character_select":{
+			"title": "SELECIONAR MENTE",
+			"mode_endless": "INFINITO",
+			"mode_standard": "PADRÃO",
+			"play_button": "JOGAR",
+			"leaderboard_button": "PLACAR",
+			"settings_button": "CONFIGURAÇÕES",
+			"simple_mode_toggle": "SIMPLES    ",
+			"back_button": "VOLTAR",
+			
+			"character_names":{
+				"starlight": "Estrelinha",
+				"tutorial": "Tutorial",
+				"shuffle": "Embaralhar"
+			},
+			"presets":{
+				"leaderboard_name_template": "#CHARACTER_NAME#\n(#PRESET_NAME#)",
+				"default": "Default",
+				"custom": "Custom",
+				"no_gimmicks": "Simple"
+			}
+		},
+		"leaderboard":{
+			"local_tab": "Local",
+			"global_tab": "Global",
+			"friends_tab": "Amigos",
+			"page_number": "Pg. #",
+			"close_button": "Fechar",
+			"text_local_no_scores": "Sem pontuações ainda.\nJogue uma partida primeiro!",
+			"text_loading_scores": "Carregando pontuações...",
+			"text_no_connection": "Sem conexão.",
+			"text_drm_free": "Placares Online só estão disponíveis na versão da Steam."
+		},
+		"options":{
+			"back_button": "Voltar",
+			"volume_label": "Volume",
+			"vol_master": "Mestre",
+			"vol_sfx": "SFX",
+			"vol_music": "Música",
+			"mute_on_lose_focus": "Silênciar no fundo",
+			"window_scale": "Escala da Janela",
+			"window_scale_option": "#x",
+			"window_scale_default": "Padrão (#x)",
+			"fullscreen_toggle": "Tela cheia",
+			"window_mouse_lock_toggle": "Travar Mouse na Janela",
+			"pause_on_lose_focus": "Pausar o Jogo no Fundo",
+			"key_ghosting_compensation": "Compensação de Key Ghosting",
+			"test_key_ghosting": "Teste de Key Ghosting",
+			
+			"key_ghosting_test_text": "Tente segurar o máximo de teclas que puder. Se certas combinações de teclas não funcionarem, seu teclado provavelmente sofre de 'key ghosting'.\n\nSe certas combinações de teclas de restringem de segurar 4 teclas simultanêamente, você vai querer habilitar Compensação de Key Ghosting.",
+			
+			"manage_profiles_button": "Gerenciar Perfis",
+			"reset_local_high_scores_button": "Resetar Pontuação Mais Alta Local",
+			"tooltip":{
+				"mute_on_lose_focus": "Silencia o áudio do jogo quando a janela perde foco.",
+				"pause_on_lose_focus": "Gameplay ativa irá pausar quando a janela perde foco.",
+				"window_mouse_lock_toggle": "Certas seções do jogo vão manter o cursor do mouse preso na janela.",
+				"key_ghosting_compensation": "Alguns teclados não conseguem segurar muitas teclas de uma vez.\nHabilitar essa opção vai minimizar a quantidade de teclas seguradas requeridas por alguns microjogos.",
+				"test_key_ghosting": "Alguns teclados não conseguem segurar muitas teclas de uma vez.\nClique nesse botão para testar o seu teclado para 'key ghosting'."
+			}
+		}
+	},
+	"dialogue":{
+		"0":{
+			"lobby":{
+				"tutorial":{
+					"basics":[
+						"Bem-vindo ao salão de espera!\n\nAqui, Pandora e Smalls podem passar o tempo conversando com seus colegas concorrentes antes do próximo round do torneio começar.",
+						"Para olhar ao redor, mova seu mouse para os cantos da tela ou use WASD/as setinhas.",
+						"Use a barra de espaço para abrir o submenu.",
+						"Você pode clicar no Smalls para falar com ele.",
+						"...e você pode clicar na Pandora para pular a sala de espera e começar o próximo round do torneio.",
+						"O primeiro round vai começar em breve.\n\nSe precisar reler alguma coisa, você pode apertar Tab para abrir o histórico."
+					],
+					"submenu_reminder":[
+						"O primeiro round irá começar em breve.\n\nPara pular direto a ele, apenas clique na Pandora no sobmenu (barra de espaço).\n\nSe precisar reler alguma coisa, você pode apertar Tab para abrir o histórico."
+					]
+				}
+			}
+		}
+	}
+}
