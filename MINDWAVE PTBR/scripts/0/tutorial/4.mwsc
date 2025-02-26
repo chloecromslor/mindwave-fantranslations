@@ -1,0 +1,28 @@
+checkflag _0.tutorial.fails 0
+goto marker 0fails
+checkflag _0.tutorial.fails 1
+goto marker 1fails
+
+goto marker 2fails
+
+
+marker 0fails
+Bom trabalho!
+Esses são todos os fundamentais...|p|\nMas você sabia que Interfaces podem ser combinadas?|p| É verdade!
+show_controls
+Vamos tentar usar um microjogo usando a Interface das Setinhas e a Barra de Espaço!
+goto marker end
+
+marker 1fails
+Oh,|p| eu sei que é desafiador,|p| mas você consegue!
+show_controls
+Lembre-se,|p| você pode usar WASD ou as Setinhas-|p| o que você preferir!
+goto marker end
+
+marker 2fails
+show_controls
+Lembre-se,|p| você pode usar WASD ou as Setinhas-|p| o que você preferir!
+goto marker end
+
+marker end
+

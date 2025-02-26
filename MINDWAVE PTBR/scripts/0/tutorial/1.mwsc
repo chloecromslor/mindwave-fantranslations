@@ -1,0 +1,35 @@
+checkflag _0.tutorial.fails 0
+goto marker 0fails
+checkflag _0.tutorial.fails 1
+goto marker 1fails
+
+goto marker 2fails
+
+
+marker 0fails
+Bom trabalho!|p| É assim que é jogar um microjogo.
+Vamos tentar outro microjogo com uma Interface diferente.
+show_controls
+Esse usa uma Interface de Teclado.|p|\nTenta aí!
+goto marker end
+
+
+
+
+
+marker 1fails
+Hmm...|p| talvez precisamos tentar outra coisa.
+show_controls
+Imagine que tem um graaande teclado na sua frente,|p| entendeu?|p|\nÉ pra isso que a Interface serve!
+Vamos tentar de novo!
+goto marker end
+
+marker 2fails
+Hmm...|p| talvez precisamos tentar outra coisa.
+show_controls
+Só veja quais letras tão sendo mostradas,|p| e digite elas!|p|\nFácil como 1-2-3!
+goto marker end
+
+
+marker end
+

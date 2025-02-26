@@ -1,0 +1,28 @@
+checkflag _0.tutorial.fails 0
+goto marker 0fails
+checkflag _0.tutorial.fails 1
+goto marker 1fails
+
+goto marker 2fails
+
+
+marker 0fails
+Bom trabalho!
+Hora de outro combo de Interface!
+show_controls
+Dessa vez,|p| use a Interface das Setinhas e o Mouse juntos.|p|\nAcha que consegue?
+goto marker end
+
+marker 1fails
+Uau,|p| uma nova perspectiva!|p| Que microjogo maluco.
+show_controls
+Volte lá e dê o seu melhor, okay?
+goto marker end
+
+marker 2fails
+show_controls
+Vamos tentar outra vez!
+goto marker end
+
+marker end
+
