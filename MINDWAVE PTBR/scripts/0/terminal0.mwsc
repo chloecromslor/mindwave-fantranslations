@@ -1,0 +1,20 @@
+function cs_0_1_scr_terminalsong_start
+function play_crowd_ambience
+char pandora p left
+char terminal t right
+
+t
+line "|style font fnt_pixel|Saudações do sistema de entrada da Torre Mindscape!"
+|style font fnt_pixel|...e bem-vinda à Torre Mindscape,|p ,| lar da Mindscape Co.|p ,|
+|style font fnt_pixel|...criadores do mais poderoso desenvolvimento no mundo em técnologia cognitiva e entretenimen-|skip|  
+p
+line "Tá tá pulapulapula não ligo."
+face p 1 0
+
+Só vai logo.|p|
+Tem tipo um milhão de pessoas atrás de mim.
+
+t
+line "|style font fnt_pixel|Um dos nossos concorrentes mais ansiosos até agora!|p|\nMuito bem..."
+skip outro
+
