@@ -10,3 +10,5 @@ Included with the .xdelta patches are the /loc and /script folders that are nece
 French patch by: Tamanakio (patch is made for 1.0.1, install at your own discretion)
 
 Brazilian Portugese patch by: Equipe Córtex
+
+Korean patch by: Pancat_Silly, geminica
