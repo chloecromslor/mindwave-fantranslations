@@ -1,7 +1,0 @@
-wait for marker line1
-text_auto 1
-speaker_voice terminal
-|style font fnt_pixel|보정이 완료되었습니다.
-wait for marker fadeout
-clear
-
